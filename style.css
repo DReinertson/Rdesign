@@ -1,0 +1,139 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100%;
+  height: 5%;
+  background-color: gray;
+  padding: 0;
+  margin: 0;
+}
+.nav{
+  margin: auto;
+  width: 100%;
+  height: 90%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.navItem{
+  width: 30vw;
+  height: 30vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: 1px solid black;
+}
+@media only screen and (min-width: 1200px){
+  .nav{
+    margin: auto;
+    width: 70%;
+  }
+  .navItem{
+    width: 20vw;
+    height:20vw;
+  }
+}
+.navItem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+/*-------------Overlay CSS------------*/
+.generalTab{
+  height: 95vh;
+  width: 0;
+  position: fixed;
+  top: 5vh;
+  right: 0;
+  overflow-x: hidden;
+  background-color: gray;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: .5s ease;
+  background-color: black;
+  color: gray;
+  word-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text{
+  color: white;
+  font-size: 5vh;
+  opacity: 1;
+  width: 75%;
+  cursor: pointer;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text a{
+  text-decoration: none;
+  color: inherit;
+}
+/*------------End Overlay CSS----------------*/
+
+/*
+.general{
+  background-image: url('./images/info.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about{
+  background-image: url('./images/about.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services{
+  background-image: url('./images/services.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects{
+  background-image: url('./images/projects.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact{
+  background-image: url('./images/contact.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*/
+.footer{
+  width: 100%;
+  height: 5%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footerItem{
+  width: 50%;
+}
