@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  z-index: 2;
 }
 
 body, html{
@@ -9,94 +8,61 @@ body, html{
   flex-direction: column;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
-.navBar{
-  width: 100%;
-  height: 5%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  background-color: gray;
-}
-.navBar .nav{
-  z-index: 2;
-}
+
 .businessName{
   font-size: 4vh;
   height: 5%;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
 }
-.navBarCont {
+.pageContainer{
   display: flex;
-  color: white;
-  align-items: center;
-  width: 50%;
-  justify-content: space-around;
-}
-
-.navBarCont li{
-  text-decoration: none;
-  color: white;
-  list-style: none;
-  cursor: pointer;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 .nav {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: auto;
 }
 .navItem{
   display: flex;
   align-items: center;
+  max-width: 75%;
   height: 16%;
   font-size: 10vw;
   font-family: Oswald;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  position: relative;
   right: 0;
-  background-color: white;
+  margin: auto 0;
 }
 .navItem span{
   margin-left: auto;
+  cursor: pointer;
+}
+.navItem span:hover{
+  color: yellow;
 }
 
 
-.about{
-  top: 6%;
-  left: 50%;
-}
-/*.services, .projects, .contact{
-  justify-content: center;
-}*/
-.services{
-  top: 25%;
-  left: 50%;
-}
-.projects{
-  top: 44%;
-  left: 50%;
-}
-.contact{
-  top: 63%;
-  left: 50%;
-}
-.other{
-  top: 82%;
-  left: 50%;
-}
-
-
-.slideIn{
-  width: 50%;
-}
-
-.page{
+.pageSpecs{
+  width: 88%;
+  height: 95%;
   position: relative;
-  width: 60%;
-  margin: auto;
-  top: 22%;
-  z-index: 1;
+  top: 5%;
+}
+.maxWidth{
+  max-width: 25%;
+}
+
+.fixed{
+  position: fixed;
+  right: 0;
 }
