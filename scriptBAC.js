@@ -16,12 +16,12 @@ $('.navItem').on('click', function(){
   console.log(id);
   $('.businessName').hide(500);
   $('.navBar').show(1500);
-  $('.navItem').animate({left : '0'}, 1500);
+  $('.navItem').animate({left : '0'}, {duration:1500, queue:false});
   $('.navItem span').animate({'margin-left': '0'}, {duration: 1000, queue:false});
-  $('.navItem').animate({top: '6%'}, {duration:1500, queue:false, complete:function(){
-    console.log('hidding all divs except', id);
-    $('.navItem').hide();
-    $(id).show();
+  $('.navItem').animate({top: '5%'}, {duration:1500, queue:false, complete:function(){
+    $('.navItem').not(id).hide();
+    $('.navItem').css({'width':'100%'});
+    //document.getElementById('page').innerHTML = '<object type = "text/html" data = "./pageTemplate.html"></object>';
   }});
-
+  $('.page').load('./pageTemplate.html').hide().delay(500).fadeIn({duration: 1500});
 })

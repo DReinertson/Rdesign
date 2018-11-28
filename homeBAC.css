@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 body, html{
@@ -8,6 +9,7 @@ body, html{
   flex-direction: column;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .navBar{
   width: 100%;
@@ -16,6 +18,9 @@ body, html{
   justify-content: space-between;
   position: fixed;
   background-color: gray;
+}
+.navBar .nav{
+  z-index: 2;
 }
 .businessName{
   font-size: 4vh;
@@ -45,14 +50,14 @@ body, html{
 .navItem{
   display: flex;
   align-items: center;
-  width: 0;
   height: 16%;
   font-size: 10vw;
   font-family: Oswald;
-  position: absolute;
+  position: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
   right: 0;
+  background-color: white;
 }
 .navItem span{
   margin-left: auto;
@@ -86,4 +91,12 @@ body, html{
 
 .slideIn{
   width: 50%;
+}
+
+.page{
+  position: relative;
+  width: 60%;
+  margin: auto;
+  top: 22%;
+  z-index: 1;
 }
