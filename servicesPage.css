@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+li{
+  list-style: none;
+  font-size: 16px;
+  margin: 10%;
+}
+
+.servicesPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.content{
+  width: 75%;
+  height: 0;
+  padding: 23% 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5vh 0;
+}
+.contentTitle{
+  width: 100%;
+  height: 25%;
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+}
+.contentText{
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  width: 100%;
+  height: 75%;
+  justify-content: center;
+}
+
+.text{
+  margin: 5% 0;
+}
+
+
+
+.buttonsContainer{
+  display: flex;
+  width: 75%;
+  height: 0;
+  padding: 12.5% 0;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.button{
+  width: 30%;
+  height: 0;
+  padding: 15% 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left:0;
+}
+.button:hover{
+  border: 1px solid black;
+}
+.buttonsContainer img{
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+  top: 5%;
+  left: 0;
+  right: 0;
+}
+.buttonsContainer h1{
+  top: 50%;
+}
+
+@media only screen and (min-width: 1200px){
+  .content{
+    width: 70%;
+    padding: 15% 0;
+  }
+  .buttonsContainer{
+    width: 70%;
+    padding: 8% 0;
+    position: relative;
+    justify-content: space-around;
+  }
+  .button{
+    width: 20%;
+    padding: 10% 0;
+  }
+
+}
