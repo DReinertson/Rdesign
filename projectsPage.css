@@ -2,14 +2,23 @@
   margin: 0;
   padding: 0;
 }
-.projectsContainer{
-  width: 61vw;
+body, html{
+  width: 100%;
+  height: 100%;
+}
+.projectsPage{
   display: flex;
-  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 0;
+}
+.projectsContainer{
+  width: 60vw;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  margin:10% auto;
 }
 
 .text {
@@ -17,6 +26,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  top: 20vw;
 
 }
 .projectsRow{
@@ -26,7 +37,7 @@
   position: relative;
 }
 .rowItem{
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   border: 1px solid black;
 }
