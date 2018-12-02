@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.businessName{
+  font-size: 4vh;
+  height: 5%;
+}
+.pageContainer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navItem{
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+  height: 16%;
+  font-size: 10vw;
+  font-family: Oswald;
+  position: relative;
+  margin: auto 0;
+}
+.navItem span{
+  cursor: pointer;
+}
+.navItem span:hover{
+  color: #E6A58A;
+}
+
+
+.pageSpecs{
+  width: 88%;
+  position: relative;
+  left: 12%;
+}
+.maxWidth{
+  max-width: 25%;
+}
+
+.fixed{
+  position: fixed;
+}
+.active{
+  color:#E6A58A;
+}
