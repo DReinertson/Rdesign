@@ -2,40 +2,53 @@ let moved = false;
 
 //page will be a string, id, div, identifier.
 function showPage(page){
+  let url = './' + page + 'Page.html';
   if (moved === false){
-    console.log('showing page');
-    $('.page').load('./' + page + 'Template.html').hide().delay(500).fadeIn({duration: 500});
+    console.log(url);
+    $('.page').load(url).hide(250).fadeIn({duration: 250});
     $('.page').addClass('pageSpecs');
   }
   else{
     console.log('else statement showPage');
-    $('.page').load('./' + page + 'Template.html').hide().delay(500).fadeIn({duration: 500});
+    $('.page').load(url).hide().delay(250).fadeIn({duration: 250});
   }
 };
 
 function moveNav(div){
   if (moved === false){
+    console.log(div.id);
     let id = '#' + div.id;
     console.log(id);
-    $('.navItem').animate({fontSize: '2vw', height: '5%', 'max-width':'100%', margin:'0', paddingRight:'4%'}, 1000);
+    $('.navItem').animate({fontSize: '2vw', height: '5%', 'max-width':'100%', margin:'0', paddingRight:'4%'}, 500);
 
-    $('.nav').animate({height: '100%', backgroundColor:'gray', width: '12%'}, {duration: 1000, complete:function(){
+    $('.nav').animate({height: '100%', backgroundColor:'#808080', width: '12%'}, {duration: 500, complete:function(){
       console.log('going into animate function');
       $('.nav').addClass('fixed');
-      $('.businessName').animate({width:'88%'});
+      //$('.businessName').animate({width:'88%'});
     }});
-    showPage('page');
+    showPage(div.id);
     moved = true;
   }
   else{
     console.log('else statement moveNav');
-    showPage('page');
+    showPage(div.id);
   }
+}
+function highlightActive(div){
+  $('.navItem').each(function(){
+    $(this).removeClass('active');
+  });
+  $(div).addClass('active');
 }
 
 $('.navItem').on('click', function(){
-  moveNav(this);
+    moveNav(this);
+    highlightActive(this);
+
 });
+
+
+
 
 
 // $(document).ready(function(){
