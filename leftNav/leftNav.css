@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 body, html{
   display: flex;
   flex-direction: column;
@@ -11,8 +14,7 @@ body, html{
 }
 
 .businessName{
-  font-size: 4vh;
-  height: 5%;
+  width: 50%;
 }
 .pageContainer{
   display: flex;
@@ -37,10 +39,10 @@ body, html{
   position: relative;
   margin: auto 0;
 }
-.navItem span{
+.navItem a{
   cursor: pointer;
 }
-.navItem span:hover{
+.navItem a:hover{
   color: #E6A58A;
 }
 
