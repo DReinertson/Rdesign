@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+i{
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+}
+.nav{
+  width: 95%;
+  height: 0;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  left: 5%;
+  transition: .3s;
+  overflow-y: hidden;
+}
+.nav ul{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  font-size: 3vh;
+}
+
+.page{
+  height: 100vh;
+  width: 95%;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  top: 5vh;
+}
+
+.introPage{
+  flex-direction: column;
+  font-size: 5.5vw;
+  justify-content: center;
+  background-color: green;
+  height: 80vh;
+  
+}
+.aboutPage{
+  background-color: gray;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+}
+.bio{
+  display: flex;
+}
+
+.services{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.service{
+  width: 20vw;
+  height: 20vw;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  text-align: center;
+}
