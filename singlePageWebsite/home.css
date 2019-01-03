@@ -14,15 +14,15 @@ i{
 .nav{
   width: 95%;
   height: 0;
-  background-color: blue;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: fixed;
   z-index: 2;
   left: 5%;
   transition: .3s;
   overflow-y: hidden;
+  background-color: white;
 }
 .nav ul{
   display: flex;
@@ -31,6 +31,16 @@ i{
   font-size: 3vh;
 }
 
+.nav a{
+  text-decoration: none;
+  color: black;
+}
+a.anchor{
+  display: block;
+  position: relative;
+  visibility: hidden;
+  bottom: 5vh;
+}
 .page{
   height: 100vh;
   width: 95%;
@@ -44,15 +54,17 @@ i{
   flex-direction: column;
   font-size: 5.5vw;
   justify-content: center;
-  background-color: green;
   height: 80vh;
   
 }
 .aboutPage{
-  background-color: gray;
   flex-direction: column;
   justify-content: space-around;
   height: 80vh;
+}
+.aboutPage > h1{
+  text-align: center;
+  font-size: 5.5vw;
 }
 .bio{
   display: flex;
@@ -73,4 +85,46 @@ i{
   align-items: center;
   font-size: 4vw;
   text-align: center;
+}
+.projectsPage{
+  height: 90vh;
+  padding-top: 10vh;
+  flex-direction: column;
+}
+.projectsPage > h1{
+  text-align: center;
+  margin-bottom: 10vh;
+  font-size: 5.5vw;
+}
+.projectsList{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.proj{
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid black;
+  margin-right: 2vw;
+}
+.overlay{
+  display: none;
+}
+
+.contactPage{
+  flex-direction: column;
+  align-items: center;
+}
+.contactInfo{
+  display: flex;
+  position: relative;
+}
+
+.contactItem{
+  width: 30vw;
+  height: 40vw;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
