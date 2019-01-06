@@ -36,3 +36,5 @@ $(window).scroll(function(){
 $(document).ready(function(){
   openNav();
 })
+
+//Add underline on hover over picture. But only to specific image/title pair.

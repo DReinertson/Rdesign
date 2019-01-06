@@ -16,6 +16,8 @@ body, html{
 .contactInfo{
   display: flex;
   position: relative;
+  width: 50%;
+  justify-content: space-around;
 }
 
 .contactItem{
