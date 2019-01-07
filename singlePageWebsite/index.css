@@ -1,7 +1,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Work Sans', Arial;
+  font-family: 'Work Sans';
 }
 li{
   list-style: none;
@@ -13,12 +13,12 @@ i{
   cursor: pointer;
   z-index: 3;
 }
-
-h1{
-  font-weight: 400;
-}
-p{
+p, span{
   font-size: 2vw;
+}
+
+h1, h2{
+  font-weight: 400;
 }
 .nav{
   width: 100%;
@@ -51,7 +51,7 @@ p{
 }
 
 .page{
-  height: 100vh;
+  min-height: 80vh;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -59,55 +59,61 @@ p{
   display: flex;
   top: 5vh;
 }
-
+.page h2{
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 5vh;
+}
 .introPage{
   flex-direction: column;
-  font-size: 5vw;
   justify-content: center;
   height: 80vh;
+  font-size: 5vw;
 }
 .aboutPage{
   flex-direction: column;
   justify-content: space-around;
-  height: 80vh;
 }
-.aboutPage > h1{
-  text-align: center;
-  font-size: 5.5vw;
-}
-.service img {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 1vw;
-}
-.bio{
-  display: flex;
-}
+
 
 .services{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 20vh;
 
 }
 .service{
-  width: 28vw;
-  height: 25vw;
+  width: 30vw;
+  height: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2vw;
   text-align: center;
+}
+.service img {
+  width: 30vw;
+  height: 20vw;
+}
+
+.bio{
+  display: flex;
+  margin-bottom: 10vh;
+}
+.headline{
+  width: 65%;
+  margin-right: 5%;
+}
+.headline h2{
+  text-align: left;
+}
+.aboutText{
+  width: 30%;
 }
 .projectsPage{
-  height: 80vh;
-  min-height: 60vh;
   padding-top: 10vh;
   flex-direction: column;
-}
-.projectsPage > h1{
-  text-align: center;
-  margin-bottom: 10vh;
-  font-size: 5.5vw;
 }
 .projectsList{
   display: flex;
@@ -116,40 +122,63 @@ p{
 }
 .proj{
   width: 25vw;
-  height: 25vw;
-  border: 1px solid black;
-  margin-right: 2vw;
+  height: 20vw;
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 .proj img{
-  width: 100%;
-  height: 100%;
+  width: 25vw;
+  height: 20vw;
 }
-.maui img{
-  height: 80%;
+.kateLynn img{
+  width: 15vw;
+  height: 20vw;
+}
+.kateLynn{
+}
+.mentor img{
+  width: 21vw;
+  height: 10vw;
+}
+.mentor{
+  background-color: #C3D2D9;
+}
+.projectsPage p{
+  width: 75vw;
+  margin: 5vh auto;
 }
 .overlay{
-  display: none;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+}
+.proj:hover .overlay{
+  opacity: 1;
 }
 
 .contactPage{
   flex-direction: column;
   align-items: center;
-  height: 70vh;
   margin: 10vh auto;
 }
-.contactPage h1{
-  margin-bottom: 10vh;
-  font-size: 5.5vw;
-}
+
 .contactInfo{
   display: flex;
   position: relative;
+  width: 100%;
+  justify-content: center;
 }
 
 .contactItem{
-  width: 30vw;
+  width: 40vw;
   height: 40vw;
   display: flex;
   align-items: center;

@@ -1,5 +1,3 @@
-
-
 let open = false;
 function openNav(){
   $('.nav').css({
@@ -22,12 +20,9 @@ $('i').on('click', function(){
   else {
     closeNav();
   }
-  //$('.nav').toggle('slow', function(){
-    //$('.nav').animate({
-      //height: '5vh'
-      //})
-  //});
 });
+
+
 
 $(window).scroll(function(){
   closeNav();
@@ -36,5 +31,3 @@ $(window).scroll(function(){
 $(document).ready(function(){
   openNav();
 })
-
-//Add underline on hover over picture. But only to specific image/title pair.
