@@ -1,3 +1,4 @@
+let pos = $(window).scrollTop();
 let open = false;
 function openNav(){
   $('.nav').css({
@@ -25,7 +26,16 @@ $('i').on('click', function(){
 
 
 $(window).scroll(function(){
-  closeNav();
+  let scroll = $(window).scrollTop();
+  if (scroll > pos){
+    console.log('Scroll Down');
+    closeNav();
+  }
+  else{
+    console.log('Scroll Up');
+    openNav();
+  }
+  pos = scroll;
 });
 
 $(document).ready(function(){

@@ -1,37 +1,8 @@
-body, html{
-  height: 100%;
-}
 .contactPage{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: 0;
+  height: 70vh;
+  margin-top: 5vh;
 }
-.contactPage h1{
-  margin-bottom: 10vh;
-  font-size: 5.5vw;
-}
-.contactInfo{
-  display: flex;
-  position: relative;
-  width: 50%;
-  justify-content: space-around;
-}
-
-.contactItem{
-  width: 20vw;
-  height: 30vw;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-right: 2vw;
-  border: none;
-}
-.contactPicture img{
-  width: 20vw;
-  height: 16vw;
+.contactPage h2{
+  font-size: 5vw;
+  margin-bottom: 0;
 }
