@@ -1,3 +1,4 @@
+/*------------Unversal CSS-------------*/
 *{
   padding: 0;
   margin: 0;
@@ -14,12 +15,17 @@ i{
   z-index: 3;
 }
 p, span{
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 h1, h2{
   font-weight: 400;
 }
+h1{
+  font-size: 8vw;
+}
+/*----------------End Universal CSS-----------------*/
+/*----------------Start NavBar CSS-----------------*/
 .nav{
   width: 100%;
   height: 0;
@@ -37,28 +43,12 @@ h1, h2{
   display: flex;
   width: 50%;
   justify-content: space-around;
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   position: relative;
 }
 
-li{
-  position: relative;
-}
-li:after{
-  content: "";
-  color: black;
-  background-color: black;
-  height: 2px;
-  width: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: .2s ease-in;
-}
-li:hover:after{
-  width: 100%;
-  right: 0;
-}
+
+
 .name{
   position: absolute;
   right: 1%;
@@ -69,7 +59,47 @@ li:hover:after{
   text-decoration: none;
   color: black;
 }
+/*----------------End NavBar CSS-----------------*/
+/*----------------Start Underline animation-----------------*/
+.underline{
+  position: relative;
+}
+.underline:after{
+  content: "";
+  color: black;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .2s ease-in;
+}
+.underline:hover:after{
+  width: 100%;
+  right: 0;
+}
 
+span{
+  position: relative;
+}
+span:after{
+  content: "";
+  color: black;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .2s ease-in;
+}
+.image:hover ~ span:after{
+  width: 100%;
+  right:0;
+}
+/*----------------End Underline Animation-----------------*/
+/*----------------Start General Page Structure--------------*/
 .page{
   min-height: 80vh;
   width: 90%;
@@ -80,15 +110,24 @@ li:hover:after{
   top: 5vh;
 }
 .page h2{
-  font-size: 6vw;
+  font-size: 3vw;
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
+/*----------------End General Page Structure-----------------*/
+/*----------------Start IntroPage CSS-----------------*/
+/*Changed font size from 5vw to 4vw and adding h1 width*/
 .introPage{
   flex-direction: column;
   justify-content: center;
-  font-size: 5vw;
+  margin-bottom: 8vh;
 }
+.introPage h1{
+  width: 85%;
+  text-align: left;
+}
+/*----------------End IntroPage CSS-----------------*/
+/*----------------Start AboutPage CSS-----------------*/
 .aboutPage{
   flex-direction: column;
   justify-content: space-around;
@@ -99,21 +138,25 @@ li:hover:after{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
+  position: relative;
 
 }
 .service{
-  width: 30vw;
-  height: 20vw;
+  width: 40vw;
+  height: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2vw;
   text-align: center;
+  cursor: pointer;
+  position: relative;
 }
 .service img {
-  width: 30vw;
-  height: 20vw;
+  width: 40vw;
+  height: 25vw;
+  position: relative;
 }
 
 .bio{
@@ -122,17 +165,37 @@ li:hover:after{
 }
 .headline{
   width: 65%;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 .headline h2{
   text-align: left;
 }
+
 .aboutText{
-  width: 30%;
+  width: 32%;
 }
+.aboutText a{
+  text-decoration: none;
+}
+.aboutText a:after{
+  background-color: blue;
+}
+/*----------------End AboutPage CSS-----------------*/
+/*----------------Start ProjectsPage CSS-----------------*/
 .projectsPage{
-  padding-top: 10vh;
   flex-direction: column;
+}
+.projectsPage h2{
+  margin-bottom: 2vh;
+}
+.projectsPage p{
+  width: 75vw;
+  margin: 0 auto 10vh auto;
+  text-align: center;
+}
+.projectsPage a{
+  text-decoration: none;
+  color: black;
 }
 .projectsList{
   display: flex;
@@ -146,6 +209,7 @@ li:hover:after{
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .proj img{
   width: 25vw;
@@ -164,10 +228,8 @@ li:hover:after{
 .mentor{
   background-color: #C3D2D9;
 }
-.projectsPage p{
-  width: 75vw;
-  margin: 5vh auto;
-}
+
+/*----------------Start Overlay CSS-----------------*/
 .overlay{
   display: flex;
   background-color: white;
@@ -182,7 +244,9 @@ li:hover:after{
 .proj:hover .overlay{
   opacity: 1;
 }
-
+/*----------------End Overlay CSS-----------------*/
+/*----------------End ProjectsPage CSS-----------------*/
+/*----------------Start contactPage CSS-----------------*/
 .contactPage{
   flex-direction: column;
   align-items: center;
@@ -198,13 +262,14 @@ li:hover:after{
 }
 
 .contactItem{
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .contactPicture img{
-  width: 30vw;
-  height: 25vw;
+  width: 25vw;
+  height: 20vw;
 }
+/*----------------End contactPage CSS-----------------*/

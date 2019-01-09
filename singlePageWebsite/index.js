@@ -1,18 +1,21 @@
 let pos = $(window).scrollTop();
 let open = false;
+function underline(id){
+  $(id).addClass('underline');
+};
 function openNav(){
   $('.nav').css({
     height: '5vh'
   });
   open = true;
-}
+};
 
 function closeNav(){
   $('.nav').css({
     height: 0
   });
   open = false;
-}
+};
 
 $('i').on('click', function(){
   if (open === false){
@@ -22,8 +25,6 @@ $('i').on('click', function(){
     closeNav();
   }
 });
-
-
 
 $(window).scroll(function(){
   let scroll = $(window).scrollTop();
@@ -37,6 +38,8 @@ $(window).scroll(function(){
   }
   pos = scroll;
 });
+
+
 
 $(document).ready(function(){
   openNav();
