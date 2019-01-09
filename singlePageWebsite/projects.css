@@ -12,6 +12,17 @@ body, html{
   width: 25vw;
   height: 25vw;
 }
+.kateLynn{
+  border: 0.5px solid black;
+}
+.kateLynn img{
+  width: 15vw;
+  height: 20vw;
+}
+.mentor img{
+  width: 21vw;
+  height: 10vw;
+}
 .projectContainer{
   position: relative;
   width: 90%;
