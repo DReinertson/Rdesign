@@ -11,10 +11,10 @@
   <i class = 'fa fa-bars' style = 'font-size:24px'></i>
   <div class = 'nav'>
     <ul>
-      <li> <a href = './index.html'>Home</a></li>
-      <li> <a href = './about.html'>About</a></li>
-      <li> <a href = './projects.html'>Projects</a></li>
-      <li> <a href = './contact.html'>Contact</a></li>
+      <li class = 'underline'> <a href = './index.html'>Home</a></li>
+      <li class = 'underline'> <a href = './about.html'>About</a></li>
+      <li class = 'underline'> <a href = './projects.html'>Projects</a></li>
+      <li class = 'underline'> <a href = './contact.html'>Contact</a></li>
     </ul>
     <span class = 'name'>RDesign</span>
   </div>
@@ -27,12 +27,13 @@
     <h2>What We Do</h2>
     <div class = 'services' id = 'services'>
       <div class = 'serviceDesign service' id = 'design'>
-        <a href = './about.html'><img src = 'https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_640.jpg' alt = 'Web Design'></a>
-        <span>Web Design<span>
+
+        <a class = 'image' href = './about.html'><img src = 'https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_640.jpg' alt = 'Web Design'></a>
+        <span class = 'underline'>Web Design<span>
       </div>
       <div class = 'serviceDev service' id = 'hosting'>
-        <a href = './about.html'><img src = 'https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373_640.jpg' alt = 'Web Development'></a>
-        <span>Web Development</span>
+        <a class = 'image' href = './about.html'><img src = 'https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373_640.jpg' alt = 'Web Development'></a>
+        <span class = 'underline'>Web Development</span>
       </div>
       <!--<div class = 'serviceMarket service' id = 'market'>
         <a href = './about.html'><img src = 'https://cdn.pixabay.com/photo/2017/06/12/03/33/seo-2394237_640.jpg' alt = 'Digital Marketing'></a>
@@ -42,21 +43,26 @@
 
     <div class = 'bio'>
       <div class = 'headline bioItem'>
-        <h2>The philosophy about the company and strong statement.</h2>
+
+        <h2>We approach every project with fun and creativity without getting caught up too much in what's new and untested.</h2>
+
       </div>
       <div class = 'aboutText bioItem'>
-        <p>Something about the company, a little more in depth of what we do and what we stand for.</p>
-        <p>Here is where I want to talk about the location and the goal to help local businesses with their online presence. <a href = '#'>Learn more</a> about the services we provide</p>
+        <p>This *project* is more your's than our's. Let us be your navigator through the journey.</p>
+        <p>We aim to help local businesses increase their online presence. Supporting local businesses and helping them grow through a friendly hand. <a class = 'underline' href = '#'>Learn more</a> about the services we provide</p>
       </div>
     </div>
   </div>
 
-    
+
+
     <div class = 'projectsPage page' id = 'projectsPage'>
       <h2>What We've Done</h2>
+      <p><a class = 'underline' href = './projects.html'>View all projects and templates</a></p>
       <div class = 'projectsList' id = 'projectsList'>
         <div class = 'projItem proj maui' id = 'maui'>
-          <img src = 'https://cdn.pixabay.com/photo/2016/08/30/12/13/beach-1630540_640.jpg' alt = "Pahana Farms">
+          <img src = '../images/concierge-crop.jpg' alt = "Pahana Farms">
+
           <div class = 'overlay mauiOverlay' id = 'mauiOverlay'>
             Pahana Farms
             <br>
@@ -65,7 +71,9 @@
           </div>
         </div>
         <div class = 'projItem proj kateLynn' id = 'kate'>
-          <img src = '../images/kateLynn.jpg' alt = 'Kate The Artist'>
+
+          <img src = '../images/toLoveWell.jpg' alt = 'Kate The Artist'>
+
           <div class = 'overlay kateOverlay' id = 'kateOverlay'>
             Kate The Artist
             <br>
@@ -86,12 +94,12 @@
       <p><a href = './projects.html'>View more</a> projects and templates</p>
     </div>
 
-    
+
     <div class = 'contactPage page' id = 'contactPage'>
       <h2>Let's Talk</h2>
       <div class = 'contactInfo'>
         <div class = 'contactPicture contactItem' id = 'contactPicture'>
-          <img src = "D:\darry\Phone pictures\Added 7-14-18\Link pictures and videos\20180522_110257(0).jpg" alt = 'Bainbridge Island'>
+          <img src = "../images/contactImage.jpg" alt = 'Bainbridge Island'>
         </div>
         <div class = 'contactText contactItem' id = 'contactText'>
           <p>
@@ -108,6 +116,8 @@
         </div>
       </div>
     </div>
+
+
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src  = './index.js'></script>

@@ -1,17 +1,23 @@
+
+let pos = $(window).scrollTop();
+
 let open = false;
+function underline(id){
+  $(id).addClass('underline');
+};
 function openNav(){
   $('.nav').css({
     height: '5vh'
   });
   open = true;
-}
+};
 
 function closeNav(){
   $('.nav').css({
     height: 0
   });
   open = false;
-}
+};
 
 $('i').on('click', function(){
   if (open === false){
@@ -25,8 +31,19 @@ $('i').on('click', function(){
 
 
 $(window).scroll(function(){
-  closeNav();
+  let scroll = $(window).scrollTop();
+  if (scroll > pos){
+    console.log('Scroll Down');
+    closeNav();
+  }
+  else{
+    console.log('Scroll Up');
+    openNav();
+  }
+  pos = scroll;
 });
+
+
 
 $(document).ready(function(){
   openNav();
