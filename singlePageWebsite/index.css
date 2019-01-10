@@ -134,17 +134,17 @@ span:after{
   justify-content: space-around;
 }
 
+
 .services{
   width: 100%;
   display: flex;
   justify-content: center;
-
   margin-bottom: 10vh;
   position: relative;
 
 }
 .service{
-  width: 40vw;
+  width: 35vw;
   height: 25vw;
   display: flex;
   flex-direction: column;
@@ -155,14 +155,15 @@ span:after{
   position: relative;
 }
 .service img {
-  width: 40vw;
+  width: 35vw;
   height: 25vw;
   position: relative;
 }
 
 .bio{
   display: flex;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
+  margin-top: 15vh;
 }
 .headline{
   width: 65%;
@@ -178,15 +179,14 @@ span:after{
 .aboutText a{
   text-decoration: none;
 }
-
 .aboutText a:after{
   background-color: blue;
 }
 /*----------------End AboutPage CSS-----------------*/
 /*----------------Start ProjectsPage CSS-----------------*/
 .projectsPage{
-
   flex-direction: column;
+  margin-bottom: 20vh;
 }
 .projectsPage h2{
   margin-bottom: 2vh;
@@ -206,13 +206,12 @@ span:after{
   justify-content: center;
 }
 .proj{
-  width: 25vw;
-  height: 25vw;
+  width: 23vw;
+  height: 23vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
   cursor: pointer;
 }
 .proj img{
@@ -223,16 +222,15 @@ span:after{
   border: 0.5px solid black;
 }
 .kateLynn img{
-  width: 15vw;
-  height: 20vw;
+  width: 50%;
+  height: 75%;
 }
 .mentor img{
-  width: 21vw;
-  height: 10vw;
+  width: 75%;
+  height: 30%;
 }
 .mentor{
   background-color: #C3D2D9;
-
 }
 
 /*----------------Start Overlay CSS-----------------*/
@@ -260,7 +258,11 @@ span:after{
   align-items: center;
   margin: 0 auto;
   background-color: #e6e6e6;
-  width: 75%;
+  width: 90%;
+  height: 90vh;
+}
+.contactPage h2{
+  margin-top: 5vh;
 }
 
 .contactInfo{
@@ -282,3 +284,45 @@ span:after{
   height: 20vw;
 }
 /*----------------End contactPage CSS-----------------*/
+/*----------------Addclass Css-----------------*/
+
+.fullscreen{
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+/*----------------End Addclass CSS----------*/
+/*----------------Begin Media Queries---------------*/
+/*----------------Start Mobile Query----------------*/
+@media only screen and (max-width: 750px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+  }
+  .nav a{
+    color: white;
+    font-size: 10vh;
+  }
+  .nav span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+  }
+  .page{
+    width: 100%;
+  }
+  .introPage h1{
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+/*----------------End Mobile Query----------------*/
+/*----------------End Media Queries---------------*/
