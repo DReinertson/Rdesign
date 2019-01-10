@@ -134,11 +134,11 @@ span:after{
   justify-content: space-around;
 }
 
-
 .services{
   width: 100%;
   display: flex;
   justify-content: center;
+
   margin-bottom: 10vh;
   position: relative;
 
@@ -178,12 +178,14 @@ span:after{
 .aboutText a{
   text-decoration: none;
 }
+
 .aboutText a:after{
   background-color: blue;
 }
 /*----------------End AboutPage CSS-----------------*/
 /*----------------Start ProjectsPage CSS-----------------*/
 .projectsPage{
+
   flex-direction: column;
 }
 .projectsPage h2{
@@ -210,6 +212,7 @@ span:after{
   justify-content: center;
   align-items: center;
   position: relative;
+
   cursor: pointer;
 }
 .proj img{
@@ -229,6 +232,7 @@ span:after{
 }
 .mentor{
   background-color: #C3D2D9;
+
 }
 
 /*----------------Start Overlay CSS-----------------*/

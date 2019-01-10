@@ -1,4 +1,6 @@
+
 let pos = $(window).scrollTop();
+
 let open = false;
 function underline(id){
   $(id).addClass('underline');
@@ -26,6 +28,8 @@ $('i').on('click', function(){
   }
 });
 
+
+
 $(window).scroll(function(){
   let scroll = $(window).scrollTop();
   if (scroll > pos){
@@ -44,3 +48,4 @@ $(window).scroll(function(){
 $(document).ready(function(){
   openNav();
 })
+
