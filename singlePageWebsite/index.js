@@ -6,7 +6,7 @@ function underline(id){
 function openNav(){
   if($(window).innerWidth() > 992){
     $('.nav').css({
-      height: '5vh'
+      height: '8vh'
     });
     open = true;
   }

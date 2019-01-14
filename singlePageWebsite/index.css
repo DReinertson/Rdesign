@@ -121,11 +121,20 @@ span:after{
 .introPage{
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 8vh;
+  /*background-image: url('../images/leaves.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+
 }
 .introPage h1{
   width: 85%;
-  text-align: left;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 500;
 }
 /*----------------End IntroPage CSS-----------------*/
 /*----------------Start AboutPage CSS-----------------*/
@@ -162,12 +171,14 @@ span:after{
 
 .bio{
   display: flex;
-  margin-bottom: 15vh;
   margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 .headline{
   width: 65%;
   margin-right: 3%;
+  align-self: flex-start;
+
 }
 .headline h2{
   text-align: left;
@@ -219,18 +230,20 @@ span:after{
   height: 100%;
 }
 .kateLynn{
-  border: 0.5px solid black;
+  background-color: #BDCBD4;
 }
 .kateLynn img{
   width: 50%;
   height: 75%;
+
 }
 .mentor img{
   width: 75%;
   height: 30%;
+
 }
 .mentor{
-  background-color: #C3D2D9;
+  background-color: #e6e6e6;
 }
 
 /*----------------Start Overlay CSS-----------------*/
@@ -248,7 +261,7 @@ span:after{
   text-align: center;
 }
 .proj:hover .overlay{
-  opacity: 1;
+  opacity: 0.8;
 }
 /*----------------End Overlay CSS-----------------*/
 /*----------------End ProjectsPage CSS-----------------*/
@@ -295,6 +308,9 @@ span:after{
 /*----------------Begin Media Queries---------------*/
 /*----------------Start Mobile Query----------------*/
 @media only screen and (max-width: 750px){
+  span, p{
+    font-size: 3vh;
+  }
   .nav{
     display: flex;
     flex-direction: column;
@@ -316,12 +332,91 @@ span:after{
     bottom: 0;
     color: white;
   }
-  .page{
-    width: 100%;
-  }
+
   .introPage h1{
     text-align: center;
     margin: 0 auto;
+    font-size: 10vh;
+    width: 75%;
+  }
+  .page{
+    width: 100%;
+    min-height: 80vh;
+  }
+  .page h2{
+    font-size: 5vh;
+  }
+  .services{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .service{
+    width: 90vw;
+    height: 80vh;
+  }
+  .service img{
+    width: 90vw;
+    height: 70vw;
+  }
+
+  .bio{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+  }
+  .headline{
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  .headline h2{
+    text-align: center;
+  }
+  .aboutText{
+    width: 90%;
+    margin: 0;
+  }
+  .projectsList{
+    flex-direction: column;
+    align-items: center;
+  }
+  .overlay{
+    font-size: 3vh;
+  }
+  .proj{
+    width: 90vw;
+    height: 70vw;
+  }
+  .proj img{
+    width: 90vw;
+    height: 70vw;
+  }
+  .kateLynn img{
+    width: 30vw;
+    height: 50vw;
+  }
+  .mentor img{
+    width: 50vw;
+    height: 30vw;
+  }
+  .contactInfo{
+    align-items: center;
+    height: 75vw;
+    flex-direction: column;
+    position: relative;
+  }
+  .contactText{
+    text-align: center;
+  }
+  .contactItem{
+    width: 60vw;
+    height: 45vw;
+  }
+  .contactPicture img{
+    width: 60vw;
+    height: 45vw;
   }
 }
 /*----------------End Mobile Query----------------*/
