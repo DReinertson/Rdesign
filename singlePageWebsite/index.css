@@ -16,7 +16,7 @@ i{
   z-index: 3;
 }
 p, span{
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 h1, h2{
@@ -39,12 +39,13 @@ h1{
   transition: .3s;
   overflow-y: hidden;
   background-color: white;
+
 }
 .nav ul{
   display: flex;
   width: 50%;
   justify-content: space-around;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   position: relative;
 }
 
@@ -53,12 +54,13 @@ h1{
 .name{
   position: absolute;
   right: 1%;
-  font-size: 3vh;
+  font-size: 1.2vw;
 }
 
 .nav a{
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 /*----------------End NavBar CSS-----------------*/
 /*----------------Start Underline animation-----------------*/
@@ -108,7 +110,7 @@ span:after{
   margin-right: auto;
   position: relative;
   display: flex;
-  top: 5vh;
+  top: 8vh;
 }
 .page h2{
   font-size: 3vw;
@@ -131,16 +133,56 @@ span:after{
 
 }
 .introPage h1{
-  width: 85%;
+  width: 70vw;
+  height: 30vh;
+  margin: 20vh auto;
   text-align: center;
   font-size: 5vw;
-  font-weight: 500;
+  font-weight: 400;
+}
+.introName{
+  white-space: nowrap;
+  font-size: 5vw;
+  font-weight: 600;
+}
+.bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: #BDCBD4;
+}
+.bioItem{
+  height: 40vh;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headline{
+  width: 48vw;
+  margin-right: 2vw;
+}
+.headline h2{
+  text-align: left;
+  margin: 0;
+}
+
+.aboutText{
+  width: 20vw;
+}
+.aboutText a{
+  text-decoration: none;
+}
+.aboutText a:after{
+  background-color: blue;
 }
 /*----------------End IntroPage CSS-----------------*/
 /*----------------Start AboutPage CSS-----------------*/
 .aboutPage{
   flex-direction: column;
-  justify-content: space-around;
+  margin-bottom: 10vh;
 }
 
 
@@ -169,35 +211,11 @@ span:after{
   position: relative;
 }
 
-.bio{
-  display: flex;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-}
-.headline{
-  width: 65%;
-  margin-right: 3%;
-  align-self: flex-start;
 
-}
-.headline h2{
-  text-align: left;
-}
-
-.aboutText{
-  width: 32%;
-}
-.aboutText a{
-  text-decoration: none;
-}
-.aboutText a:after{
-  background-color: blue;
-}
 /*----------------End AboutPage CSS-----------------*/
 /*----------------Start ProjectsPage CSS-----------------*/
 .projectsPage{
   flex-direction: column;
-  margin-bottom: 20vh;
 }
 .projectsPage h2{
   margin-bottom: 2vh;
@@ -217,8 +235,8 @@ span:after{
   justify-content: center;
 }
 .proj{
-  width: 23vw;
-  height: 23vw;
+  width: 23.3vw;
+  height: 23.3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,11 +253,6 @@ span:after{
 .kateLynn img{
   width: 50%;
   height: 75%;
-
-}
-.mentor img{
-  width: 75%;
-  height: 30%;
 
 }
 .mentor{
@@ -271,7 +284,7 @@ span:after{
   align-items: center;
   margin: 0 auto;
   background-color: #e6e6e6;
-  width: 90%;
+  width: 70vw;
   height: 90vh;
 }
 .contactPage h2{
@@ -290,6 +303,14 @@ span:after{
   height: 30vw;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.list{
+  font-size: 1.2vw;
+  height: 20vw;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .contactPicture img{
