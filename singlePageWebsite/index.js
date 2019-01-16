@@ -1,5 +1,7 @@
 let pos = $(window).scrollTop();
 let open = false;
+
+
 function underline(id){
   $(id).addClass('underline');
 };
@@ -28,6 +30,14 @@ function closeNav(){
     open = false;
   };
 }
+function openPage(id){
+  console.log(id);
+  console.log(id + 'Page');
+  $('.innerPage').hide();
+  $('.' + id + 'Page').show();
+}
+
+
 
 $('i').on('click', function(){
   if (open === false){
@@ -54,5 +64,9 @@ if($(window).innerWidth() > 992){
   });
   $(document).ready(function(){
     openNav();
+    $('#devPage, #marketPage').hide();
+  })
+  $('.service').on('click', function(){
+    openPage(this.id);
   })
 }
