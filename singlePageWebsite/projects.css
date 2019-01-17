@@ -1,25 +1,16 @@
-body, html{
-  display: flex;
-  flex-direction: column;
-}
+
 a{
   text-decoration: none;
 }
 
-
-.projectContainer{
-  position: relative;
-  width: 90%;
-  margin: 10vh auto 0 auto;
-  display: flex;
-  justify-content: center;
-
+.projectsPage{
+  margin-bottom: 10vh;
 }
-.page{
+.projectsList{
   flex-wrap: wrap;
 }
-.contactPage{
-  margin-top: 10vh;
+.proj{
+  margin-top: 3.5vw;
 }
 
 @media only screen and (max-width: 750px){

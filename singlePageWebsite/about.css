@@ -20,17 +20,17 @@ h2{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: #BDCBD4;
 }
 .introPage h2{
   width: 70%;
 }
 .heroBanner{
-  height: 70vh;
+  height: 90vh;
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 .heroBanner img{
@@ -43,20 +43,21 @@ h2{
 }
 
 .contentContainer{
-  flex-direction: column;
+  flex-direction: row;
+  height: 90vh;
 }
 .innerPage{
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 50vh;
+  height: 90vh;
 }
 .text{
   display: flex;
-  justify-content: center;
-}
-.text li{
-  list-style-position: inside;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
 }
 .designPage{
   display: flex;
@@ -65,40 +66,54 @@ h2{
 .text p, .text ul{
   line-height: 1.6;
 }
-.text ul{
-  margin-left: 4vw;
-  padding-left: 1vw;
-  width: 25vw;
-  border-left: 2px solid #e6e6e6;
-}
 .text p{
-  width: 40vw;
+  width: 80%;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  min-height: 20%;
+  margin-top: 10%;
+}
+.list li{
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.list ul{
+  margin-left: 0.5%;
+}
+.list ul ~ ul{
+  margin-left: 0;
 }
 
 .buttons{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-self: center;
-  width: 100%;
+  height: 100%;
+  width: 15vw;
 }
 .service{
   display: flex;
-  justify-content: center;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
 }
 .service img{
-  width: 20vw;
-  height: 15vw;
-  margin: 0;
-}
-.contactPage{
-  margin-top: 10vh;
-  background: #e6e6e6;
-  width: 100%;
+  width: 15vw;
+  height: 11vw;
 }
 
+.contactPage{
+  width: 100%;
+  background: #BDCBD4;
+}
+.contactPage li{
+  font-weight: 400;
+}
 
 
 @media only screen and (max-width: 750px){
