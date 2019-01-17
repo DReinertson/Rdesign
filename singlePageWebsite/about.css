@@ -1,6 +1,6 @@
 .page li{
   font-size: 1.2vw;
-  list-style: square;
+  font-weight: 700;
 }
 
 
@@ -10,8 +10,8 @@ h2{
 }
 
 .introPage{
-  height: 40vh;
-  width: 90%;
+  height: 50vh;
+  width: 100%;
   margin: 0 auto;
   font-size: 4vw;
   position: relative;
@@ -23,14 +23,14 @@ h2{
   background-color: #e6e6e6;
 }
 .introPage h2{
-  width: 60%;
+  width: 70%;
 }
 .heroBanner{
   height: 70vh;
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 .heroBanner img{
@@ -38,7 +38,7 @@ h2{
   height: 100%;
 }
 .page{
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -54,7 +54,6 @@ h2{
 .text{
   display: flex;
   justify-content: center;
-  height: 30vh;
 }
 .text li{
   list-style-position: inside;
@@ -64,8 +63,16 @@ h2{
   flex-direction: column;
 }
 .text p, .text ul{
-  border: 1px solid black;
-  width: 30vw;
+  line-height: 1.6;
+}
+.text ul{
+  margin-left: 4vw;
+  padding-left: 1vw;
+  width: 25vw;
+  border-left: 2px solid #e6e6e6;
+}
+.text p{
+  width: 40vw;
 }
 
 .buttons{
@@ -73,18 +80,23 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  width: 60vw;
+  width: 100%;
 }
 .service{
   display: flex;
   justify-content: center;
-  width: 15vw;
+  width: 20vw;
   height: 20vw;
 }
 .service img{
-  width: 15vw;
+  width: 20vw;
   height: 15vw;
   margin: 0;
+}
+.contactPage{
+  margin-top: 10vh;
+  background: #e6e6e6;
+  width: 100%;
 }
 
 

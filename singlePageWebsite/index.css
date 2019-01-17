@@ -4,6 +4,7 @@
   margin: 0;
   font-family: 'Work Sans';
   color: #404040;
+  line-height: 1.6;
 }
 li{
   list-style: none;
@@ -55,6 +56,11 @@ h1{
   position: absolute;
   right: 1%;
   font-size: 1.2vw;
+}
+.name img{
+  width: 3vh;
+  height: 3vh;
+  background-color: black;
 }
 
 .nav a{
@@ -121,6 +127,7 @@ span:after{
 /*----------------Start IntroPage CSS-----------------*/
 /*Changed font size from 5vw to 4vw and adding h1 width*/
 .introPage{
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -150,19 +157,19 @@ span:after{
   justify-content: center;
   align-items: center;
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   background-color: #BDCBD4;
 }
 .bioItem{
-  height: 40vh;
+  min-height: 20vh;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .headline{
-  width: 48vw;
-  margin-right: 2vw;
+  width: 44vw;
+  margin-right: 4vw;
 }
 .headline h2{
   text-align: left;
@@ -171,6 +178,9 @@ span:after{
 
 .aboutText{
   width: 20vw;
+  justify-content: flex-start;
+  border-left: 2px solid #e6e6e6;
+  padding-left: 2vw;
 }
 .aboutText a{
   text-decoration: none;
@@ -221,7 +231,6 @@ span:after{
   margin-bottom: 2vh;
 }
 .projectsPage p{
-  width: 75vw;
   margin: 0 auto 10vh auto;
   text-align: center;
 }
@@ -230,13 +239,14 @@ span:after{
   color: black;
 }
 .projectsList{
+  align-self: center;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 70vw;
+  justify-content: space-between;
 }
 .proj{
-  width: 23.3vw;
-  height: 23.3vw;
+  width: 21vw;
+  height: 21vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,10 +292,10 @@ span:after{
 .contactPage{
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  background-color: #e6e6e6;
-  width: 70vw;
+  background-color: /*#e6e6e6*/#BDCBD4;
+  width: 100%;
   height: 90vh;
+  margin: 0;
 }
 .contactPage h2{
   margin-top: 5vh;
@@ -314,8 +324,9 @@ span:after{
   justify-content: center;
 }
 .contactPicture img{
-  width: 25vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
+  background: transparent;
 }
 /*----------------End contactPage CSS-----------------*/
 /*----------------Addclass Css-----------------*/

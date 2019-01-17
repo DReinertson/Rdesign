@@ -1,5 +1,6 @@
 let pos = $(window).scrollTop();
 let open = false;
+let page;
 
 
 function underline(id){
@@ -31,10 +32,16 @@ function closeNav(){
   };
 }
 function openPage(id){
+  if (page === id){
+    return;
+  }
   console.log(id);
   console.log(id + 'Page');
-  $('.innerPage').hide();
-  $('.' + id + 'Page').show();
+  $('.innerPage').fadeOut(100);
+  $('.' + id +'Page').delay(100).fadeIn(100);
+  page = id;
+  // $('.innerPage').hide(500);
+  // $('.' + id + 'Page').show();
 }
 
 
