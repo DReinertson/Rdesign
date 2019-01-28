@@ -1,0 +1,193 @@
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+p{
+  font-size: 1.2vw;
+}
+h1{
+  font-size: 3vw;
+}
+.parallax{
+  height: 90%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  background-image: url('../images/sand_gray.png');
+  color: white;
+  height: 5%;
+  font-size: 2vh;
+  text-decoration: none;
+  align-items: center;
+  border: none;
+}
+
+.nav li{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.nav img{
+  height: 90%;
+}
+#lastItem{
+  margin-left: auto;
+  cursor: default;
+}
+
+.navbar-item:hover {
+  border-bottom: 2px solid orange;
+}
+
+/*------------Hero Banner-----------*/
+.homeItem{
+  width: 100%;
+  min-height: 40vh;
+}
+
+.heroBanner{
+  background-image: url("../images/overView.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center-center;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.intro{
+  display: flex;
+  height: 10vh;
+  opacity: 0.7;
+  color: #B27000;
+  font-size: 4vw;
+}
+/*------------End Hero-banner---------*/
+
+/*--=---------Start overView-------------*/
+
+.overView{
+  width: 100%;
+  background-image: url('../images/sand_gray.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overViewSection{
+  width: 60%;
+  color: lightGray;
+  padding: 5% 0;
+}
+.overView h1{
+  margin-bottom: 2%;
+}
+
+/*---------End OverView----------*/
+
+/*---------Start homeItems---------*/
+.pictureAbout{
+  background-image: url('../images/mainHouse.jpg')
+}
+
+.pictureLocation{
+  background-image: url('../images/haleakala_crater.jpg');
+}
+
+.pictureAccommodations{
+  background-image: url('../images/deck.jpg');
+}
+
+.pictureAmenities{
+  background-image: url('../images/pool.jpg')
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('../images/sand_gray.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.5vh;
+  min-height: 40vh;
+  color: lightGrey;
+}
+.text h1{
+  width: 60%;
+  padding: 2% 0;
+}
+
+.footer{
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('../images/sand_black.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: lightGray;
+}
+.footer a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 3vh;
+}
+.footer p a{
+  font-size: inherit;
+}
+.footer p a:hover{
+  border-bottom: 2px solid orange;
+}
+
+
+.lowerFooter{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lowerItem{
+  width: 30%;
+  padding: 0 2.5%;
+  display: flex;
+  align-items: center;
+}
+
+
+.socialMedia{
+  display: flex;
+  font-size: 3vh;
+  justify-content: flex-end;
+}
+
+.fa{
+  padding: 0 2%;
+}
