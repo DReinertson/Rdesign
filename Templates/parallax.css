@@ -1,0 +1,57 @@
+body, html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.heroBanner{
+  background-attachment: fixed;
+  background-color: green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../pahana/images/overView.jpg');
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.heroBanner h1{
+  font-size: 4vw;
+  background-color: gray;
+}
+.parallax{
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1{
+  background-image: url('../pahana/images/deck.jpg')
+}
+
+.parallax2{
+  background-image: url('../pahana/images/haleakala_crater.jpg');
+}
+
+.parallax3{
+  background-image: url('../pahana/images/pool.jpg');
+}
+
+.text{
+  background-color: grey;
+  font-size: 5vh;
+  height: 40%;
+}
+p{
+  background-color: green;
+}
