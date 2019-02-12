@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  height: 100%;
+}
+.outerContainer{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 50%;
+  margin: 5% auto 0 auto;
+  position: relative;
+  background: gray;
+}
+.imageContainer{
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  padding-top: 5%;
+  width: 90%;
+  height: 100%;
+  overflow-x: scroll;
+  cursor: pointer;
+}
+.imageContainer::-webkit-scrollbar{
+  display: none;
+}
+.outerContainer h1{
+  align-self: center;
+  position: absolute;
+  width: 90%;
+  top: 2%;
+}
+.image{
+  flex: 0 0 auto;
+  height: 90%;
+  width: 40%;
+  margin-right: 2%;
+  background: green;
+}
+a{
+  text-decoration: none;
+}
+.previous{
+  position: absolute;
+  top: 45%;
+  left: 1%;
+  font-size: 5vw;
+  color: black;
+}
+.next{
+  position: absolute;
+  top: 45%;
+  right: 0;
+  font-size: 5vw;
+  color: black;
+}
