@@ -4,19 +4,20 @@
   margin: 0;
   font-family: 'Work Sans';
   color: #404040;
+  line-height: 1.6;
 }
 li{
   list-style: none;
 }
 i{
   position: fixed;
-  top: 1%;
+  top: 2.5%;
   left: 1%;
   cursor: pointer;
   z-index: 3;
 }
 p, span{
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 h1, h2{
@@ -39,12 +40,13 @@ h1{
   transition: .3s;
   overflow-y: hidden;
   background-color: white;
+
 }
 .nav ul{
   display: flex;
   width: 50%;
   justify-content: space-around;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   position: relative;
 }
 
@@ -53,12 +55,18 @@ h1{
 .name{
   position: absolute;
   right: 1%;
-  font-size: 3vh;
+  font-size: 1.2vw;
+}
+.name img{
+  width: 3vh;
+  height: 3vh;
+  background-color: black;
 }
 
 .nav a{
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 /*----------------End NavBar CSS-----------------*/
 /*----------------Start Underline animation-----------------*/
@@ -81,10 +89,10 @@ h1{
   right: 0;
 }
 
-span{
+.service h2{
   position: relative;
 }
-span:after{
+.service h2:after, span:after{
   content: "";
   color: black;
   background-color: black;
@@ -95,7 +103,7 @@ span:after{
   left: 0;
   transition: .2s ease-in;
 }
-.image:hover ~ span:after{
+.image:hover ~ h2:after, .image:hover ~ span:after{
   width: 100%;
   right:0;
 }
@@ -108,7 +116,7 @@ span:after{
   margin-right: auto;
   position: relative;
   display: flex;
-  top: 5vh;
+  top: 8vh;
 }
 .page h2{
   font-size: 3vw;
@@ -119,80 +127,115 @@ span:after{
 /*----------------Start IntroPage CSS-----------------*/
 /*Changed font size from 5vw to 4vw and adding h1 width*/
 .introPage{
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 8vh;
+  /*background-image: url('../images/leaves.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+
 }
 .introPage h1{
-  width: 85%;
+  width: 70vw;
+  height: 30vh;
+  margin: 20vh auto;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 400;
+}
+.introName{
+  white-space: nowrap;
+  font-size: 5vw;
+  font-weight: 600;
+}
+.bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-color: #BDCBD4;
+}
+.bioItem{
+  min-height: 20vh;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.headline{
+  width: 44vw;
+  margin-right: 4vw;
+}
+.headline h2{
   text-align: left;
+  margin: 0;
+}
+
+.aboutText{
+  width: 20vw;
+  justify-content: flex-start;
+  border-left: 2px solid #e6e6e6;
+  padding-left: 2vw;
+}
+.aboutText > p{
+  margin-bottom: 5%;
+}
+.aboutText a{
+  text-decoration: none;
+}
+.aboutText a:after{
+  background-color: black;
 }
 /*----------------End IntroPage CSS-----------------*/
 /*----------------Start AboutPage CSS-----------------*/
 .aboutPage{
   flex-direction: column;
-  justify-content: space-around;
+  margin-bottom: 10vh;
 }
+
 
 .services{
   width: 100%;
   display: flex;
   justify-content: center;
-
   margin-bottom: 10vh;
   position: relative;
 
 }
 .service{
-  width: 40vw;
+  width: 35vw;
   height: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2vw;
   text-align: center;
   cursor: pointer;
   position: relative;
 }
 .service img {
-  width: 40vw;
+  width: 35vw;
   height: 25vw;
   position: relative;
 }
-
-.bio{
-  display: flex;
-  margin-bottom: 10vh;
-}
-.headline{
-  width: 65%;
-  margin-right: 3%;
-}
-.headline h2{
-  text-align: left;
+.service h2{
+  font-size: 1.2vw;
+  position: relative;
 }
 
-.aboutText{
-  width: 32%;
-}
-.aboutText a{
-  text-decoration: none;
-}
-
-.aboutText a:after{
-  background-color: blue;
-}
 /*----------------End AboutPage CSS-----------------*/
 /*----------------Start ProjectsPage CSS-----------------*/
 .projectsPage{
-
   flex-direction: column;
 }
 .projectsPage h2{
   margin-bottom: 2vh;
 }
 .projectsPage p{
-  width: 75vw;
   margin: 0 auto 10vh auto;
   text-align: center;
 }
@@ -201,38 +244,34 @@ span:after{
   color: black;
 }
 .projectsList{
+  align-self: center;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 70vw;
+  justify-content: space-between;
 }
 .proj{
-  width: 25vw;
-  height: 25vw;
+  width: 21vw;
+  height: 21vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
   cursor: pointer;
 }
 .proj img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.maui img{
+  object-fit: cover;
+
 }
 .kateLynn{
-  border: 0.5px solid black;
-}
-.kateLynn img{
-  width: 15vw;
-  height: 20vw;
-}
-.mentor img{
-  width: 21vw;
-  height: 10vw;
+  background-color: #BDCBD4;
 }
 .mentor{
-  background-color: #C3D2D9;
-
+  background-color: #e6e6e6;
 }
 
 /*----------------Start Overlay CSS-----------------*/
@@ -248,9 +287,18 @@ span:after{
   opacity: 0;
   font-size: 1.5vw;
   text-align: center;
+  visibility: hidden;
 }
 .proj:hover .overlay{
-  opacity: 1;
+  opacity: 0.8;
+  visibility: visible;
+}
+.overlay a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*----------------End Overlay CSS-----------------*/
 /*----------------End ProjectsPage CSS-----------------*/
@@ -258,9 +306,13 @@ span:after{
 .contactPage{
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  background-color: #e6e6e6;
-  width: 75%;
+  background-color: /*#e6e6e6*/#BDCBD4;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+}
+.contactPage h2{
+  margin-top: 5vh;
 }
 
 .contactInfo{
@@ -268,17 +320,243 @@ span:after{
   position: relative;
   width: 100%;
   justify-content: center;
+  margin-top: 5vh;
 }
 
 .contactItem{
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contactPicture img{
-  width: 25vw;
+.listContact{
+  font-size: 1.2vw;
   height: 20vw;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactPicture img{
+  width: 7vw;
+  height: 7vw;
+  background: transparent;
 }
 /*----------------End contactPage CSS-----------------*/
+/*----------------Addclass Css-----------------*/
+.navHeight{
+  height: 8vh;
+}
+.fullscreen{
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+/*----------------End Addclass CSS----------*/
+/*----------------Begin Media Queries---------------*/
+/*----------------Start Mobile Query----------------*/
+@media screen and (max-width: 992px){
+  i{
+    left: 2%;
+  }
+  span, p, li{
+    font-size: 2.2vh;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+  }
+  .nav a{
+    color: white;
+    font-size: 10vh;
+  }
+  .nav span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+  }
+
+  .introPage h1{
+    text-align: center;
+    margin: 22.5vh auto;
+    font-size: 6vh;
+    height: 45vh;
+    width: 75%;
+  }
+  .introPage span{
+    font-size: inherit;
+  }
+  .page{
+    width: 100%;
+    min-height: 80vh;
+    top: 0;
+  }
+  .page h2{
+    font-size: 5vh;
+  }
+  .bio{
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: center;
+  }
+  .headline{
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 2vh;
+  }
+  .aboutText{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border: none;
+  }
+
+  .services{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .service{
+    width: 100%;
+    min-height: 80vw;
+    margin-bottom: 20vh;
+  }
+  .service img{
+    width: 100%;
+    height: 80vw;
+  }
+  .service a{
+    width: 100%;
+  }
+  .service h2{
+    font-size: 2.2vh;
+  }
+
+  .bio{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    min-height: 90vh;
+  }
+  .headline{
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  .headline h2{
+    text-align: center;
+  }
+  .aboutText{
+    width: 90%;
+    margin: 0;
+  }
+  .projectsList{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .overlay{
+    font-size: 3vh;
+  }
+  .projectsPage{
+    width: 100%;
+  }
+  .proj{
+    width: 100%;
+    min-height: 80vw;
+  }
+  .proj img{
+    width: 100%;
+    height: 80vw;
+  }
+  .kateLynn img{
+    width: 100%;
+    height: 100%;
+  }
+  .mentor img{
+    width: 100%;
+    height: 80vw;
+  }
+  .contactInfo{
+    align-items: center;
+    height: 75vw;
+    flex-direction: column;
+    position: relative;
+  }
+  .contactText{
+    text-align: center;
+  }
+  .contactItem{
+    width: 60vw;
+    height: 45vw;
+  }
+  .contactPicture img{
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 750px){
+  .page{
+    min-height: 60vw;
+  }
+  .introPage{
+    justify-content: flex-start;
+  }
+  .introPage h1{
+    min-height: 50vw;
+    margin: 30vw 0 20vw 0;
+  }
+
+  span, p, li{
+    font-size: 2.5vw;
+  }
+
+  .overlay{
+    left:0;
+  }
+
+  .bioItem{
+    width: 75%;
+    min-height: 20vw;
+  }
+  .aboutPage{
+    margin-top: 10vw;
+    margin-bottom: 0;
+  }
+  .services{
+    min-height: 80vw;
+  }
+  .service{
+    height: 80vw;
+    margin-bottom: 5vw;
+  }
+  .service img{
+    width: 85%;
+    height: 60vw;
+  }
+  .service h2{
+    font-size: 2.5vw;
+  }
+  .proj{
+    min-height: 70vw;
+    width: 85%;
+  }
+  .proj img{
+    height: 70vw;
+    width: 100%;
+  }
+  .contactPage{
+    margin-top: 10vw;
+  }
+}
+/*----------------End Mobile Query----------------*/
+/*----------------End Media Queries---------------*/
