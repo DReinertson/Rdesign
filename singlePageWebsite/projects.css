@@ -1,54 +1,22 @@
-body, html{
-  display: flex;
-  flex-direction: column;
+
+a{
+  text-decoration: none;
 }
 
-.proj{
-  width: 25vw;
-  height: 25vw;
+.projectsPage{
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
-
-.proj img{
-  width: 25vw;
-  height: 25vw;
-}
-.kateLynn{
-  border: 0.5px solid black;
-}
-.kateLynn img{
-  width: 15vw;
-  height: 20vw;
-}
-.mentor img{
-  width: 21vw;
-  height: 10vw;
-}
-.projectContainer{
-  position: relative;
-  width: 90%;
-  margin: 10vh auto 0 auto;
-  display: flex;
-  justify-content: center;
-
-}
-
-.page{
+.projectsList{
   flex-wrap: wrap;
 }
-.contactPage{
-  margin-top: 10vh;
+.proj{
+  margin-top: 3.5vw;
 }
 
 @media only screen and (max-width: 750px){
   .projectContainer{
     display: flex;
     flex-direction: column;
-  }
-  .proj{
-    width: 100vw;
-  }
-  .proj img{
-    width: 100vw;
-    height: 80vh;
   }
 }
