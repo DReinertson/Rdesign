@@ -101,8 +101,6 @@ a{
 }
 .quote{
   width: 96%;
-  border-bottom: 1px solid #333333;
-  border-top: 1px solid #333333;
   margin: 2% auto;
   font-size: 1.6vw;
   display: flex;
@@ -122,7 +120,7 @@ a{
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   position: relative;
 
 }
@@ -131,14 +129,15 @@ a{
   position: relative;
   margin-bottom: 2%;
   box-shadow: 3px 3px 8px 1px grey;
+  cursor: pointer;
 }
 .pictureNav h3{
   font-size: 3.2vw;
   font-family: 'Lato';
-  font-weight: 300;
+  font-weight: 200;
 }
 #airHead{
-  width: 55%;
+  width: 68%;
   margin-right: 2%;
 }
 #airHead img{
@@ -147,25 +146,28 @@ a{
 }
 #airHead h3{
   position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 11%;
-  transform: translate(0, -50%);
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
+  white-space: nowrap;
 }
 #denise{
-  width: 43%;
+  width: 30%;
+  background: #e6e6e6;
 }
 #denise img{
   height: 100%;
-  width: 100%;
+  width: 63%;
+  position: absolute;
+  right: 0;
 }
 #denise h3{
-  width: 40%;
+  width: 35%;
   position: absolute;
-  left: 5%;
-  top: 20%;
-
+  top: 50%;
+  left: 1%;
+  transform: translate(0, -50%);
 }
 #blog{
   width: 43%;
@@ -201,7 +203,7 @@ a{
   width: 96%;
   padding: 0.5% 0;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-bottom: 5% !important;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
   display: flex;
@@ -229,4 +231,8 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#momin img{
+  width: 100%;
+  height: 100%;
 }
