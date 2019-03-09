@@ -26,6 +26,7 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
 .heading{
   width: 100%;
   display: flex;
@@ -40,6 +41,9 @@ a{
 }
 .heading h3{
   margin-bottom: 1%;
+}
+#normal{
+  letter-spacing: 4.2px;
 }
 .nav{
   width: 96%;
@@ -100,18 +104,16 @@ a{
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333;
   margin: 2% auto;
-  height: 20vh;
-  font-size: 2.5vw;
+  font-size: 1.6vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .quote h2{
-
-  /* border-left: 1px solid gray; */
-  height: 75%;
+  width: 75%;
   display: flex;
   align-items: center;
+  padding: 2% 0;
 }
 
 .pictureNav{
@@ -199,7 +201,7 @@ a{
   width: 96%;
   padding: 0.5% 0;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
   display: flex;
