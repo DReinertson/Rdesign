@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.slideshow{
+  position: relative;
+  width: 53%;
+  height: 60%;
+  margin: 0 auto;
+  color: black;
+  background: green;
+}
+
+.slide{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  /* color: white; */
+  font-weight: bold;
+  font-size: 32px;
+  user-select: none;
+  /* background: rgba(0,0,0,0.3); */
+}
+.next{
+  right: 0;
+}
+.prev:hover, .next:hover{
+  /* background: rgba(0,0,0,0.8); */
+}
+.number{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slide img{
+  height: 100%;
+  margin: 0 auto;
+}
+
+.paragraph, .services{
+  width: 53%;
+  margin: 2% auto;
+  font-size: 1.2vw;
+}
+
+.paragraph span, .services span{
+  font-weight: bold;
+}
+.quote{
+  width: 100%;
+  background: rgba(51, 51, 51, 0.05);
+  height: 30%;
+}
+.quote h2{
+  width: 53%;
+}
+
+.services{
+  margin-bottom: 20%;
+}
+.services li{
+  list-style: square inside;
+  width: 96%;
+  margin-left: auto;
+}
