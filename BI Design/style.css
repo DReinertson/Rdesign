@@ -8,7 +8,8 @@
 html, body{
   width: 100%;
   height: 100%;
-
+  position: relative;
+  padding-bottom: 5%;
 }
 h1{
   font-size: 3.3vw;
@@ -132,7 +133,7 @@ a{
 
 }
 .pictureNavItem{
-  min-height: 40%;
+  max-height: 40%;
   position: relative;
   margin-bottom: 2%;
   box-shadow: 3px 3px 8px 1px grey;
@@ -145,7 +146,7 @@ a{
   color: white;
 }
 #airHead{
-  width: 72%;
+  width: 70%;
   margin-right: 2%;
 }
 #airHead img{
@@ -161,14 +162,12 @@ a{
   white-space: nowrap;
 }
 #denise{
-  width: 26%;
+  width: 28%;
   background: #e6e6e6;
 }
 #denise img{
   height: 100%;
   width: 100%;
-  position: absolute;
-  right: 0;
 }
 #denise h3{
   position: absolute;
@@ -208,11 +207,10 @@ a{
 
 .footer{
   position: relative;
-  bottom: 0;
+  bottom: 5%;
   width: 96%;
   padding: 0.5% 0;
-  margin: 0 auto;
-  margin-bottom: 5% !important;
+  margin: 5% auto;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
   display: flex;
