@@ -9,14 +9,13 @@
   height: 60%;
   margin: 0 auto;
   color: black;
-  background: green;
 }
 
 .slide{
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -34,9 +33,6 @@
 .next{
   right: 0;
 }
-.prev:hover, .next:hover{
-  /* background: rgba(0,0,0,0.8); */
-}
 .number{
   color: #f2f2f2;
   font-size: 12px;
@@ -46,8 +42,10 @@
 }
 
 .slide img{
-  height: 100%;
-  margin: 0 auto;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .paragraph, .services{
@@ -61,7 +59,7 @@
 }
 .quote{
   width: 100%;
-  background: rgba(51, 51, 51, 0.05);
+  background: rgba(51, 51, 51, 0.1);
   height: 30%;
 }
 .quote h2{
