@@ -1,0 +1,24 @@
+.aboutContainer{
+  width: 65vw;
+  margin: 5% auto;
+  display: flex;
+}
+
+.aboutPicture{
+  width: 40%;
+  height: 100%;
+}
+.aboutPicture img{
+  width: 100%;
+  height: auto;
+}
+
+.aboutText{
+  width: 55%;
+  margin-left: 5%;
+  font-size: 1.2vw;
+}
+.aboutText p{
+  margin-bottom: 2%;
+  line-height: 1.6;
+}

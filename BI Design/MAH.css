@@ -13,8 +13,8 @@
   position: relative;
 }
 .description img{
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   margin: 2%;
 }
 
@@ -27,7 +27,7 @@
 }
 .descText p{
   width: 100%;
-  
+
 }
 .descCTA{
   align-self: flex-end;

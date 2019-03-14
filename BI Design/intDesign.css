@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 .slideshow{
   position: relative;
@@ -48,6 +47,9 @@
   max-height: 100%;
 }
 
+.paragraph, .quote, .services{
+  line-height: 1.6;
+}
 .paragraph, .services{
   width: 53%;
   margin: 2% auto;

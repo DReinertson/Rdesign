@@ -1,0 +1,28 @@
+.contactContainer{
+  width: 80vw;
+  margin: 5% auto;
+  display: flex;
+  min-height: 60%;
+}
+.contactImage{
+  width: 50%;
+  height: 100%;
+}
+.contactImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.formContainer{
+  width: 45%;
+  height: 100%;
+  margin-left: 5%;
+  font-size: 1.2vw;
+}
+
+.formContainer input, textarea{
+  width: 100%;
+  font-size: 1.2vw;
+}

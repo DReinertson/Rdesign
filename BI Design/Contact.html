@@ -3,6 +3,7 @@
 
 <head>
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './contact.css'>
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito:300,400,600" rel="stylesheet">
@@ -10,7 +11,7 @@
 
 <body>
   <div class = 'heading' id = 'heading'>
-    <h1>BI Design</h1>
+    <h1><a href = './indexQuote.html'>BI Design</a></h1>
     <h3>Bainbridge Island | WA</h3>
     <h3 class = 'margin'>Denise Stoughton | Designer</h3>
   </div>
@@ -26,34 +27,29 @@
     </ul>
   </div>
 
-  <div class = 'banner' id = 'banner'>
-  </div>
-
-  <div class = 'quote' id = 'quote'>
-    <h2>&ldquo;So that is the design process or the creative process. Start with a problem, forget the problem, the problem reveals itself or the solution reveals itself and then you reevaulate it. This is what you are doing all the time.&rdquo;
-      <span>&ndash;Paul Rand</span></h2>
-  </div>
-
-
-
-  <div class = 'pictureNav' id = pictureNav>
-    <div class = 'pictureNavItem' id = 'airHead'>
-      <img src = './images/MAH/airHeadSingles.jpg'>
-      <h3>Modern Air Head Collection</h3>
+  <div class = 'contactContainer'>
+    <div class = 'contactImage'>
+      <img src = './images/interior/Entry.jpeg' alt = 'Entryway'>
     </div>
-    <div class = 'pictureNavItem' id = 'denise'>
-      <img src = './images/denise/denise2.jpg'>
-      <h3>Get to Know Denise</h3>
-    </div>
-    <div class = 'pictureNavItem' id = 'blog'>
-      <img src = './images/writing.jpg'>
-      <h3>Blog</h3>
-    </div>
-    <div class = 'pictureNavItem' id = 'intDesign'>
-      <img src = './images/interior/diningBright.jpg'>
-      <h3>Interior Design Services</h3>
+    <div class = 'formContainer'>
+      <p>Do you need to PURCHASE PRODUCTS, FIND A RETAILER or CUSTOM WORK DONE?!<br>
+        Want to discuss a project? Give me a call at ###-###-### or send a message below. I'll be in touch soon.
+      </p>
+      <form action = ''>
+        Name:<br>
+        <input type = 'text' name = 'Name' placeholder = 'First and Last Name'></input>
+        Email:<br>
+        <input type = 'text' name = 'Email' placeholder = 'Email Address'></input>
+        Confirm Email:<br>
+        <input type = 'text' name = 'EmailConfirm' placeholder = 'Confirm Your Email Address'></input>
+        Leave a Message:<br>
+        <textarea name = "Message" placeholder = "Leave me a message"></textarea>
+        <button type = 'submit' name = 'submit'>Send Message</button>
+      </form>
     </div>
   </div>
+
+
 
   <div class = 'footerHeight'>
     <div class = 'footer' id = 'footer'>
@@ -68,6 +64,13 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
 
 
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

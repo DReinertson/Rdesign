@@ -9,10 +9,9 @@ html, body{
   width: 100%;
   height: 100%;
   position: relative;
-  padding-bottom: 5%;
 }
 h1{
-  font-size: 3.3vw;
+  font-size: 3vw;
 }
 
 h3{
@@ -35,7 +34,7 @@ a{
   justify-content: center;
   text-align: center;
   margin-top: 1%;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 .heading h1, .heading h3{
   letter-spacing: 7px;
@@ -47,7 +46,7 @@ a{
   letter-spacing: 4.2px;
 }
 .nav{
-  width: 96%;
+  width: 95vw;
   display: flex;
   align-items: center;
   margin: 0 auto 2% auto;
@@ -84,7 +83,7 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 96%;
+  width: 95vw;
   height: 80vh;
   margin: auto;
   position: relative;
@@ -101,7 +100,7 @@ a{
   background: rgba(0,0,0,0.2);
 }
 .quote{
-  width: 96%;
+  width: 95vw;
   margin: 2% auto;
   font-size: 1.4vw;
   display: flex;
@@ -123,7 +122,7 @@ a{
 }
 
 .pictureNav{
-  width: 96%;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -133,7 +132,7 @@ a{
 
 }
 .pictureNavItem{
-  max-height: 40%;
+  height: 37vw;
   position: relative;
   margin-bottom: 2%;
   box-shadow: 3px 3px 8px 1px grey;
@@ -146,8 +145,8 @@ a{
   color: white;
 }
 #airHead{
-  width: 70%;
-  margin-right: 2%;
+  width: 67vw;
+  margin-right: 2vw;
 }
 #airHead img{
   width: 100%;
@@ -162,7 +161,7 @@ a{
   white-space: nowrap;
 }
 #denise{
-  width: 28%;
+  width: 26vw;
   background: #e6e6e6;
 }
 #denise img{
@@ -177,6 +176,7 @@ a{
 }
 #blog{
   width: 43%;
+  height: 30vw;
   margin-right: 2%;
 }
 #blog img{
@@ -189,7 +189,8 @@ a{
   left: 57%;
 }
 #intDesign{
-  width: 55%
+  width: 55%;
+  height: 30vw;
 }
 #intDesign img{
   height: 100%;
@@ -206,16 +207,17 @@ a{
 }
 
 .footer{
-  position: relative;
-  bottom: 5%;
-  width: 96%;
+  width: 95vw;
   padding: 0.5% 0;
-  margin: 5% auto;
+  margin: 15% auto 0 auto;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footerHeight{
+  height: 15%;
 }
 .socialMedia{
   height: 100%;
