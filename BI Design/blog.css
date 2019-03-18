@@ -4,11 +4,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 h2{
   font-weight: bold;
   font-size: 1.6vw;
+}
+.blogPostContainer{
+  width: 55vw;
+  height: 20vw;
+  margin-bottom: 4%;
+  position: relative;
 }
 .blogPost{
   width: 55vw;
@@ -50,16 +57,167 @@ h2{
   bottom: 1%;
   right: 1%;
 }
-.blogContainer .socialMedia{
+.blogPostContainer .socialMedia{
   position: absolute;
   z-index: 3;
   top: 2%;
   right: 0;
   height: auto;
-  background: green;
 }
+
+/*------------Start Individual Blog page design-----------*/
 .blog{
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+  padding-bottom: 5%;
 }
+.blogHeader p{
+  font-size: 1.5vw;
+  font-style: italic;
+  margin-top: 4%;
+}
+.blog .socialMedia{
+  align-self: flex-start;
+  padding: 1% 0;
+  width: 88%;
+  margin: 1% auto;
+  justify-content: flex-end;
+}
+.blog .socialMedia ~ .socialMedia{
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  justify-content: flex-start;
+}
+.blog .socialMedia a{
+  margin-right: 2%;
+}
+.blogHeader{
+  margin: 4% 6%;
+  font-style:italic;
+}
+.paragraph{
+  display: flex;
+  margin: 4% 6%;
+}
+.paragraph p{
+  width: 45%;
+  line-height: 1.6;
+  font-size: 1.2vw;
+}
+#beauty .paragraph p{
+  width: 50%;
+}
+
+.paragraphImage{
+  width: 45%;
+}
+.paragraphImage img{
+  box-sizing: border-box;
+  width: 100%;
+  border: 10px solid white;
+  box-shadow: 3px 3px 8px 1px grey;
+}
+
+.paragraph1 .paragraphImage{
+  margin-left: auto;
+}
+.paragraph2 p{
+  margin-left: auto;
+}
+.finalImage{
+  width: 88%;
+  margin: 4% auto;
+}
+.finalImage img{
+  box-sizing: border-box;
+  border: 20px solid white;
+  box-shadow: 3px 3px 8px 1px grey;
+  width: 100%;
+}
+.postDate{
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
+/*----------Dumpster Diving CSS-------*/
+#dumpster{
+  width: 60%;
+  line-height: 1.6;
+}
+#dumpster  .blogSection > .paragraphImage{
+  width: 88%;
+  margin: 0 auto;
+}
+#dumpster .paragraph p{
+  font-size: 1.3vw;
+}
+#dumpster .paragraph1 p{
+  width: 100%;
+}
+#dumpster .paragraph3 .paragraphImage, .paragraph4 p{
+  margin-left: auto;
+}
+#dumpster .paragraph .paragraphImage{
+  width: 45%;
+}
+#dumpster .paragraph2 p, .paragraph3 p, .paragraph4 p{
+  width: 50%;
+}
+#dumpster .paragraph3 .paragraphImage{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+#dumpster .paragraph3 .paragraphImage img{
+  margin-bottom: 10%;
+}
+#dumpster .paragraph4 p, .paragraph5 p{
+  width: 100%;
+}
+/*------------End Dumpster Diving CSS--------------*/
+/*------------Beauty CSS------------------*/
+
+.blogQuote{
+  font-weight: bold;
+  font-size: 1.6vw;
+}
+#beauty .paragraph1 .paragraphImage{
+  margin-top: 5%;
+}
+#beauty .paragraph2 p{
+  width: 100%;
+}
+.midPageQuote{
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 5% 0;
+  width: 88%;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+}
+
+#beauty .paragraph3 p{
+  width: 100%;
+}
+#beauty .paragraph4 p{
+  width: 100%;
+}
+#beautyGraf{
+  width: 88%;
+  margin: 0 auto;
+}
+#beauty .paragraph5 p{
+  margin-left: auto;
+}
+#beauty .paragraph6 p{
+  width: 100%;
+}
+#beauty .paragraph7 p{
+  width: 100%;
+}
+/*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
