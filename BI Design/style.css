@@ -139,7 +139,7 @@ a{
   cursor: pointer;
 }
 .pictureNav h3{
-  font-size: 3.2vw;
+  font-size: 3.5vw;
   font-family: 'Lato';
   font-weight: 400;
   color: white;
@@ -175,9 +175,9 @@ a{
   line-height: 1;
 }
 #blog{
-  width: 43%;
+  width: 43vw;
   height: 30vw;
-  margin-right: 2%;
+  margin-right: 2vw;
 }
 #blog img{
   height: 100%;
@@ -185,11 +185,13 @@ a{
 }
 #blog h3{
   position: absolute;
-  top: 27%;
-  left: 57%;
+  /* top: 27%;
+  left: 57%; */
+  top: 5%;
+  right: 5%;
 }
 #intDesign{
-  width: 55%;
+  width: 50vw;
   height: 30vw;
 }
 #intDesign img{

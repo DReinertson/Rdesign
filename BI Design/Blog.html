@@ -7,6 +7,7 @@
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito:300,400,600" rel="stylesheet">
+  <title>Blog posts about design, lifestyle and so much more</title>
 </head>
 
 <body>
@@ -18,42 +19,58 @@
     <!--<i class = 'fa fa-bars' style = 'font-size:24px'></i>-->
   <div class = 'nav'>
     <ul>
-      <li class = 'navItem'> <a href = './InteriorDesign.html'>Interior Design Services</a></li>
-      <li class = 'navItem'> <a href = './MAH.html'>Modern Air Head Products</a></li>
-      <li class = 'navItem'> <a href = './Clients.html'>Clients</a></li>
-      <li class = 'navItem'> <a href = './Blog.html'>Blog</a></li>
-      <li class = 'navItem'> <a href = './About.html'>About Denise</a></li>
-      <li class = 'navItem'> <a href = './Contact.html'>Contact</a></li>
+      <li class = 'navItem' id = 'interiorDesign'> <a href = './InteriorDesign.html'>Interior Design Services</a></li>
+      <li class = 'navItem' id = 'MAH'> <a href = './MAH.html'>Modern Air Head Products</a></li>
+      <li class = 'navItem' id = 'Clients'> <a href = './Clients.html'>Clients</a></li>
+      <li class = 'navItem' id = 'Blog'> <a href = './Blog.html'>Blog</a></li>
+      <li class = 'navItem' id = 'About'> <a href = './About.html'>About Denise</a></li>
+      <li class = 'navItem' id = 'Contact'> <a href = './Contact.html'>Contact</a></li>
     </ul>
   </div>
 
   <div class = 'blogContainer'>
-    <div class = 'blogPost'>
-      <img src = './images/denise/denise3.JPG'>
-      <div class = 'blogText'>
-        <h2 class = 'blogTitle'>Beauty's Where You Find It!</h2>
-        <p class = 'blogBlerb'>You're a Modonna fan or have been around long enough to remember when she dominated pop culture. You're familiar with the term: Voguing...</h2>
+    <a href = './beauty.html'>
+      <div class = 'socialMedia' id = 'socialMedia'>
+        <a href = '#' class = 'fa fa-instagram' style = 'font-size:32px' id = 'insta'></a>
+        <a href = '#' class = 'fa fa-facebook-official' style = 'font-size:32px' id = 'fb'></a>
       </div>
-      <span class = 'date'>Feb 15, 2019</span>
-    </div>
+      <div class = 'blogPost'>
+        <div class = 'blogImage'>
+          <img src = './images/Blog/beautyGraf.jpg' id = 'beauty'>
+        </div>
+        <div class = 'blogText'>
+          <h2 class = 'blogTitle'>Beauty's Where You Find It!</h2>
+          <p class = 'blogBlerb'>You're a Modonna fan or have been around long enough to remember when she dominated pop culture. You're familiar with the term: Voguing...</h2>
+        </div>
+        <span class = 'date'>Feb 15, 2019</span>
+      </div>
+    </a>
 
-    <div class = 'blogPost'>
-      <img src = './images/interior/bedWide.jpg'>
-      <div class = 'blogText'>
-        <h2 class = 'blogTitle'>Dumpster Diving and Other Interesting Home Decorating Activities</h2>
-        <p class = 'blogBlerb'>Bainbridge Island bears little resemblance to the island of Manhattan, which I called home most of my adult life. Yet...</h2>
+    <a href = './dumpsterDiving.html'>
+      <div class = 'blogPost'>
+          <div class = 'blogImage'>
+            <img src = './images/interior/bedWide.jpg'>
+          </div>
+          <div class = 'blogText'>
+            <h2 class = 'blogTitle'>Dumpster Diving and Other Interesting Home Decorating Activities</h2>
+            <p class = 'blogBlerb'>Bainbridge Island bears little resemblance to the island of Manhattan, which I called home most of my adult life. Yet...</h2>
+          </div>
+          <span class = 'date'>Feb 15, 2019</span>
       </div>
-      <span class = 'date'>Feb 15, 2019</span>
-    </div>
+    </a>
 
-    <div class = 'blogPost'>
-      <img src = './images/denise/denise3.JPG'>
-      <div class = 'blogText'>
-        <h2 class = 'blogTitle'>Denise Stoughton: Natural Beauty in Design</h2>
-        <p class = 'blogBlerb'>Inspired by globe-trotting, day tripping, found objects and high fashion, I've been designing home decor for two decades. Originally from...</h2>
+    <a href = './denise.html'>
+      <div class = 'blogPost'>
+          <div class = 'blogImage'>
+            <img src = './images/denise/denise3.JPG'>
+          </div>
+          <div class = 'blogText'>
+            <h2 class = 'blogTitle'>Denise Stoughton: Natural Beauty in Design</h2>
+            <p class = 'blogBlerb'>Inspired by globe-trotting, day tripping, found objects and high fashion, I've been designing home decor for two decades. Originally from...</h2>
+          </div>
+          <span class = 'date'>Feb 15, 2019</span>
       </div>
-      <span class = 'date'>Feb 15, 2019</span>
-    </div>
+    </a>
 
   </div>
 
