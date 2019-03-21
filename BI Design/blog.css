@@ -183,6 +183,7 @@ h2{
 
 .blogQuote{
   font-weight: bold;
+  font-style: italic;
   font-size: 1.6vw;
 }
 #beauty .paragraph1 .paragraphImage{
@@ -221,3 +222,88 @@ h2{
   width: 100%;
 }
 /*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
+@media screen and (max-width: 1024px){
+  .blogContainer{
+    width: 100%;
+    margin-bottom: 25%;
+  }
+  .blogPostContainer{
+    width: 100%;
+    height: 45vw;
+  }
+  .blogPost{
+    width: 100%;
+    height: 45vw;
+  }
+  .blogText h2{
+    font-size: 3.5vw;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  .socialMedia a{
+    font-size: 18px;
+  }
+  .blogText p{
+    margin: 1% auto;
+    font-size: 3vw;
+  }
+  .blogPost span{
+    font-size: 3vw;
+  }
+  .footer .socialMedia a{
+    font-size: 26px;
+  }
+
+  .blog{
+    width: 100%;
+  }
+  .paragraph p{
+    font-size: 3.3vw;
+    width: 49%;
+    line-height: 1.5;
+  }
+  .blogHeader, .paragraph{
+    margin: 4%
+  }
+  #deniseBlog .paragraphImage{
+    width: 49%;
+  }
+  #deniseBlog .paragraph2 p{
+    margin-left: 5%;
+  }
+  #deniseBlog .finalImage{
+    margin-bottom: 25%;
+  }
+
+  #dumpster{
+    width: 100%;
+  }
+  #dumpster .blogSection > .paragraphImage{
+    width: 92%;
+  }
+  #dumpster .paragraph p{
+    font-size: 3.3vw;
+  }
+  #dumpster .paragraph2 p{
+    margin-left: auto;
+  }
+  #dumpster .paragraph .paragraphImage{
+    align-self: center;
+  }
+  #dumpster .paragraph5 p{
+    width: 100%;
+  }
+  #dumpster .paragraph5{
+    margin-bottom: 20%;
+  }
+
+  .blogQuote {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3vw;
+
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 750px){
+
+}

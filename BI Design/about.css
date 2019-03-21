@@ -2,7 +2,6 @@
   width: 65vw;
   margin: 3% auto;
   display: flex;
-  min-height: 60%;
 }
 
 .aboutPicture{
@@ -12,6 +11,7 @@
 .aboutPicture img{
   width: 100%;
   min-height: 100%;
+  box-shadow: 3px 3px 8px 1px grey;
 }
 
 .aboutText{
@@ -25,4 +25,29 @@
 }
 .aboutText p{
   line-height: 1.6;
+}
+@media screen and (max-width: 1024px){
+  .aboutContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .aboutPicture{
+    min-height: none;
+    width: auto;
+  }
+  .aboutPicture img{
+    min-height: none;
+    width: 50vw;
+    height: 80vw;
+  }
+  .aboutText{
+    min-height: none;
+    font-size: 3.5vw;
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 750px){
+
 }
