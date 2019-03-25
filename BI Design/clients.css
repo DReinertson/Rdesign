@@ -77,7 +77,7 @@
   color: white;
   font-size: 1.1vw;
 } */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .clientContainer{
     width: 100%;
     margin-bottom: 25%;

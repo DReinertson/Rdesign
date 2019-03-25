@@ -1,6 +1,6 @@
 .aboutContainer{
-  width: 65vw;
-  margin: 3% auto;
+  width: 75vw;
+  margin: 5% auto;
   display: flex;
 }
 
@@ -26,7 +26,7 @@
 .aboutText p{
   line-height: 1.6;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .aboutContainer{
     flex-direction: column;
     align-items: center;
@@ -48,6 +48,11 @@
     margin: 5% auto;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 750px){
-
-}
+/* @media screen and (max-width: 1366px) and (min-width: 1024px){
+  .aboutPicture{
+    width: auto;
+  }
+  .aboutText{
+    width: 60%;
+  }
+} */

@@ -18,9 +18,12 @@ function showSlides(n) {
   $(slides[slideIndex-1]).fadeIn(800);
 }
 
-$('.navItem').hover(function(){
-  $(this).toggleClass('underline');
-});
+if ($(window).width() >= 1024){
+  $('.navItem').hover(function(){
+    $(this).toggleClass('underline');
+  });
+  $('i').hide();
+};
 
 function openNav(){
   console.log('opening nav');

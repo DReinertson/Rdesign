@@ -1,0 +1,72 @@
+.makeoverContainer{
+  width: 100%;
+  border: 1px dashed rgba(0,0,0,0.2);
+  margin: 2% auto;
+}
+
+.makeoverHeader{
+  margin-bottom: 5%;
+  text-align: center;
+  width: 100%;
+  padding: 8% 0;
+  background: rgba(0,0,0,0.1)
+}
+.makeoverHeader h2{
+  width: 70vw;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.makeoverTitle{
+  width: 50vw;
+  margin: 2% auto;
+  text-align: center;
+}
+.makeoverTitle h2{
+  margin-bottom: 2%;
+}
+
+.makeoverContent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin: 5% auto;
+}
+.contentImagesSide{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2% 0;
+}
+.contentImagesSide img{
+  width: 100%;
+  height: auto;
+}
+.contentText{
+  width: 55%;
+  margin: 2% 0 2% 5%;
+  line-height: 1.6;
+  font-size: 1.2vw;
+}
+
+.contentImagesBottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contentImagesBottom img {
+  width: 34vw;
+  height: 25vw;
+}
+/* .row .rowImage{
+  width: 40%;
+}
+.rowImage img{
+  width: 100%;
+}
+
+.row .paragraph{
+  width: 48%;
+  margin-left: auto;
+  margin-right: 2%;
+} */

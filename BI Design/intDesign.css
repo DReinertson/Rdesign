@@ -16,6 +16,13 @@
   height: 100%;
   width: 90%;
   margin: 0 auto;
+  position: relative;
+}
+.slide p{
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  color: white;
 }
 
 .prev, .next{
@@ -42,9 +49,8 @@
 
 .slide img{
   align-self: center;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  max-height: 100%;
 }
 
 .paragraph, .quote, .services{
@@ -76,7 +82,13 @@
   width: 96%;
   margin-left: auto;
 }
-@media screen and (max-width: 1024px){
+.services a{
+  font-weight: bold;
+}
+.services a:hover{
+   border-bottom: 1px solid gray;
+}
+@media screen and (max-width: 1023px){
   .slideshow{
     width: 100%;
     height: 90vw;
@@ -84,7 +96,10 @@
   .slide{
     width: 100%;
   }
-  .slide img{
+  .slide p{
+    left: 1%;
+    bottom: 14%;
+    font-size: 2.5vw;
   }
   .prev, .next{
     color: rgba(0,0,0,0.5);
