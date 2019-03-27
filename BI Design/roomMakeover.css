@@ -1,6 +1,5 @@
 .makeoverContainer{
   width: 100%;
-  border: 1px dashed rgba(0,0,0,0.2);
   margin: 2% auto;
 }
 
@@ -9,12 +8,13 @@
   text-align: center;
   width: 100%;
   padding: 8% 0;
-  background: rgba(0,0,0,0.1)
+  background: rgba(0,0,0,0.1);
 }
 .makeoverHeader h2{
-  width: 70vw;
+  width: 55vw;
   margin: 0 auto;
   line-height: 1.6;
+  font-size: 1.6vw;
 }
 
 .makeoverTitle{
@@ -25,48 +25,86 @@
 .makeoverTitle h2{
   margin-bottom: 2%;
 }
-
 .makeoverContent{
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  width: 45vw;
   margin: 5% auto;
 }
-.contentImagesSide{
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: 2% 0;
-}
-.contentImagesSide img{
-  width: 100%;
-  height: auto;
+
+.contentText p{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .contentText{
-  width: 55%;
-  margin: 2% 0 2% 5%;
+  width: 100%;
+  margin: 2% auto;
   line-height: 1.6;
   font-size: 1.2vw;
-}
-
-.contentImagesBottom{
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-.contentImagesBottom img {
-  width: 34vw;
-  height: 25vw;
-}
-/* .row .rowImage{
-  width: 40%;
-}
-.rowImage img{
-  width: 100%;
+  flex-wrap: wrap;
 }
 
-.row .paragraph{
-  width: 48%;
-  margin-left: auto;
-  margin-right: 2%;
-} */
+.contentImage{
+  width: 100%;
+}
+.contentImage img{
+  width: 100%;
+  border: 10px solid white;
+  box-shadow: 3px 3px 8px 1px grey;
+  box-sizing: border-box;
+
+}
+#side{
+  width: 40%;
+  margin-bottom: 2%;
+}
+#sideText{
+  width: 45%;
+  margin: 0;
+  margin: auto 0 auto auto;
+  line-height: 1.8;
+}
+
+#bottom{
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1023px){
+
+  * h1{
+    font-size: 6vw;
+  }
+  * h2{
+    font-size: 4vw;
+
+  }
+  * h3,li,p{
+    font-size: 3.5vw;
+  }
+
+  .makeoverHeader h2{
+    width: 90%;
+    font-size: 4vw;
+  }
+  .makeoverTitle{
+    width: 90%;
+  }
+  .makeoverContent{
+    width: 90%;
+  }
+  #side{
+    width: 50%;
+    height: auto;
+  }
+  #side img{
+    height: 95%;
+    margin: auto 0;
+    object-fit: cover;
+    object-position: 65% 0;
+  }
+  #sideText{
+    margin: 0 0 0 auto;
+    line-height: 1.6;
+  }
+}

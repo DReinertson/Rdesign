@@ -100,6 +100,8 @@ window.addEventListener('touchend', e => {
 function getTouch (e) {
   return e.changedTouches[0]
 }
+
+
     /* reset values */
   //   xDo
   //
