@@ -1,5 +1,6 @@
 var slideIndex = 1;
 let open = false;
+$('.thanks').hide();
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -49,6 +50,10 @@ $('i').on('click', function(){
     $('body').removeClass('noscroll');
   }
 });
+
+$('.close').on('click', function(){
+  $('.thanks').hide();
+})
 
 $(document).ready(function(){
 
@@ -130,3 +135,30 @@ function getTouch (e) {
 if($(window).width()>1024){
   $('i').hide();
 }
+$('.form-contact').submit(function(e){
+
+        // Prevent the default submit
+        e.preventDefault();
+
+        // Collect the data from the form
+        var formData =  $('.form-contact').serialize();
+
+        //Send the from
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: formData,
+            timeout: 5000,
+
+            success: function(msg){
+              console.log('success!!');
+                $('.thanks').show();
+                $('.form-contact').each(function(){
+                  this.reset();
+                })
+            },
+            fail: function(xhr, testStatus, errorThrown){
+              alert('request failed');
+            }
+        });
+    });
