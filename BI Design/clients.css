@@ -5,17 +5,58 @@
   position: relative;
   margin-bottom: 15.5%;
 }
+.imageQuotesContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+.imgQuote{
+  position: -webkit-sticky;
+  position: sticky;
+  width: 30%;
+  height: 43%;
+  opacity: 0.4;
+  z-index: 1;
+}
+#leftQuote{
+  height: 70%;
+  margin-top: 1%;
+  left: -8%;
+}
+#rightQuote{
+  margin-top: 1%;
+  height: 70%;
+  bottom: 0;
+  right: -8%;
+  justify-content: flex-end;
+}
+.topLeft{
+  /* top: 10%; */
+  /* left:-8%; */
+  top: 0;
+}
+.bottomRight{
+  /* bottom: 14%; */
+  /* right: -8%; */
+  /* top: 25%; */
+  top: 37%;
+}
 .quoteContainer{
   width: 65%;
   margin: 0 auto;
+  position: relative;
 }
 .quote{
   width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 3px 3px 8px 1px grey;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   font-size: 1.2vw;
+  z-index: 5;
+  position: relative;
+  background: rgb(255,255,255);
 }
 .testimonial{
   font-style: italic;
@@ -81,6 +122,9 @@
   .clientContainer{
     width: 100%;
     margin-bottom: 25%;
+  }
+  .imgQuote{
+    display: none;
   }
   .quoteContainer{
     width: 90%;

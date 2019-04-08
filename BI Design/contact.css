@@ -16,31 +16,30 @@
   opacity: 1;
   z-index: 3;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .thanksMessage{
   width: 30vw;
   height: 35vw;
-  background: rgb(200,200,200);
-  /* background: rgb(255,255,255); */
+  /* background: rgb(200,200,200); */
+  background: rgb(255,255,255);
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .thanks img{
   width: 80%;
-  margin: 0 auto 2% auto;
+  margin: 10% auto 10% auto;
   object-fit: cover;
   box-sizing: border-box;
   border: 10px solid white;
   box-shadow: 3px 3px 8px 1px grey;
 }
 .thanks h2{
-  font-size: 2vw;
-  width: 65%;
-  margin: 3% auto;
+  font-size: 1.5vw;
+  width: 70%;
+  margin: 2% auto;
   color: rgb(50,50,50);
   text-align: center;
 }
@@ -138,6 +137,9 @@ textarea{
     width: 100%;
     height: 75%;
   }
+  .thanksMessage .first{
+    margin-top: 10%;
+  }
   .thanksMessage h2{
     font-size: 5.5vw;
   }
@@ -155,5 +157,8 @@ textarea{
   }
   .thanks h2{
     margin-top: 0;
+  }
+  .thanksMessage .first{
+    margin-top: 5%;
   }
 }

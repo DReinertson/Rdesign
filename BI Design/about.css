@@ -2,11 +2,12 @@
   width: 75vw;
   margin: 5% auto;
   display: flex;
+  justify-content: center;
 }
 
 .aboutPicture{
-  width: 40%;
-  min-height: 100%;
+  width: 30%;
+  /* min-height: 100%; */
 }
 .aboutPicture img{
   width: 100%;
@@ -47,10 +48,13 @@
     width: 90%;
     margin: 5% auto;
   }
+  .aboutText p{
+    margin-bottom: 2%;
+  }
 }
 /* @media screen and (max-width: 1366px) and (min-width: 1024px){
   .aboutPicture{
-    width: auto;
+
   }
   .aboutText{
     width: 60%;

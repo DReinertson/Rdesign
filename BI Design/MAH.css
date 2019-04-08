@@ -120,7 +120,17 @@
   }
   .descText p{
     font-size: 3.5vw;
+    margin-bottom: 3%;
   }
+
+  .descCTA .socialMedia a{
+    margin: 0;
+    margin-right: 0;
+    margin-right: 5% !important;
+    margin-top: 2%;
+    font-size: 28px;
+  }
+
   .products{
     width: 100%;
   }
@@ -170,4 +180,10 @@
     margin-top: 2%;
     margin-bottom: 2%;
   }
-}
+  .descText{
+    height: 35vw;
+  }
+  .description img{
+    height: 35vw;
+    width: 40vw;
+  }
