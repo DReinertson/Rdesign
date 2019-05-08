@@ -34,6 +34,7 @@
 }
 .descText p{
   width: 100%;
+  font-size: 1.15vw;
 }
 .descCTA{
 }
@@ -44,8 +45,12 @@
 .descCTA a:hover{
   border-bottom: 1px solid black;
 }
+.descCTA p:first-child{
+  margin-bottom: 2%;
+}
 .descCTA .socialMedia{
   height: auto;
+  margin-top: 1%;
 }
 
 .productTitle{
@@ -68,6 +73,7 @@
 }
 .sort{
   width: 100%;
+  display: none;
 }
 
 .item{
@@ -88,24 +94,36 @@
 #imageLogo{
   position: absolute;
   background: none;
-  bottom: 21%;
+  bottom: 26%;
   right: 2%;
   width: 2vw;
   height: 2vw;
+
 }
 .rotate{
   transform: rotate(90deg);
 }
+.large{
+  font-size: 1.6vw;
+}
+.bold{
+  font-weight: bold;
+}
 @media screen and (max-width: 1023px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
   .description{
     min-height: 120vw;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0;
     margin-bottom: 10%;
+    width: 100%;
   }
   .description img{
-    width: 100vw;
+    width: 100%;
     height: 90vw;
     max-width: none;
     max-height: none;
@@ -159,27 +177,38 @@
   #imageLogo{
     width: 7vw;
     height: 7vw;
-    bottom: 10%;
+    bottom: 11%;
+    /* right: 5%; */
   }
   #rectangleMAH img{
     object-fit: contain;
   }
+
+  .large{
+    font-size: 4.5vw;
+  }
+  .bold{
+    font-weight: bold;
+  }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1024px){
-  * h1{
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+  /* * h1{
     font-size: 3.5vw;
   }
   * h2{
     font-size: 3vw;
-  }
-  * h3, li, p{
+  } */
+  * h3, p{
     font-size: 1.2vw;
   }
-  .heading{
+  .descText p{
+    font-size: 1.25vw;
+  }
+  /* .heading{
     margin-top: 2%;
     margin-bottom: 2%;
-  }
+  } */
   .descText{
     height: 35vw;
   }

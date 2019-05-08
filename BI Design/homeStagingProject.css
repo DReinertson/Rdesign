@@ -1,0 +1,137 @@
+.tileGallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.tileGallery h2{
+  width: 100%;
+  padding: 2% 0 4% 0;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.preview{
+  width: 45vw;
+  height: 30vw;
+  position: relative;
+  margin-right: 2.5vw;
+}
+.preview img{
+  width: 100%;
+  height: 100%;
+}
+.tiles{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 45vw;
+  height: 30vw;
+  overflow-y: scroll;
+  margin-left: 2.5vw;
+  padding-left: 1vw;
+  direction: rtl;
+}
+.tiles::-webkit-scrollbar{
+  width: 2px;
+}
+.tiles::-webkit-scrollbar-track{
+  background: rgba(120,120,120,0.5);
+}
+.tiles::-webkit-scrollbar-thumb{
+  background: rgb(92, 142, 180);
+}
+.tiles::after{
+  content: "";
+  flex: 1 1 100%;
+  max-width: 9vw;
+}
+.tileImageContainer{
+  width: 13.5vw;
+  height: 9vw;
+  cursor: pointer;
+  margin-bottom: 2.25vw;
+  /* margin: 0 1vw 2vw 1vw; */
+}
+.tileImageContainer img{
+  width: 100%;
+  height: 100%;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%; */
+  transform: translate(0, -50%);
+  /* color: white; */
+  font-weight: bold;
+  text-align: center;
+  width: 22.5vw;
+  height: auto;
+  font-size: 2vw;
+  user-select: none;
+  background: rgba(120,120,120,0.1);
+  color: rgb(92,142,180);
+}
+.prev, .next{
+  /* bottom: -13.5%; */
+  bottom: -4.1vw;
+}
+.prev{
+  /* left: -5%; */
+  left: 0;
+}
+.prev::after{
+  content: '';
+  position: absolute;
+  height: 75%;
+  width: 1px;
+  top: 12.5%;
+  right: 0;
+  background: rgb(92, 142, 180);
+}
+.next{
+  right: 0;
+  /* right: -5%; */
+}
+
+@media screen and (max-width: 1023px){
+  .preview{
+    display: none;
+  }
+  .tileGallery{
+    margin-top: 20vw;
+  }
+  .tileGallery h2{
+    font-size: 5.5vw;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .tiles{
+    width: 95vw;
+    height: auto;
+    overflow-y:auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .tileImageContainer{
+    width: 46vw;
+    width: 95vw;
+    height: 30.666vw;
+    height: 63.333vw;
+    margin-bottom: 3vw;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 750px){
+
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px){
+  .prev,.next{
+    bottom: -4.3vw;
+  }
+}

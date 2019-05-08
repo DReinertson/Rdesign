@@ -101,6 +101,9 @@ h2{
   margin: 4% 6%;
   font-style:italic;
 }
+.blogHeader h1{
+  font-size: 2.4vw;
+}
 .paragraph{
   display: flex;
   margin: 4% 6%;

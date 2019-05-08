@@ -1,7 +1,22 @@
 var slideIndex = 1;
 let open = false;
+let preview = document.getElementById('previewImage');
+let imageArr = document.getElementsByClassName("tileImage");
 $('.thanks').hide();
 showSlides(slideIndex);
+
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
 
 // Next/previous controls
 function changeSlides(n) {
@@ -18,6 +33,34 @@ function showSlides(n) {
   }
   $(slides[slideIndex-1]).fadeIn(800);
 }
+
+
+
+function changePhoto(img){
+  preview.src = img.src;
+  console.log(imageArr);
+  for (let x = 0; x < imageArr.length; x++){
+    if(imageArr[x].src === img.src){
+      slideIndex = x+1;
+      break;
+    }
+  }
+}
+
+function changeImage(n) {
+  showImage(slideIndex += n);
+}
+
+function showImage(n) {
+  var i;
+  var slides = document.getElementsByClassName("tileImage");
+  // console.log(slides[0].src);
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  preview.src = slides[slideIndex-1].src;
+
+}
+
 
 if ($(window).width() >= 1024){
   $('.navItem').hover(function(){
