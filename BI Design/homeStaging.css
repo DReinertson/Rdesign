@@ -1,8 +1,10 @@
 .banner{
   background-image: url('./images/homeStaging/Tranquility-7.jpg');
   background-position: 0 80%;
+  width: 95vw;
   box-sizing: border-box;
   margin-bottom: 8px;
+  height: 60vh;
 }
 
 .stagingContainer{
@@ -16,8 +18,7 @@
   justify-content: space-around;
   width: 100%;
   margin: 0 auto;
-  padding: 8vw 0;
-  background: rgba(120,120,120,0.2);
+  padding: 3vw 0;
 }
 .stagingText h2{
   width: 100%;
@@ -57,8 +58,8 @@
   padding: 5vw 0;
 }
 .stagingItem{
-  width: 30vw;
-  height: 25vw;
+  width: 35vw;
+  height: 23.333vw;
   position: relative;
   box-shadow: 3px 3px 8px 1px grey;
   box-sizing: border-box;
@@ -71,11 +72,32 @@
 .stagingItem h3{
   position: absolute;
   top: 1%;
-  left: 4%;
+  left: 2%;
   color: white;
-  font-size: 2.5vw;
-  width: 50%;
-  text-align: center;
+  font-size: 2vw;
+  width: 40%;
+}
+
+.stagingItem h3 span{
+  position: relative;
+  color: white;
+}
+.stagingItem h3 span:after{
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-in;
+}
+/* .stagingItem img:hover ~ h3:after, .stagingItem h3:hover h3:after{
+  width: 100%;
+  right:0;
+} */
+.stagingImages a:hover > h3 span:after{
+  width: 100%;
 }
 
 @media screen and (max-width: 1023px){

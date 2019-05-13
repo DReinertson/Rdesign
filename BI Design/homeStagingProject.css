@@ -73,8 +73,11 @@
   height: auto;
   font-size: 2vw;
   user-select: none;
-  background: rgba(120,120,120,0.1);
+  /* background: rgba(120,120,120,0.1); */
   color: rgb(92,142,180);
+}
+.prev:hover, .next:hover{
+  background: rgba(120,120,120,0.1);
 }
 .prev, .next{
   /* bottom: -13.5%; */
