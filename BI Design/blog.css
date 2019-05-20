@@ -278,10 +278,13 @@ h2{
     font-size: 26px;
   }
 
+  .blogHeader h1{
+    font-size: 4.5vw;
+  }
   .blog{
     width: 100%;
   }
-  .paragraph p{
+  .paragraph p, .paragraph span{
     font-size: 3.5vw;
     width: 49%;
     line-height: 1.5;

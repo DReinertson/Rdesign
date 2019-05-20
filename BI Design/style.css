@@ -1,7 +1,13 @@
+@font-face{
+  font-family : Avenir;
+  src: url('./Avenir.ttc');
+}
+
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: Avenir;
   font-weight: 300;
   color: #333333;
   outline: none;
@@ -38,8 +44,14 @@ a{
   margin-top: 1%;
   line-height: 1.4;
 }
+.heading img{
+  width: 15vw;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
 .heading h1, .heading h3{
-  letter-spacing: 7px;
+  /* letter-spacing: 7px; */
+  letter-spacing: 5px;
 }
 .heading > h3{
   margin-bottom: 1%;
@@ -83,6 +95,7 @@ a{
 .banner{
   background-image: url('./images/collage/modRusNobordCoverSmall.jpg');
   background-position: center;
+  /* background-size: cover; */
   background-size: cover;
   background-repeat: no-repeat;
   width: 95vw;
@@ -329,7 +342,9 @@ form button, #mc-embedded-subscribe{
 
 @media screen and (max-width: 1023px){
 
-
+  .heading img{
+    width: 30vw;
+  }
   h1{
     font-size: 6vw;
   }
