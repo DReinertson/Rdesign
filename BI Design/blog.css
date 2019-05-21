@@ -227,6 +227,49 @@ h2{
 #beauty .paragraph7 p{
   width: 100%;
 }
+/*----------------End Beauty CSS-------------------*/
+/*----------------Grandma CSS--------------*/
+#grandma .paragraphImage img{
+  border: 25px solid white;
+}
+#grandma .paragraph1 p{
+  width: 45%;
+}
+#grandma .paragraph1 .paragraphImage{
+  display: flex;
+  justify-content: flex-end;
+}
+#grandma .paragraph1 .paragraphImage img{
+  align-self: center;
+  width: 90%;
+}
+#grandma .paragraph2 p, #grandma .paragraph3 p, #grandma .paragraph4 p, #grandma .paragraph6 p, #grandma .paragraph7 p{
+  width: 100%;
+}
+#grandmaHelen, #grandmaHoney{
+  width: 80%;
+  margin: 0 auto;
+}
+#grandmaHoney{
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+#grandmaHelen img, #grandmaHoney img{
+  border: 25px solid white;
+}
+#grandma .paragraph5 p{
+  width: 48%;
+  margin-left: auto;
+}
+#grandma .paragraph5 .paragraphImage{
+  align-self: center;
+}
+#grandma .paragraph5 img{
+  border: 25px solid white;
+}
+/*----------------End Grandma CSS-----------*/
+
 /*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
 @media screen and (max-width: 1023px){
   .blogContainer{
@@ -386,5 +429,30 @@ h2{
   .postDate{
     margin-bottom: 2%;
   }
+  /*----------------Grandma CSS--------------*/
+  #grandma .paragraph1 .paragraphImage img{
+    width: 100%;
+    object-position: 45% 0;
+  }
+  #grandma .paragraphImage img{
+    height: 85%;
+    object-fit: cover;
+    border: 10px solid white;
+  }
+  #grandmaHelen, #grandmaHoney{
+    width: 92vw;
+    height: 100%;
+  }
+  #grandma .paragraph5{
+  }
+  #grandma .paragraph5 .paragraphImage{
+    height: 70vw;
+    display: flex;
+    align-items: center;
+  }
+  #grandma .paragraph5 .paragraphImage img{
+    object-fit: contain;
+  }
+  /*----------------End Grandma CSS-----------*/
 
 }
