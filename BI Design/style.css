@@ -160,18 +160,22 @@ a{
   font-weight: 400;
   color: white;
 }
-.pictureNav h3:after{
+.pictureNavItem h3 span{
+  position: relative;
+  color: white;
+}
+.pictureNavItem h3 span:after{
   content: "";
   background-color: white;
-  height: 2px;
+  height: 3px;
   width: 0;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 0;
   transition: width 0.2s ease-in;
 }
 
-.pictureNavItem:hover > .pictureNav h3:after{
+.pictureNav a:hover > .pictureNavItem h3 span:after{
   width: 100%;
 }
 #airHead{
@@ -405,10 +409,11 @@ form button, #mc-embedded-subscribe{
     margin-top: 10%;
     justify-content: space-around;
     width: 80%;
+    background: green;
   }
   .nav li{
     height: 10%;
-    font-size: 4.5vw;
+    background: yellow;
   }
   .nav li a{
     font-weight: bold;
@@ -474,6 +479,9 @@ form button, #mc-embedded-subscribe{
   }
   .pictureNavItem{
     height: 100vw;
+  }
+  .pictureNav a:hover > .pictureNavItem h3 span:after{
+    width: 0;
   }
   .socialMedia a{
     font-size: 22px;
@@ -582,6 +590,10 @@ form button, #mc-embedded-subscribe{
     .heading{
       margin-top: 2%;
       margin-bottom: 2%;
+    }
+    .heading img{
+      width: 15%;
+      width: 15vw;
     }
     * .socialMedia a{
       font-size: 24px;

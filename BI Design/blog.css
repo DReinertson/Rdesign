@@ -268,7 +268,93 @@ h2{
 #grandma .paragraph5 img{
   border: 25px solid white;
 }
+
 /*----------------End Grandma CSS-----------*/
+/*----------------AirTime CSS-----------*/
+#airTime img{
+  border: 18px solid white;
+}
+#airTime .paragraph1 p{
+  width: 49%;
+}
+#airTime .paragraph2 p{
+  width: 100%;
+}
+#samShack{
+  width: 88%;
+  margin: 0 auto;
+}
+#airTime .paragraph3 p{
+  width: 100%;
+}
+#airTime .paragraph4 p{
+  margin-right: auto;
+  margin-left: 0;
+  width: 48%;
+}
+#airTime .paragraph6{
+}
+#airTime .paragraph6 img{
+  margin-left: 0;
+  margin-right: auto;
+}
+#airTime .paragraph6 p{
+  margin-left: auto;
+  line-height: 1.75;
+  align-self: center;
+}
+#airTime .paragraph7 p{
+  width: 100%;
+}
+#airTime .paragraph8 p{
+  margin-left: auto;
+  width: 49%;
+}
+#airTime #samAndCustomer{
+  /* width: 48%; */
+}
+#airTime .paragraph9 p{
+  width: 100%;
+}
+/*----------------End AirTime CSS-----------*/
+
+/*----------------ADD CSS--------------------*/
+#apartmentDwelling .paragraph2 p{
+  width: 100%;
+}
+#apartmentDwelling .paragraph3 .paragraphImage{
+  margin-left: auto;
+}
+#apartmentDwelling .paragraph3 img{
+  height: 100%;
+  object-fit: cover;
+}
+#apartmentDwelling .paragraph4 p{
+  width: 100%;
+}
+#apartmentDwelling3{
+  width: 88%;
+  margin: auto;
+}
+#apartmentDwelling3 img{
+  object-fit: cover;
+  height: 40vw;
+  object-position: 0 80%;
+}
+#collage{
+  width: 88%;
+  margin: auto;
+}
+#apartmentDwelling .paragraph6 p{
+  width: 100%;
+}
+#apartmentDwelling4{
+  margin-left: auto;
+}
+#apartmentDwelling .paragraph8 p{
+  width: 100%;
+}
+/*----------------End ADD CSS--------------------*/
 
 /*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
 @media screen and (max-width: 1023px){
@@ -451,8 +537,90 @@ h2{
     align-items: center;
   }
   #grandma .paragraph5 .paragraphImage img{
-    object-fit: contain;
   }
   /*----------------End Grandma CSS-----------*/
+  /*----------------AirTime CSS-----------*/
+  #airTime .paragraph1{
+    flex-direction: column-reverse;
+  }
 
+  #airTime .paragraph1 .paragraphImage{
+    width: 75%;
+    margin: 0 auto 10% auto;
+  }
+  #airTime .paragraph1 img{
+    object-fit: cover;
+  }
+  #airTime .paragraph1 p{
+    width: 100%;
+  }
+  #airTime .paragraph4 img{
+    height: 100%;
+    object-fit: cover;
+  }
+  #airTime .paragraph5 p{
+    width: 100%;
+  }
+  #airTime .paragraph6 p{
+    line-height: 1.6;
+  }
+  #airTime .paragraph6 img{
+    object-fit: cover;
+    align-self: center;
+    height: 80%;
+    margin-top: 15%;
+    object-position: left;
+  }
+  #airTime .paragraph8{
+    flex-direction: column;
+  }
+  #airTime .paragraph8 .paragraphImage{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+  #airTime .paragraph8 p{
+    width: 100%;
+  }
+  /*----------------End AirTime CSS-----------*/
+  /*----------------ADD CSS-----------*/
+  #apartmentDwelling .paragraph1 img{
+    height: 70%;
+    object-fit: cover;
+    margin-top: 35%;
+  }
+  #apartmentDwelling .paragraph3{
+    flex-direction: column-reverse;
+  }
+  #apartmentDwelling .paragraph3 .paragraphImage{
+    width: 100%;
+  }
+  #apartmentDwelling .paragraph3 img{
+    height: 70vw;
+    object-fit: cover;
+    object-position: 0 25%;
+  }
+  #apartmentDwelling .paragraph3 p{
+    margin-top: 5%;
+    width: 100%;
+  }
+  #apartmentDwelling3{
+    width: 92vw;
+  }
+  #apartmentDwelling3 img{
+    height: 80vw;
+  }
+  #collage{
+    width: 92vw;
+    margin: 10% auto;
+  }
+  #apartmentDwelling .paragraph5 p{
+    width: 100%;
+  }
+  #apartmentDwelling4 img{
+    height: 80%;
+    object-fit: cover;
+    margin-top: 25%;
+  }
+  /*----------------End ADD CSS-----------*/
 }

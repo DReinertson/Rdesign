@@ -83,22 +83,29 @@
 }
 .item img{
   width: 28vw;
-  height: 28vw;
-  object-fit: contain;
-  background: rgba(220,203,185,0.6);
+  height: 23vw;
+  object-fit: cover;
+  /* background: rgba(220,203,185,0.6); */
+}
+.circleMAH img{
+  height: 22vw;
 }
 .item h3{
   text-align: center;
   margin-top: 1%;
 }
+
 #imageLogo{
   position: absolute;
   background: none;
-  bottom: 26%;
+  bottom: 30%;
   right: 2%;
   width: 2vw;
   height: 2vw;
-
+  background: white;
+}
+.circleMAH #imageLogo{
+  bottom: 31%;
 }
 .rotate{
   transform: rotate(90deg);
@@ -174,15 +181,13 @@
     height: 100%;
     object-fit:cover;
   }
-  #imageLogo{
+  #imageLogo, .circleMAH #imageLogo{
     width: 7vw;
     height: 7vw;
     bottom: 11%;
     /* right: 5%; */
   }
-  #rectangleMAH img{
-    object-fit: contain;
-  }
+
 
   .large{
     font-size: 4.5vw;
