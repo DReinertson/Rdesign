@@ -1,0 +1,22 @@
+
+a{
+  text-decoration: none;
+}
+
+.projectsPage{
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+.projectsList{
+  flex-wrap: wrap;
+}
+.proj{
+  margin-top: 3.5vw;
+}
+
+@media only screen and (max-width: 750px){
+  .projectContainer{
+    display: flex;
+    flex-direction: column;
+  }
+}

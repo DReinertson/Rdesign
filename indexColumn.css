@@ -1,0 +1,299 @@
+*{
+  font-family: "Baskerville Old Face", Arial, Times;
+  text-transform: lowercase;
+  line-height: 1.6;
+  color: #4C4C4C;
+}
+p, p a{
+  font-size: 1.3vw;
+}
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vh;
+  text-align: center;
+  align-items: center;
+  height: 15vh;
+
+}
+
+.title h1{
+  margin: 0;
+}
+
+.title img{
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  padding-bottom: 3vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1vh 0;
+  width: 40%;
+  font-size: 3vh;
+  height: 4vh;
+}
+
+
+
+.container li{
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.social-media{
+  display: flex;
+}
+.social-media-item{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.navbar-item:hover{
+  border-bottom: 1px solid gray;
+}
+.homePage, .aboutPage, .booksPage, .blogPage, .contactPage{
+  width: 40%;
+  padding-top: 10vh;
+  min-height: 59vh;
+}
+
+.aboutPage, .contactPage{
+  padding-top: 5vh;
+  min-height: 64vh;
+}
+
+/*-----------HomePage----------*/
+
+/*-----------Latest----------*/
+.latest{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid gray;
+  font-size: 2vh;
+  margin: auto;
+}
+
+.latest img{
+  width: 25vh;
+  height: 37.5vh;
+}
+
+.latestInfo{
+  width: 100%;
+  text-align: center;
+
+
+}
+.latest a:hover{
+  border-bottom: 1px solid gray;
+}
+
+/*-----------End Latest----------*/
+
+/*-----------Author-------------*/
+.author{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 5vh;
+  padding-top: 10vh;
+  font-size: 2vh;
+  margin: auto;
+}
+
+.author-item{
+  width: 100%;
+  text-align: center;
+}
+
+.author img{
+  width: 25vh;
+  height: 25vh;
+  margin-bottom: 5vh;
+}
+
+.author a:hover{
+  border-bottom: 1px solid grey;
+}
+/*-------------End Author------------*/
+
+/*-------------Start AboutPage------------*/
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.aboutInfo{
+  width: 80%;
+  padding: 0;
+}
+.aboutInfo h1{
+  text-align: center;
+}
+.aboutContainer{
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+}
+
+.aboutPictures{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 100vw;
+  padding: 10vh 0;
+}
+.aboutContainer img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: .5s ease;
+  background-color: black;
+  color: gray;
+  word-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*-------------End AboutPage------------*/
+
+/*-------------Start BooksPage------------*/
+.booksInner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5vh;
+}
+.booksInner img{
+  width: 30vh;
+  height: 45vh;
+  padding-bottom: 5vh;
+}
+.booksInner p{
+  width: 80%;
+  text-align: center;
+}
+/*-------------End BooksPage------------*/
+
+/*-------------Start BlogPage------------*/
+.blogPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blogPage img{
+  width: 30vh;
+  height: 20vh;
+}
+
+.blog-post{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  min-height: 60vh;
+  margin: auto 0;
+}
+.blog-post p{
+  width: 80%;
+}
+
+/*-------------End BlogPage------------*/
+
+/*-------------Start ContactPage------------*/
+.contactPage{
+  display: flex;
+  justify-content: center;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 4vh;
+}
+
+.contactSocial{
+  text-align: center;
+  width: 60%;
+  margin-top: 10vh;
+}
+
+.contactPage a{
+  font-size: 5vh;
+}
+/*-------------End ContactPage------------*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkGrey;
+  height: 10vh;
+  width: 100%;
+}
+
+.footer a:hover{
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 750px){
+  p, p a{
+    font-size: 3vw;
+  }
+  .tab, .container{
+    width: 70%;
+  }
+  .latest{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .latest img{
+    width: 70%;
+    height: 90%;
+  }
+}
