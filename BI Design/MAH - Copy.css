@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.description{
+  /* width: 100%; */
+  width: 80vw;
+  margin: 2% auto;
+  font-size: 1.2vw;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  /* background: rgba(51, 51, 51, 0.1); */
+  position: relative;
+  padding: 2% 0;
+}
+.description img{
+  /* min-width: 32vw;
+  min-height: 32vw;
+  max-width: 35vw;
+  max-height: 35vw; */
+  width: 23vw;
+  height: 23vw;
+  /* margin-right: 10vw; */
+}
+
+.descText{
+  display: flex;
+  width: 40vw;
+  height: 23vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.descText p{
+  width: 90%;
+  font-size: 1.15vw;
+}
+.descCTA{
+  display: flex;
+  flex-direction: column;
+}
+.descCTA p{
+  align-self: center;
+}
+.descCTA a{
+  cursor: pointer;
+  font-weight: bold;
+}
+.descCTA a:hover{
+  border-bottom: 1px solid black;
+}
+.descCTA p:first-child{
+  margin-bottom: 3%;
+}
+.descCTA .socialMedia{
+  height: auto;
+  margin-top: 1%;
+  width: 90%;
+  align-self: center;
+}
+
+.retailers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vw;
+}
+.retailers *{
+  padding-bottom: 5%;
+}
+.retailerLogo{
+  display: flex;
+  width: 40vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.plumCap{
+  margin-top: 1vw;
+}
+.retailerLogo img{
+  height: 10vw;
+  /* border: 1px solid rgba(51, 51, 51, 0.1); */
+}
+.retailers a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.productTitle{
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.productTitle img{
+  width: 4vw;
+  height: 4vw;
+  margin-right: 1vw;
+}
+.products{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2% auto 20% auto;
+}
+
+.products:after{
+  content: "";
+  flex: 1 1 100%;
+  max-width: 30vw;
+}
+.sort{
+  width: 100%;
+  display: none;
+}
+
+.item{
+  width: 28vw;
+  padding-bottom: 5%;
+  position: relative;
+}
+.item img{
+  width: 28vw;
+  height: 23vw;
+  object-fit: cover;
+  /* background: rgba(220,203,185,0.6); */
+}
+.circleMAH img{
+  height: 22vw;
+}
+.item h3{
+  text-align: center;
+  margin-top: 1%;
+}
+
+#imageLogo{
+  position: absolute;
+  background: none;
+  bottom: 30%;
+  right: 2%;
+  width: 2vw;
+  height: 2vw;
+  background: white;
+}
+.circleMAH #imageLogo{
+  bottom: 31%;
+}
+.rotate{
+  transform: rotate(90deg);
+}
+.large{
+  font-size: 1.6vw;
+}
+.bold{
+  font-weight: bold;
+}
+.underline{
+  position: relative;
+  border: none;
+}
+.underline:after{
+  content: "";
+  color: black;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .1s ease-in;
+}
+.underline:hover:after{
+  width: 100%;
+  right: 0;
+}
+@media screen and (max-width: 1023px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .description{
+    min-height: 120vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  .description img{
+    width: 90%;
+    height: auto;
+    /* max-width: none;
+    max-height: none; */
+    margin: 0 auto;
+  }
+  .descText{
+    width: 90%;
+    height: auto;
+    max-height: none;
+    margin: 2% auto;
+    padding: 5% 0;
+  }
+  .descText p{
+    font-size: 3.5vw;
+    margin-bottom: 3%;
+  }
+
+  .descCTA .socialMedia a{
+    margin: 0;
+    margin-right: 0;
+    margin-right: 5% !important;
+    margin-top: 2%;
+    font-size: 28px;
+  }
+
+  .retailers{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .retailerLogo{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .retailerLogo img{
+    height: auto;
+    width: 50vw;
+  }
+
+  .products{
+    width: 100%;
+    flex-direction: column;
+  }
+  .productTitle h1{
+    font-size: 5vw;
+  }
+  .productTitle img{
+    margin-left: 5%;
+    width: 7vw;
+    height: 7vw;
+  }
+  .item{
+    width: 100%;
+    height: 100vw;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+  }
+  .item h3{
+    font-size: 4vw;
+  }
+  .item img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  #imageLogo, .circleMAH #imageLogo{
+    width: 7vw;
+    height: 7vw;
+    bottom: 11%;
+    /* right: 5%; */
+  }
+
+
+  .large{
+    font-size: 4.5vw;
+  }
+  .bold{
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 750px){
+
+  .description img{
+    width: 70%;
+    height: auto;
+  }
+  .socialMedia a{
+    font-size: 40px !important;
+  }
+
+  .retailerLogo img{
+    width: 40vw;
+  }
+  .retailerLogo a{
+    margin: 5% auto;
+  }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+  /* * h1{
+    font-size: 3.5vw;
+  }
+  * h2{
+    font-size: 3vw;
+  } */
+  * h3, p{
+    font-size: 1.2vw;
+  }
+  .descText p{
+    font-size: 1.25vw;
+  }
+  /* .heading{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  } */
+  .description{
+    /* justify-content: space-between; */
+  }
+  .descText{
+    height: 30vw;
+    width: 35vw;
+  }
+  .description img{
+    width: 30vw;
+    height: 30vw;
+  }
+  .retailers{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .retailers h2{
+    font-size: 2vw;
+  }

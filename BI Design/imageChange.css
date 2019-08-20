@@ -1,0 +1,386 @@
+.imageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vw;
+  /* margin: 0 auto; */
+  position: relative;
+  /* justify-content: center;
+  align-items: center; */
+  justify-content: space-between;
+  /* padding-bottom: 5%; */
+  margin-bottom: 5%;
+}
+.productLink{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.imageHolder{
+  height: 100%;
+  width: 100%;
+}
+.imageHolder img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.imageCaption{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+.imageCaption p{
+  padding: 2% 0;
+  font-size: 1vw;
+}
+.captionSizes{
+  margin-right: 23.5%;
+}
+.optionsSize{
+  margin-left: 10%;
+}
+
+.options{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2vw;
+}
+.choice{
+  content: "";
+  width: 1.5vw;
+  height: 1.5vw;
+  /* border-radius: 50%; */
+  background: black;
+  margin-right: 1vw;
+  opacity: 0.6;
+}
+
+/*All of the CSS needed to make each choice represent the shape of the product.
+i.e. The Square products have square icons, circle have circle icons, triangle triangle, etc.
+*/
+/* #square .choice{
+  border-radius: 0;
+}
+#rectangle .choice {
+  width: 2vw;
+  border-radius: 0;
+}
+#softSquare .choice{
+  border-radius: 25%;
+}
+#triangle .choice{
+  width: 0;
+  height: 0;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-bottom: 2vw solid transparent;
+  border-radius: 0;
+  background: none;
+  z-index: 3;
+  position: relative;
+}
+.inner{
+  position: relative;
+  width: 0;
+  height: 0;
+  left: -.75vw;
+  bottom: -.35vw;
+  z-index: -2;
+  border-left: .75vw solid transparent;
+  border-right: .75vw solid transparent;
+}
+#triangle .white .inner{
+  border-bottom: 1.5vw solid rgb(240,240,240);
+}
+#triangle .darkGray .inner{
+  border-bottom: 1.5vw solid darkGray;
+}
+#triangle .silver .inner{
+  border-bottom: 1.5vw solid silver;
+  shadow:
+}
+#triangle .gold .inner{
+  border-bottom: 1.5vw solid gold;
+}
+#triangle .orange .inner{
+  border-bottom: 1.5vw solid orange;
+}
+#triangle .teal .inner{
+  border-bottom: 1.5vw solid teal;
+} */
+.noImage{
+  background: '';
+  position: absolute;
+  height: 15vw;
+  top: 15%;
+  /* Center the no image image. */
+  /* left: 25%;
+  transform: translate(-25%,); */
+  left: 50%;
+  transform: translate(-50%);
+  /* top: 25%; */
+  /* transform : translate(-50%, -25%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.6vw solid black;
+}
+#circle .noImage{
+  width: 15vw;
+  border-radius: 50%;
+}
+#square .noImage{
+  width: 15vw;
+}
+#rectangle .noImage{
+  width: 20vw;
+}
+#softSquare .noImage{
+  width: 15vw;
+  border-radius: 25%;
+}
+#triangle .noImage{
+  width: 0;
+  height: 0;
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 15vw solid;
+}
+#triangle .noImage h3{
+  width: 10vw;
+  height: 8vw;
+  position: absolute;
+  top: 7vw;
+  text-align: center;
+}
+#triangle .imageContainer .imageSection .noImage h3{
+  width: 10vw;
+  height: 8vw;
+  position: absolute;
+  top: 7vw;
+  text-align: center;
+}
+#triangle .noImageInner{
+  width: 0;
+  height: 0;
+  background: none;
+  border-radius 0;
+  border-left: 8.667vw solid transparent;
+  border-right: 8.667vw solid transparent;
+  border-bottom: 13vw solid white;
+  position: absolute;
+  top: 1.3vw;
+}
+.white{
+  background: rgb(230,230,230);
+  color: rgb(230,230,230);
+
+}
+.darkGray{
+  background:darkGray;
+}
+.silver{
+  background: silver;
+}
+.gold{
+  background: gold;
+}
+.orange{
+  background: orange;
+}
+.teal{
+  background: teal;
+}
+.navy{
+  background: navy;
+}
+.border{
+  border-bottom-color: black !important;
+}
+.choice:hover{
+  opacity: 1;
+}
+.currentColor{
+  border: 3px solid black;
+}
+.hide{
+  opacity: 0;
+}
+.white, .silver, .gold, .orange, .darkGray{
+  color: black;
+}
+.spacer{
+  width: 30vw;
+  height: 30vw;
+  background: green;
+  position: relative;
+  top: -15%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px){
+
+  .productTitle h1 {
+    font-size: 7vw;
+  }
+  .imageContainer{
+    width: 90vw;
+    /* height: 100vw; */
+    height: auto;
+    margin: 4% auto;
+  }
+  .imageContainer img{
+    height: 80vw;
+  }
+  .imageCaption p{
+    font-size: 3.5vw;
+    margin: 0;
+  }
+  .choice{
+    width: 6vw;
+    height: 6vw;
+    margin-right: 2vw;
+  }
+  /* #rectangle .choice{
+    width: 6vw;
+    height: 4.5vw;
+  }
+  #triangle .choice{
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-bottom: 6vw solid transparent;
+  }
+  .inner{
+    border-left: 2.25vw solid transparent;
+    border-right: 2.25vw solid transparent;
+    left: -2.25vw;
+    bottom: -1vw;
+  }
+  #triangle .white .inner{
+    border-bottom: 4.5vw solid rgb(240,240,240);
+  }
+  #triangle .darkGray .inner{
+    border-bottom: 4.5vw solid darkGray;
+  }
+  #triangle .silver .inner{
+    border-bottom: 4.5vw solid silver;
+    shadow:
+  }
+  #triangle .gold .inner{
+    border-bottom: 4.5vw solid gold;
+  }
+  #triangle .orange .inner{
+    border-bottom: 4.5vw solid orange;
+  }
+  #triangle .teal .inner{
+    border-bottom: 4.5vw solid teal;
+  }
+  #triangle .navy .inner{
+    border-bottom: 4.5vw solid navy;
+  } */
+  .options{
+    height: auto;
+  }
+  .noImage{
+    height: 50vw;
+    border-width: 1.5vw;
+  }
+  .noImage h3{
+    text-align: center;
+  }
+
+  #circle .noImage{
+    width: 50vw;
+    border-radius: 50%;
+  }
+  #square .noImage{
+    width: 50vw;
+  }
+  #rectangle .noImage{
+    width: 66vw;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #softSquare .noImage{
+    width: 50vw;
+    border-radius: 25%;
+  }
+  #triangle .noImage{
+    width: 0;
+    height: 0;
+    background: none;
+    border-radius: 0;
+    border-left: 33vw solid transparent;
+    border-right: 33vw solid transparent;
+    border-bottom: 50vw solid;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #triangle .noImage h3{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    top: 25vw;
+    text-align: center;
+  }
+  #triangle .noImageInner{
+    top: 3vw;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-bottom: 45vw solid white;
+  }
+
+
+  .spacer{
+    width: 100%;
+    height: 80vw;
+  }
+  .optionsSize{
+    font-size: 3.5vw;
+    position: absolute;
+    /* bottom: -5px; */
+    bottom: 11%;
+    margin: 0;
+    padding: 0;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 13vw;
+    width: 20vw;
+  }
+  .optionsDimensions{
+    margin-top: 10%;
+    font-size: 3vw;
+    line-height: 1.2;
+  }
+  .optionTwo{
+    display: block;
+  }
+
+
+}
+@media screen and (max-width: 1023px) and (min-width: 750px){
+
+  #circleImage{
+
+  }
+
+
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px){
+
+}
+
+@media screen and (max-width: 750px){
+
+}

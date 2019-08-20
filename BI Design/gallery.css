@@ -1,0 +1,57 @@
+.gallery{
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: 0 auto;
+}
+.galleryText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 4%;
+}
+.title{
+  margin-bottom: 5%;
+  display: flex;
+  width: 65vw;
+  justify-content: center;
+  align-items: flex-end;
+}
+.title h1{
+}
+.collage{
+  width: 95vw;
+  padding: 15% 0;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.title img{
+  width: 8vw;
+  height: auto;
+  margin-left: 3%;
+}
+.galleryText p{
+  width: 65%;
+  /* text-align: center; */
+  margin-bottom: 4%;
+  font-size: 1.2vw;
+}
+.galleryText h2{
+  margin-bottom: 1%;
+}
+@media screen and (max-width: 1023px){
+
+
+}
+@media screen and (max-width: 1023px) and (min-width: 750px){
+
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px){
+
+}
+
+@media screen and (max-width: 750px){
+
+}
