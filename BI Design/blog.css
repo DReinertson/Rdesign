@@ -360,6 +360,70 @@ h2{
   width: 100%;
 }
 /*----------------End ADD CSS--------------------*/
+/*----------------Start Mercury CSS--------------------*/
+#mercury .paragraphImage img{
+  border: none;
+  box-shadow: none;
+}
+#mercury .paragraph1 p{
+  width: 100%;
+}
+#mercury .paragraph2{
+  justify-content: space-between;
+}
+#mercury .paragraph2 p{
+  margin-left: 0;
+}
+#mercury .paragraph3 p{
+  width: 100%;
+}
+#mercury .blogSection > .paragraphImage{
+  width: 88%;
+  margin: 0 auto;
+}
+#mercury .blogQuote{
+  margin-top: 5%;
+}
+#mercury .paragraph4 p{
+  width: 100%;
+}
+#mercury .paragraph5{
+  justify-content: space-between;
+  align-items: center;
+}
+#mercury .paragraph5 p{
+  width: 50%;
+}
+#mercury .paragraph6 p{
+  width: 100%;
+}
+#mercury .paragraph7 p{
+  width: 100%;
+}
+#mercury .paragraph8{
+  justify-content: space-between;
+  align-items: center;
+}
+#mercury .paragraph8 .paragraphImage{
+  width: 80%;
+}
+#mercury .paragraph8 p{
+  width: 50%;
+}
+#mercury .paragraph9 p{
+  width: 100%;
+}
+#mercury .paragraphImageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-end;
+}
+#mercury .paragraph10 p{
+  width: 100%;
+}
+
+/*----------------End Mercury CSS--------------------*/
 
 /*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
 @media screen and (max-width: 1023px){
@@ -628,4 +692,106 @@ h2{
     margin-top: 25%;
   }
   /*----------------End ADD CSS-----------*/
+  /*----------------Start Mercury CSS----------------*/
+  #mercury{
+    width: 90vw;
+    margin: 0 auto;
+    border-left: none;
+    border-right: none;
+  }
+  #mercury .paragraph{
+    margin: 4% 2%;
+  }
+  #mercury .paragraph1 p{
+    width: 100%;
+  }
+  #mercury .paragraph2{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #mercury .paragraph2 p{
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+  }
+  #mercury .paragraph2 .paragraphImage{
+    width: 100%;
+    margin: 4% auto 2% auto;
+  }
+  #mercury .paragraph3 p{
+    width: 100%;
+  }
+  #mercury .blogSection > .paragraphImage{
+    /* width: 88%; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  #mercury .blogQuote{
+    margin-top: 5%;
+    width: 100vw;
+    position: relative;
+    left: -5vw;
+    padding: 10% 0;
+  }
+  #mercury .blogQuote h2{
+    font-size: 5.5vw;
+  }
+  #mercury .paragraph4 p{
+    width: 100%;
+  }
+  #mercury .paragraph5{
+    flex-direction: column;
+  }
+  #mercury .paragraph5 p{
+    width: 100%;
+  }
+  #mercury .paragraph5 .paragraphImage{
+    width: 100%;
+    margin: 8% auto 2% auto;
+  }
+  #mercury .paragraph6 p{
+    width: 100%;
+  }
+  #mercury .paragraph7 p{
+    width: 100%;
+  }
+  #mercury .paragraph8{
+    flex-direction: column;
+  }
+  #mercury .paragraph8 .paragraphImage{
+    width: 80%;
+  }
+  #mercury .paragraph8 p{
+    width: 100%;
+  }
+  #mercury .paragraph9 p{
+    width: 100%;
+  }
+  #mercury .paragraphImageContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8% 0 2% 0;
+   }
+  #mercury .paragraphImageContainer img{
+    height: 50vw;
+    width: auto;
+  }
+  #mercury .paragraph10{
+    flex-direction: column;
+    margin-bottom: 12%;
+  }
+  #mercury .paragraph10 p{
+    width: 100%;
+  }
+  #mercury .paragraph10:before{
+    content:"";
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    height: 1px;
+    margin: 10% 0 14% 0;
+  }
+  /*----------------End Mercury CSS----------------*/
 }
