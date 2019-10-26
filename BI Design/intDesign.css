@@ -88,13 +88,45 @@
 .services a:hover{
    border-bottom: 1px solid gray;
 }
+
+#edgecombe{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#edgecombe h1{
+  position: absolute;
+  /* background: rgba(51, 51, 51, 0.5); */
+  bottom: 2%;
+  left: 2%;
+  color: white;
+}
+#edgecombeText:after{
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  transition: width 0.2s ease-in;
+}
+#edgecombe:hover > #edgecombeText:after{
+  width: 100%;
+}
+
 @media screen and (max-width: 1023px){
   .slideshow{
     width: 100%;
     height: 90vw;
   }
   .slide{
+    width: 90%;
+  }
+  #edgecombe{
     width: 100%;
+    height: auto;
+    align-self: center;
   }
   .slide p{
     left: 1%;

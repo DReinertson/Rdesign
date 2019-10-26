@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 30vw;
-  height: 30vw;
+  /* height: 30vw; */
   /* margin: 0 auto; */
   position: relative;
   /* justify-content: center;
@@ -12,7 +12,8 @@
   margin-bottom: 5%;
 }
 .productLink{
-  height: 100%;
+  /* height: 100%; */
+  height: 28vw;
   width: 100%;
   position: relative;
 }
@@ -30,10 +31,13 @@
   width: 100%;
   position: relative;
   justify-content: space-between;
+  margin: 2% auto 4%;
+
 }
 .imageCaption p{
-  padding: 2% 0;
+  /* padding: 1vw 0; */
   font-size: 1vw;
+  height: auto;
 }
 .captionSizes{
   margin-right: 23.5%;
@@ -47,16 +51,23 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 2vw;
+  /* height: 2vw; */
 }
 .choice{
   content: "";
-  width: 1.5vw;
-  height: 1.5vw;
+  /* width: 1.5vw;
+  height: 1.5vw; */
+  width: 2.8vw;
+  height: 2.8vw;
   /* border-radius: 50%; */
   background: black;
   margin-right: 1vw;
   opacity: 0.6;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8vw;
 }
 
 /*All of the CSS needed to make each choice represent the shape of the product.
@@ -237,6 +248,9 @@ i.e. The Square products have square icons, circle have circle icons, triangle t
     height: auto;
     margin: 4% auto;
   }
+  .productLink{
+    height: auto;
+  }
   .imageContainer img{
     height: 80vw;
   }
@@ -354,11 +368,11 @@ i.e. The Square products have square icons, circle have circle icons, triangle t
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    height: 13vw;
+    height: 15vw;
     width: 20vw;
   }
   .optionsDimensions{
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 3vw;
     line-height: 1.2;
   }
