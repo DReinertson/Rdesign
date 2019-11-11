@@ -65,6 +65,52 @@ let options = [
     caption : 'Here is the caption for image 3',
     color: 'Navy'
   },
+  //Start Nine Circle objects
+  {
+    id : 'circleWhiteNine',
+    src : './images/products/nineRound/nineRoundWhite.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'White'
+  },
+  {
+    id : 'circleDarkGrayNine',
+    // src : './images/products/nineRound/nineRoundMetal.jpg',
+    src : '',
+    caption : 'Here is the caption for image 2',
+    color: "Gun Metal"
+  },
+  {
+    id : 'circleSilverNine' ,
+    // src : './images/products/nineRound/nineRoundSilver.jpg',
+    src : '',
+    caption : 'Here is the caption for image 3',
+    color: 'Silver'
+  },
+  {
+    id : 'circleGoldNine',
+    // src : './images/products/nineRound/nineRoundGold.jpg',
+    src : '',
+    caption : 'Here is the caption for image 4',
+    color: 'Gold'
+  },
+  {
+    id : 'circleOrangeNine' ,
+    src : './images/products/nineRound/nineRoundOrange.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Orange'
+  },
+  {
+    id : 'circleTealNine' ,
+    src : './images/products/nineRound/nineRoundTeal.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Teal'
+  },
+  {
+    id : 'circleNavyNine' ,
+    src : './images/products/nineRound/nineRoundNavy.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Navy'
+  },
 //Start of Square objects
 //For square planters
   {
@@ -109,17 +155,64 @@ let options = [
     caption : 'Here is the caption for image 3',
     color: 'Navy'
   },
+  //Start Nine Square objects
+  {
+    id : 'squareWhiteNine' ,
+    src : './images/products/nineSquare/nineSquareWhite.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'White'
+  },
+  {
+    id : 'squareDarkGrayNine',
+    // src : './images/products/nineSquare/nineSquareMetal.jpg',
+    src:"",
+    caption : 'Here is the caption for desk image',
+    color: 'Gun Metal'
+  },
+  {
+    id : 'squareSilverNine',
+    // src : './images/products/nineSquare/nineSquareSilver.jpg',
+    src:"",
+    caption : 'Here is the caption for desk image',
+    color: 'Silver'
+  },
+  {
+    id : 'squareGoldNine',
+    // src : './images/products/nineSquare/nineSquareGold.jpg',
+    src:"",
+    caption : 'Here is the caption for desk image',
+    color: 'Gold'
+  },
+  {
+    id : 'squareOrangeNine',
+    src : './images/products/nineSquare/nineSquareOrange.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Orange'
+  },
+  {
+    id : 'squareTealNine',
+    // src : './images/products/nineSquare/nineSquareTeal.jpg',
+    src:"",
+    caption : 'Here is the caption for desk image',
+    color: 'Teal'
+  },
+  {
+    id : 'squareNavyNine' ,
+    src : './images/products/nineSquare/nineSquareNavy.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Navy'
+  },
   //Start Rectangle objects
   //For Rectangle Content
   {
     id : 'rectangleWhite',
-    src : './images/MAH/MAHRectangle1.jpeg',
+    src : '',
     caption : 'Here is the caption for desk image',
     color: 'White'
   },
   {
     id : 'rectangleDarkGray',
-    src : './images/MAH/MAHRectangle2.jpeg',
+    src : '',
     caption : 'Here is the caption for desk image',
     color: 'Gun Metal'
   },
@@ -246,6 +339,7 @@ let options = [
 //Takes the button clicked, adds border around that button to show that it's the current color, changes photo above and if there is no photo attached to the object (see above), then it hides the img and show's the image replacement of shape/color with text that reads image not available
 function imageChange(choice, container) {
   let obj = options.find(o => o.id === choice.id)
+  $("#" + container.id).find(".noImage").removeClass('silverBorder whiteBorder goldBorder orangeBorder darkGrayBorder tealBorder navyBorder');
   //changes image src to load image, can change text to represent what color it is.
   // $('#' + container.id + '> img').attr('src',obj.src);
   console.log($('#' + container.id + '>.productLink>.imageHolder> img').attr('src',obj.src));
@@ -264,8 +358,13 @@ function imageChange(choice, container) {
 
   //Either hide img and show noImage div or show img and hide noImage.
   if(obj.src === ''){
-    console.log('src = blank');
-    $("#" + container.id).find('.noImage').css('border-color', obj.color.replace(' ', ''));
+    let border = $("#" + choice.id).attr('class').split(' ')[1] + 'Border';
+    $("#" + container.id).find('.noImage').addClass(border);
+    // $("#" + container.id).find('.noImage').css('border-color', obj.color.replace(' ', ''));
+    // if (obj.color === 'Gun Metal'){
+    //   // console.log('in gun metal');
+    //   $("#" + container.id).find('.noImage').css('border-color', 'RGB(52,53,58)');
+    // }
     // $('#' + container.id + '>.noImage').removeClass('hide');
     // $('#' + container.id + '>img').addClass('hide');
     $('#' + container.id + '>.productLink>.imageHolder>.noImage').removeClass('hide');
@@ -313,3 +412,75 @@ $('.choice').on('mouseover', function(){
   }
   // $(this).html('');
 })
+
+//Gallery, show larger images
+
+$(document).keyup(function(e){
+  if(e.key === 'Escape'){
+    $('#galleryOverlay').fadeOut();
+    $('body').css('overflow', 'auto');
+  }
+});
+
+$('#galleryOverlay').hide();
+if($(document).width() > 1023){
+    $("#galleryImages img").on('click', function(){
+      $('#galleryOverlay').fadeIn();
+      $("#galleryOverlayImage").attr('src', this.src);
+      // console.log($("#galleryOverlayImage").src;
+      $('body').css('overflow', 'hidden');
+      if(this.width > this.height){
+        $('#galleryOverlayImage').addClass('changeWidth');
+      }
+      else{
+        $('#galleryOverlayImage').removeClass('changeWidth');
+      }
+    });
+
+    $('#close').on('click', function(){
+      $('#galleryOverlay').fadeOut();
+      $('body').css('overflow', 'auto');
+    });
+  };
+
+  //Fit height of image to previous or next images
+  let imgBefore = $('#fitBefore').prev();
+  let imgAfter = $('#fitAfter').next();
+
+  function resize(){
+    let imageHeightBefore = imgBefore[0].height
+    $('#fitBefore').height(imageHeightBefore);
+    let imageHeightAfter = imgAfter[0].height
+    $('#fitAfter').height(imageHeightAfter);
+  }
+
+  //Change image size on resizing of window.
+  $(window).on('resize', function(){
+    let timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(resize, 100);
+  });
+
+  
+
+  //Match image size to image before tagged image
+  $(imgBefore).on('load', function(){
+    let imageHeightBefore = imgBefore[0].height
+    $('#fitBefore').height(imageHeightBefore);
+  });
+
+  //Match image size to image after tagged image
+  $(imgAfter).on('load',function(){
+    console.log(imgAfter[0]);
+    let imageHeightAfter = imgAfter[0].height
+    console.log(imageHeightAfter);
+    $('#fitAfter').height(imageHeightAfter);
+  })
+
+
+  // $(document).ready(function(){
+  //
+  //   document.getElementById('fitBefore').height = imageHeightBefore
+  //
+  //   document.getElementById('fitAfter').height = imageHeightAfter
+  // })

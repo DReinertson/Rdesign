@@ -30,10 +30,9 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  color: rgba(51, 51, 51, 0.3);
   /* color: white; */
   font-weight: bold;
-  font-size: 52px;
+  font-size: 32px;
   user-select: none;
   /* background: rgba(0,0,0,0.3); */
 }
@@ -115,6 +114,27 @@
 #edgecombe:hover > #edgecombeText:after{
   width: 100%;
 }
+#projects h3{
+  background: rgba(0,0,0,0.3);
+  padding: 0 2%;
+}
+#themesService h3{
+  background: rgba(0,0,0,0.3);
+}
+#projects h3:after{
+  content : '';
+  background-color: white;
+  height: 3px;
+  width: 0%;
+  bottom: 10%;
+  left: 6%;
+  position: absolute;
+  transition: width 0.2s ease-in;
+}
+#projects a:hover > h3:after{
+  width: 88%;
+}
+
 
 @media screen and (max-width: 1023px){
   .slideshow{
@@ -157,32 +177,5 @@
 
 }
 @media screen and (max-width: 1024px) and (min-width: 750px){
-
-}
-@media screen and (max-width: 1366px) and (min-width: 1024px){
-  * h1{
-    font-size: 3.5vw;
-  }
-  * h2{
-    font-size: 2.5vw;
-  }
-  * h3, li, p{
-    font-size: 1.2vw;
-  }
-  .slideshow{
-    width: 70%;
-    height: 42vw;
-    margin: 4% auto;
-  }
-  .prev, .next{
-    color: rgba(51, 51, 51, 0.3);
-  }
-  /* .paragraph {
-    width: 70%;
-  }
-  .paragraph p{
-    width: 90%;
-    margin: 0 auto;
-  } */
 
 }

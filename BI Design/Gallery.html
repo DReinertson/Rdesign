@@ -13,6 +13,14 @@
 </head>
 
 <body>
+  <div class = 'galleryOverlay' id = galleryOverlay>
+    <div id = 'galleryImage'>
+      <img src = '' class = 'galleryOverlayImage' id = 'galleryOverlayImage'>
+    </div>
+    <span class = 'close' id = 'close'>X</span>
+    <!-- <h2 class = 'imageName'>Text</h2> -->
+  </div>
+
   <div class = 'heading' id = 'heading'>
     <!-- <h1><a href = 'https://www.denisebidesign.com'>BI Design</a></h1> -->
     <a href = 'https://www.denisebidesign.com'>
@@ -26,7 +34,7 @@
     <ul>
       <li class = 'navItem' id = 'interiorDesign'> <a href = 'Interior_Design_Services'>Interior Design Services</a></li>
       <li class = 'navItem' id = 'homeStaging'> <a href = 'Home_Staging'>Home Staging</a></li>
-      <li class = 'navItem current' id = 'MAH'> <a href = ''>Modern Air Head Products</a></li>
+      <li class = 'navItem current' id = 'MAH'> <a href = 'MoAH'>Modern Air Head Products</a></li>
       <li class = 'navItem' id = 'Clients'> <a href = 'Clients'>Clients</a></li>
       <li class = 'navItem' id = 'Blog'> <a href = 'Blog'>Blog</a></li>
       <li class = 'navItem' id = 'About'> <a href = 'About'>About Denise</a></li>
@@ -36,11 +44,68 @@
 
   <div class = 'gallery'>
 
-    <div class = 'galleryText'>
+    <div class = 'title'>
+      <h1>
+        Modern Air Head Gallery
+      </h1>
+      <img src = './images/Logo/ModernAirHeadFinalCrop.jpg'>
+    </div>
 
-      <!-- <div class = 'collage'>
-        have collage of images here as an intro to the gallery?
+    <div class = 'hints' id = 'hints'>
+      <!-- <div class = 'hintsText' id = 'hintsVerbiage'>
+        <h2>
+          What's so cool about MoAH is that the possibilities for creating your unique wallscape are pretty much, endless!  The Gallery shows a few ideas to get you going.
+        </h2>
       </div> -->
+      <div class = 'hintsText' id = 'hintsVideo'>
+        <video src = './images/gallery/AirheadVideo.mp4' type = 'video/mp4' controls playsinline>
+          <!-- <source src = './images/gallery/AirheadVideo.mp4' type = 'video/mp4'> -->
+        </video>
+      </div>
+      <div class = 'hintsText' id = 'hints'>
+        <h2>
+          Helpful Hanging Tips We've Learned Along the Way
+        </h2>
+        <p>
+          <br>
+          Measure your wall space (width and height). Lay out  planters in your desired pattern on the floor. Mark all nailholes on the wall with a pencil before you put your first nail in.  Remember to take into account the size of the planters as well as the size of the spaces in between:  size of planters + size of spaces = total  design area.
+          <br><br>
+          Alternating circles and squares are easier to hang than trying to hang squares only.  You can hang all squares but your measurements have to be spot on!
+          <br><br>
+          Three to four inch spacing between  12" planters works nicely. Two to three inch spacing between 9" planters.
+        </p>
+      </div>
+    </div>
+
+    <div class = 'galleryImages' id = 'galleryImages'>
+      <img class = '' src = './images/gallery/colorCircles.jpg'>
+      <img class = '' src = './images/gallery/nineSquares.jpg'>
+      <img class = '' src = './images/gallery/threeTriangles.jpg'>
+      <img class = '' src = './images/gallery/fourSilver.jpg'>
+      <img class = '' src = './images/gallery/fourSilver2.jpg'>
+      <img class = '' src = './images/gallery/silverGold.jpg'>
+      <img class = '' src = './images/gallery/silverSquares.jpg'>
+      <img class = '' src = './images/gallery/silverWhite.jpg'>
+      <img class = 'fit' id = 'fitBefore' src = './images/gallery/whiteCircles.jpg'>
+      <img class = 'fit' id = 'fitAfter'src = './images/gallery/rectangle.jpg'>
+      <img class = '' src = './images/gallery/circleWall.jpg'>
+    </div>
+
+    <!-- <div class = 'galleryText'>
+      <p>
+        What's so cool about MoAH is that the possibilities for creating your unique wallscape are pretty much, endless!  The Gallery shows a few ideas to get you going.
+      </p>
+      <h2>
+        Helpful hanging hints we've learned along the way:
+      </h2>
+      <p>
+        Measure your wall space (width and height). Lay out  planters in your desired pattern on the floor. Mark all nailholes on the wall with a pencil before you put your fist nail in.  Remember to take into account the size of the planters as well as the size of the spaces in between:  size of planters + size of spaces = total  design area<br><br>
+        Alternating circles and squares are easier to hang than trying to hang squares only.  You can hang all squares but your measurements have to be spot on!<br><br>
+        Three - four inch spacing between  12" planters works nicely. Two - three inch spacing between 9" planters.
+      </p>
+    </div> -->
+
+    <!-- <div class = 'galleryText'>
       <p>
         What's so cool about MoAH is that the possibilities for creating your unique wallscape are pretty much, endless!  The Gallery shows a few ideas to get you going.
       </p>
@@ -60,10 +125,9 @@
         <img src = './images/Logo/ModernAirHeadFinalCrop.jpg'>
       </div>
 
-    </div>
+    </div> -->
 
-    <div class = 'galleryImages'>
-    </div>
+
   </div>
 
 

@@ -1,0 +1,120 @@
+/*Display | margins | padding*/
+.fullWidth{
+  width: 100%;
+}
+.halfWidth{
+  width: 50%;
+}
+.fullHeight{
+  height: 100%;
+}
+.serviceHeight{
+  height: 33.333vw;
+}
+
+.matchingWidth{
+  width: 53%;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.justifyCenter{
+  justify-content: center;
+}
+.justifySpaceBetween{
+  justify-content: space-between;
+}
+.justifySpaceAround{
+  justify-content: space-around;
+}
+.justifyEnd{
+  justify-content: flex-end;
+}
+.alignCenter{
+  align-items: center;
+}
+.alignEnd{
+  align-items: flex-end;
+}
+.centerDiv{
+  margin-left: auto;
+  margin-right: auto;
+}
+.fourVerticalMargin{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.twoVerticalMargin{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.fourTopMargin{
+  margin-top: 4%;
+}
+.fourBottomMargin{
+  margin-bottom: 4%;
+}
+.twoTopMargin{
+  margin-top: 2%;
+}
+.twoBottomMargin{
+  margin-bottom: 2%;
+}
+.fourVerticalPadding{
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.twoVerticalPadding{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.zeroAuto{
+  margin: 0 auto;
+}
+.zeroMargin{
+  margin: 0;
+}
+.zeroPadding{
+  padding: 0;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fitCover{
+  object-fit: cover;
+}
+
+/*End Display | margins | padding*/
+
+/*Font size*/
+.header1{
+  font-size: 4.5vw;
+}
+.header2{
+  font-size: 2.5vw;
+}
+.header3{
+  font-size: 1.5vw;
+}
+.textSize{
+  font-size: 1vw
+}
+.textCenter{
+  text-align: center;
+}
+.white{
+  color: white;
+}
+/*End font and background color*/
