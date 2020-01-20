@@ -3,6 +3,7 @@
 
 <head>
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './reformat.css'>
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <meta name="twitter:card" content="summary"></meta>
   <meta name="twitter:image" content="https://www.denisebidesign.com/images/Logo/Icon.png">
@@ -20,11 +21,11 @@
 </head>
 
 <body>
+
   <div class = 'heading' id = 'heading'>
     <a href = 'https://www.denisebidesign.com'>
       <img src = './images/Logo/BIDesign.png' alt = 'Head Title BiDesign'>
     </a>
-    <!-- <h3>Bainbridge Island | WA</h3> -->
     <h3 class = ''>Denise Stoughton | Designer</h3>
   </div>
     <i class = 'fa fa-bars' style = 'font-size:24px'></i>
@@ -39,45 +40,73 @@
     </ul>
   </div>
 
-  <div class = 'banner' id = 'banner'>
-  </div>
-
-  <div class = 'quote' id = 'quote'>
-    <h2>&ldquo;So that is the design process or the creative process. Start with a problem, forget the problem, the problem reveals itself or the solution reveals itself and then you reevaulate it. This is what you are doing all the time.&rdquo;
-      <span>&ndash;Paul Rand</span></h2>
-  </div>
 
 
 
-  <div class = 'pictureNav' id = pictureNav>
-    <a href = 'MoAH'>
-      <div class = 'pictureNavItem' id = 'airHead'>
-        <img src = './images/MAH/airHeadLogo.jpg' alt = 'Modern Air Head Collection'>
-        <h3><span>Modern AirHead Collection</span></h3>
-      </div>
+  <section class = 'fullWidth flexRow justifyCenter relative mobileColumn mobileFullWidth mobileCenterDiv'>
+    <section class = 'introImage fortyWidth fourRightMargin mobileThreeQuarters mobileCenterDiv'>
+      <img src = './images/gallery/colorCirclesEdit.jpg' class = 'fullWidth'>
+    </section>
+    <section class = 'flexColumn fortyWidth fourTopMargin mobileFullWidth' id = 'bannerText'>
+      <h2 class = 'header1 mobileFullWidth mobileHide'>
+        Interior Design Services
+      </h2>
+      <h2 class = 'header1 mobileFullWidth mobileShow'>
+        Interior Design Services &
+      </h2>
+      <h2 class = 'header1 selfCenter mobileFullWidth mobileHide'>
+        And
+      </h2>
+      <h2 class = 'header1 textEnd mobileFullWidth'>
+        Modern Airhead Products
+      </h2>
+      <a href = 'MoAH' class = 'flexRow selfCenter autoMarginTop fifteenBottomMargin' id = 'mahLink'>
+        <h2 class = 'header2 textCenter'>Modern Airhead Product Line</h2>
+      </a>
+    </section>
+  </section>
+
+  <section class = 'fullWidth flexRow relative' id = 'introInt'>
+    <section class = 'introImage fullWidth fullHeight'>
+      <img src = './images/edgecombe/023large.jpg' class = 'threeQuarters fitCover fullHeight mobileOneHundred'>
+    </section>
+    <section class = 'flexColumn alignCenter justifySpaceAround fullHeight absolute' id = 'columnButtons'>
+      <a href = 'Interior_Design_Projects'>
+        <h2 class = 'header2 fullWidth textCenter'>Interior Design</h2>
+      </a>
+      <a href = 'Home_Staging'>
+        <h2 class = 'header2 fullWidth textCenter'>Home Staging</h2>
+      </a>
+      <a href = 'Room_Makeover'>
+        <h2 class = 'header2 fullWidth textCenter'>Room Makeover</h2>
+      </a>
+      <a href = 'Ideas_And_Themes'>
+        <h2 class = 'header2 fullWidth textCenter'>Ideas & Themes</h2>
+      </a>
+    </section>
+  </section>
+
+  <!-- <div class = 'banner' id = 'banner'>
+  </div> -->
+
+  <section class = 'pictureColumns flexRow justifySpaceAround fullWidth fourVerticalMargin'>
+
+    <a href = 'About' class = 'thirtyWidth relative flexRow'>
+        <img src = './images/denise/denise2.jpg' class = 'fullWidth fitCover fullHeight'>
+        <h3 class = 'absolute header2 mobileHide'>Get to Know Denise</h3>
+        <h3 class = 'absolute header2 mobileShow'>Denise</h3>
     </a>
 
-    <a href = 'About'>
-      <div class = 'pictureNavItem' id = 'denise'>
-        <img src = './images/denise/denise2.jpg' alt = 'Denise Stoughton'>
-        <h3><span>Get to Know</span> <span>Denise</span</h3>
-      </div>
+    <a href = 'Blog' class = 'thirtyWidth relative flexRow'>
+      <img src = './images/writing.jpg' alt= 'Denise Stoughton Blog' class = 'fullWidth fitCover fullHeight'>
+      <h3 class = 'absolute header2'>Blog</h3>
     </a>
 
-    <a href = 'Blog'>
-      <div class = 'pictureNavItem' id = 'blog'>
-        <img src = './images/writing.jpg' alt= 'Denise Stoughton Blog'>
-        <h3><span>Blog</span></h3>
-      </div>
+    <a href = 'Contact' class = 'thirtyWidth relative flexRow'>
+      <img src = './images/edgecombe/003.jpg' alt = 'Edgecombe Interior Design Project Image' class = 'fullWidth fitCover fullHeight'>
+      <h3 class = 'absolute header2'>Contact</h3>
     </a>
-
-    <a href = 'Interior_Design_Services'>
-      <div class = 'pictureNavItem' id = 'intDesign'>
-        <img src = './images/interior/diningBright.jpg' alt = 'Denise Stoughton Interior Design Services'>
-        <h3><span>Interior</span> <span>Design</span> <span>Services</span></h3>
-      </div>
-    </a>
-  </div>
+  </section>
 
   <div class = 'footerHeight'>
 
@@ -98,15 +127,16 @@
     <div class = 'footer' id = 'footer'>
       <div class = 'copyright' id = 'copyright'>
         <p>Copyright 2019 BI Design. All rights reserved.</p>
-        <p>Web design by <a href = 'https://www.rdesigndev.com'>RDesign</a></p>
+        <p>Web design by <a href = 'https://www.rdesigndev.com' target = '_blank'>RDesign</a></p>
       </div>
 
 
 
       <div class = 'socialMedia' id = 'socialMedia'>
-        <a href = 'https://www.instagram.com/denisestoughton/' class = 'fa fa-instagram' id = 'insta'></a>
-        <a href = 'https://www.facebook.com/bainbridge.island.design/' class = 'fa fa-facebook-official' id = 'fb'></a>
-        <a href = 'https://www.mo-minski.com/profile/denisestoughton176633/blog-posts' class = 'fa' id = 'momin'>Mo <br> Minski</a>
+        <a href = 'https://www.instagram.com/Modern.airhead/' target = '_blank' class = 'icon' id = 'moah'></a>
+        <a href = 'https://www.instagram.com/denisestoughton/' target = '_blank' class = 'fa fa-instagram' id = 'insta'></a>
+        <a href = 'https://www.facebook.com/bainbridge.island.design/' target = '_blank' class = 'fa fa-facebook-official' id = 'fb'></a>
+        <a href = 'https://www.mo-minski.com/profile/denisestoughton176633/blog-posts' target = '_blank' class = 'fa' id = 'momin'>Mo <br> Minski</a>
       </div>
 
 

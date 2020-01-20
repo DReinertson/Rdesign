@@ -4,6 +4,7 @@
 <head>
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
   <link rel = 'stylesheet' type = 'text/css' href = './intDesign.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './reformat.css'>
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <meta name="twitter:card" content="summary"></meta>
   <meta name="twitter:image" content="https://www.denisebidesign.com/images/Logo/Icon.png">
@@ -26,15 +27,14 @@
     <a href = 'https://www.denisebidesign.com'>
       <img src = './images/Logo/BIDesign.png' alt = 'Head Title BiDesign'>
     </a>
-    <h3>Bainbridge Island | WA</h3>
-    <h3 class = 'margin'>Denise Stoughton | Designer</h3>
+    <!-- <h3>Bainbridge Island | WA</h3> -->
+    <h3 class = ''>Denise Stoughton | Designer</h3>
   </div>
     <i class = 'fa fa-bars' style = 'font-size:24px'></i>
   <div class = 'nav'>
     <ul>
       <li class = 'navItem current' id = 'interiorDesign'> <a href = ''>Interior Design Services</a></li>
-      <li class = 'navItem' id = 'homeStaging'> <a href = 'Home_Staging'>Home Staging</a></li>
-      <li class = 'navItem' id = 'MAH'><a href = 'MoAH'>Modern Air Head Products</a></li>
+      <li class = 'navItem' id = 'MAH'><a href = 'MoAH'>Modern Airhead Products</a></li>
       <li class = 'navItem' id = 'Clients'><a href = 'Clients'>Clients</a></li>
       <li class = 'navItem' id = 'Blog'><a href = 'Blog'>Blog</a></li>
       <li class = 'navItem' id = 'About'><a href = 'About'>About Denise</a></li>
@@ -42,92 +42,27 @@
     </ul>
   </div>
 
-  <div class = 'slideshow'>
+  <div class = 'flexRow relative wrap fullWidth' id = 'projects'>
+    <a href = 'Interior_Design_Projects' class = 'relative halfWidth flexColumn serviceHeight alignCenter justifyCenter' id = 'interiorDesignService'>
+      <img class = 'fullWidth fullHeight fitCover' src = './images/edgecombe/004.jpg'>
+      <h3 class = 'header2 absolute white'>Interior Design</h3>
+    </a>
+    <a  href = 'Home_Staging' class = 'relative halfWidth flexColumn serviceHeight alignCenter justifyCenter' id = 'homeStagingService'>
+        <img class = 'fullWidth fullHeight fitCover' src = './images/homeStaging/Tranquility-7.jpg'>
+        <h3 class = 'header2 absolute white'>Home Staging</h3>
+    </a>
+    <a href = 'Room_Makeover' class = 'relative halfWidth flexColumn serviceHeight alignCenter justifyCenter' id = 'roomMakeoverService'>
+      <img class = 'fullWidth fullHeight fitCover' src = './images/edgecombe/007.jpg'>
+      <h3 class = 'header2 absolute white'>Room Makeover</h3>
+    </a>
+    <a href = 'Ideas_And_Themes' class = 'relative halfWidth flexColumn serviceHeight alignCenter justifyCenter' id = 'themesService'>
+      <img class = 'fullWidth fullHeight fitCover' src = './images/collage/redefinedSimplicity.jpg'>
+      <h3 class = 'header2 absolute white'>Ideas & Themes</h3>
+    </a>
 
-
-      <div class = 'slide'>
-        <div class = 'number'></div>
-        <a href = 'Edgecombe_Place' id = 'edgecombe'>
-          <img src = './images/edgecombe/004.jpg'>
-          <h1 id = 'edgecombeText'>Manitou Beach</h1>
-        </a>
-      </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/artisan.jpg' alt ='Interior design artisan collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/classic.jpg' alt ='Interior design classic collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/cozy.jpg' alt ='Interior design cozy collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/modernRustic.jpg' alt ='Interior design modern rustic collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/redefinedRustic.jpg' alt ='Interior design redefined rustic collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/redefinedSimplicity.jpg' alt ='Interior design redefined simplicity collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/riccioGarage.jpg' alt ='Interior design Riccio garage collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/collage/traditionalTwist.jpg' alt ='Interior design traditional twist collection'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/interior/barAndDining3.jpg' alt ='Interior design bar and dining room'>
-      <p>Interior photos credit : Joyce Rudolph</p>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/interior/deskAndDining2.jpg' alt ='Interior design desk and dining room '>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/interior/dining5.jpg' alt ='Interior design dining room'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/interior/bedroom.jpg' alt ='Interior design bedroom'>
-    </div>
-
-    <div class = 'slide'>
-      <div class = 'number'></div>
-      <img src = './images/interior/bedLandscape.jpg' alt ='Interior design bedroom'>
-    </div>
-
-
-
-
-    <!-- Buttons-->
-    <a class = 'prev' onclick = 'changeSlides(-1)'>&#10094;</a>
-    <a class = 'next' onclick = 'changeSlides(1)'>&#10095;</a>
   </div>
 
-  <div class = 'paragraph'>
+  <!-- <div class = 'paragraph'>
     <p>
       <span>DEMYSTIFYING THE DESIGN PROCESS</span> and creating wonderfully articulated spaces which    reflect the clients&apos; style is what I&apos;m about!<br><br>
       Living is an art in itself!  At some moment (maybe this very one) you decide part of the art of living is creating a living or work space that is your mirror and your muse.  With an overwhelming amount of design advice and inspiration available online, knowing where to begin or make clear, practical decisions can seem impossible on your own.
@@ -154,14 +89,14 @@
       <li>Outdoor living space design</li>
       <li>Complete design & project coordination</li>
     </ul>
-  </div>
+  </div> -->
 
   <div class = 'footerHeight'>
 
     <div id="mc_embed_signup">
       <form action="https://deniseBIdesign.us20.list-manage.com/subscribe/post?u=14ce4b62ac9f301c9fe901f30&amp;id=55108c090a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-          <label for="mce-EMAIL">Sign up for Denise's email list to be the first to hear about design trends, Modern Air Head product arrivals, and blog posts.</label>
+          <label for="mce-EMAIL">Sign up for Denises email list to be the first to hear about design trends, Modern Air Head product arrivals, and blog posts.</label>
           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style = 'position:absolute; left:-5000px' aria-hidden="true"><input type="text" name="b_14ce4b62ac9f301c9fe901f30_55108c090a" tabindex="-1" value=""></div>
@@ -191,6 +126,7 @@
   <script type = 'text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
 
   <script src  = './script.js'></script>
+  <script src  = './imageChange.js'></script>
 </body>
 
 </html>
