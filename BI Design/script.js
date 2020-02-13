@@ -38,7 +38,16 @@ function showSlides(n) {
 
 function changePhoto(img){
   preview.src = img.src;
-  console.log(imageArr);
+  console.log(img);
+  // console.log(imageArr);
+  console.log(img.className);
+  console.log($(img).hasClass('regular'));
+  if ($(img).hasClass('regular')){
+    $('#previewImage').addClass('regular');
+  }
+  else{
+    $('#previewImage').removeClass('regular');
+  }
   for (let x = 0; x < imageArr.length; x++){
     if(imageArr[x].src === img.src){
       slideIndex = x+1;
@@ -57,7 +66,14 @@ function showImage(n) {
   // console.log(slides[0].src);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+  if (slides[slideIndex-1].classList.contains('regular')){
+    $('#previewImage').addClass('regular');
+  }
+  else{
+    $('#previewImage').removeClass('regular');
+  }
   preview.src = slides[slideIndex-1].src;
+
 
 }
 

@@ -50,19 +50,22 @@ let options = [
   },
   {
     id : 'circleDarkGrayNine',
-    src : './images/products/nineRound/nineRoundMetal.jpg',
+    // src : './images/products/nineRound/nineRoundMetal.jpg',
+    src : '',
     caption : 'Here is the caption for image 2',
     color: "Gun Metal"
   },
   {
     id : 'circleSilverNine' ,
-    src : './images/products/nineRound/nineRoundSilver.jpg',
+    // src : './images/products/nineRound/nineRoundSilver.jpg',
+    src : '',
     caption : 'Here is the caption for image 3',
     color: 'Silver'
   },
   {
     id : 'circleGoldNine',
-    src : './images/products/nineRound/nineRoundGold.jpg',
+    // src : './images/products/nineRound/nineRoundGold.jpg',
+    src : '',
     caption : 'Here is the caption for image 4',
     color: 'Gold'
   },
@@ -179,19 +182,19 @@ let options = [
   //For Rectangle Content
   {
     id : 'rectangleWhite',
-    src : './images/MAH/MAHRectangle1.jpeg',
+    src : '',
     caption : 'Here is the caption for desk image',
     color: 'White'
   },
   {
     id : 'rectangleDarkGray',
-    src : './images/MAH/MAHRectangle2.jpeg',
+    src : '',
     caption : 'Here is the caption for desk image',
     color: 'Gun Metal'
   },
   {
     id : 'rectangleSilver',
-    src : '',
+    src : './images/products/rectangle/rectangleSilver.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Silver'
   },
@@ -533,24 +536,29 @@ let options = [
 function imageChange(choice, container) {
   // console.log('choice: ', choice);
   // console.log(container);
-  let obj = options.find(o => o.id === choice.id)
+  let obj = options.find(o => o.id === choice.id);
+  $("#noImage").removeClass('silverBorder whiteBorder goldBorder orangeBorder darkGrayBorder tealBorder navyBorder');
 
   $('#productImage').attr('src',obj.src);
   $("#captionColor").html(obj.color);
+
   $('#' + container.id + '>.infoContainer>.colors>.options>span.currentColor').removeClass('currentColor');
-  if(container.id === 'triangle'){
-    // $(choice).css('border-bottom', '1.8vw solid black');
-    $(".options .choice").removeClass('border');
-    $(choice).addClass('border');
-  }
-  else{
-    $(choice).addClass('currentColor');
-  }
+  $(choice).addClass('currentColor');
+
+  // if(container.id === 'triangle'){
+  //   $(".options .choice").removeClass('border');
+  //   $(choice).addClass('border');
+  // }
+  // else{
+  //   $(choice).addClass('currentColor');
+  // }
   if(obj.src === ''){
-    console.log('noimage');
-    console.log($("#" + container.id).find('.noImage'));
-    // $("#" + container.id).find('.noImage').css('background', obj.color.replace(' ', ''));
-    $("#" + container.id).find('.noImage').css('border-color', obj.color.replace(' ', ''));
+    let border = $("#" + choice.id).attr('class').split(' ')[1] + 'Border';
+    $('#noImage').addClass(border);
+    // $("#" + container.id).find('.noImage').css('border-color', obj.color.replace(' ', ''));
+    // if (obj.color === 'Gun Metal'){
+    //   $("#" + container.id).find('.noImage').css('border-color', 'RGB(52,53,58)');
+    // }
 
     // $('#' + container.id + '>.imageSection>.noImage').css('background', obj.color);
     $('#noImage').removeClass('hide');
@@ -569,25 +577,53 @@ function imageChange(choice, container) {
 
 };
 $('.choice').on('mouseover', function(){
-  let color = $(this).attr('class').split(' ')[1];
+  // let color = $(this).attr('class').split(' ')[1];
+  let obj = options.find(o => o.id === this.id)
+  let color = obj.color;
   let triangle = document.getElementById('triangle');
   if(triangle !== null){
     console.log(color);
-    $("#" + this.id + ">p").html(color);
+    console.log($(this));
+    $(this).html(color);
   }
   else{
     console.log(color);
+    console.log($(this));
     $(this).html(color);
   }
 }).on('mouseleave', function(){
   let triangle = document.getElementById('triangle');
   if(triangle !== null){
     console.log(this);
-    console.log($(this.id + '>p'));
-    $("#" + this.id + ">p").html('');
+    $(this).html('');
   }
   else{
     $(this).html('');
   }
   // $(this).html('');
 })
+// $('.choice').on('mouseover', function(){
+//   let color = $(this).attr('class').split(' ')[1];
+//   let triangle = document.getElementById('triangle');
+//   $(this).html(color);
+//   if(triangle !== null){
+//     console.log(color);
+//     $("#" + this.id + ">p").html(color);
+//   }
+//   else{
+//     console.log(color);
+//     $(this).html(color);
+//   }
+// }).on('mouseleave', function(){
+//   $(this).html('');
+//   let triangle = document.getElementById('triangle');
+//   if(triangle !== null){
+//     console.log(this);
+//     console.log($(this.id + '>p'));
+//     $("#" + this.id + ">p").html('');
+//   }
+//   else{
+//     $(this).html('');
+//   }
+//   $(this).html('');
+// })
