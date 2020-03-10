@@ -1,0 +1,1125 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html{
+	overflow-y: auto !important;
+	overflow-x: hidden;
+}
+
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto !important;
+/* 	border: 0.1px solid red; */
+}
+#masthead{
+	min-height: 0;
+}
+
+/* #page ::-webkit-scrollbar{
+	display: none !important
+} */
+.search-form{
+	display: none !important;
+}
+
+.entry-breadcrumbs{
+	display: none;
+}
+
+#page-header{
+	display: none;
+}
+.entry-footer{
+	display: none;
+}
+.wp-block-cover{
+	height: 40vw;
+}
+
+
+.header1{
+	font-size: 3.6vw !important;
+}
+.header2{
+	font-size: 3vw !important;
+}
+
+.textFont{
+	font-size: 1.6vw !important;
+}
+.readerFont{
+	font-size: 1.3vw !important;
+}
+.bold{
+	font-weight: 400 !important;
+}
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+.flexColumn{
+	display: flex;
+	flex-direction: column;
+}
+.spaceAround{
+	justify-content: space-around;
+}
+.spaceBetween{
+	justify-content: space-between;
+}
+.autoWidth{
+	width: auto;
+}
+.fortyWidth{
+	width: 40%;
+}
+.homeWidth{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.relative{
+	position: relative;
+}
+
+.noMargin{
+	margin: 0 !important;
+}
+.fourBottomMargin{
+	margin-bottom: 4%;
+}
+.homeTopMargin{
+	margin-top: 5%;
+}
+.homeBottomMargin{
+	margin-bottom: 15%;
+}
+.rightAfter:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 40%;
+	background: #004b87;
+	width: 2px;
+	opacity: 0.2;
+	right: 8%;
+	top: 10%;
+}
+.listPosition{
+	list-style: none;
+	padding-left: 0 !important;
+}
+
+.noLine a{
+	text-decoration: none;
+}
+.noLine a:hover{
+	text-decoration: underline;
+}
+.pageHeader{
+	min-height: 0;
+	height: 25vw;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+}
+.homeHeader{
+	height: 33vw;
+}
+.pageHeader div{
+	width: 100% !important;
+}
+.content-area {
+		padding: 0;
+		margin: 0;
+	}
+.pageHeader .wp-block-cover {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pageHeader .wp-block-cover__inner-container{
+	position: absolute;
+	bottom: 0;
+	opacity: 0.7;
+}
+.pageHeader p{
+	text-align: center;
+	position: relative;	
+	font-size: 4vw; 
+	bottom: 0;
+	margin: 0 auto;
+}
+
+
+.homeBlockList{
+	display: flex;
+}
+.homeBlockList a, .homeBlockList li{
+	width: 90% !important;
+	text-wrap: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homeCalendar{
+	justify-content: flex-start;
+	margin-bottom: 0% !important;
+}
+.homeCalendar li{
+	margin-left: 0;
+	margin-right: auto;
+}
+.homeCommunity{
+	height: 30vw;
+	margin: 0 0 15% 0;
+}
+.homeCommunity .wp-block-column{
+	height: 100% !important;
+}
+.communityImage img{
+	height: 30vw !important;
+}
+
+.underline:hover{
+	text-decoration: underline;
+}
+.kitsapColumnOne{
+	margin-left: 1%;
+}
+
+
+
+/*----------About Page----------*/
+.aboutContainer{
+	padding: 5%;
+}
+.aboutContainer p{
+	width: 85%;
+}
+.aboutContainer .wp-block-column{
+	margin: 0 !important;
+}
+.aboutContainer ul{
+	
+}
+.aboutContainer li{
+	padding-left: 0;
+}
+/*----------End About Page---------*/
+.aboutHeader p{
+	width: 86%;
+	margin: 0 auto;
+}
+.contactContainer{
+	width: 100%;
+	margin: 0 auto;
+	padding: 8% 0;
+	display: flex;
+	align-items: center;
+/* 	background: rgba(89,148,93,0.2); */
+/* 	background: rgba(0,132,61, 0.2); */
+}
+.contactContainer img{
+	width: 5vw;
+	border: 2px solid rgba(0,132,61, 0.4);
+	border-radius: 50vw;
+}
+
+.contactContainer {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contactContainer .wp-block-column{
+	min-width: 10%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.contactContainer .innerContactTitle{
+	font-size: 2vw;
+}
+.contactContainer .wp-block-separator{
+	width: 25%;
+	margin: auto;
+	background: rgba(0,132,61,0.4);
+}
+.contactColumn{
+	word-break: normal !important;
+	overflow-wrap: normal !important; 
+	white-space: nowrap;
+}
+/*-----------End Contact Page-------*/
+
+/*-----------Community2 Page-------*/
+.communityHeader p{
+	margin: 0 auto;
+	width: 80%;
+}
+.communityContainer p {
+	width: 80%;
+	margin: 10% auto 5% auto;
+	font-size: 2.5vw;
+}
+
+.blockList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0 !important;
+	margin-bottom: 10%;
+}
+.blockList li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.3vw;
+	list-style: none;
+	width: 50%;
+	padding: 2% 0;
+	border: 3px solid rgba(0,132,61, 0.9);
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+.blockList a{
+	text-decoration: none;
+}
+.blockList li:first-child{
+	border-bottom: 1.5px solid green;
+	border-right: 1.5px solid green;
+}
+.blockList li:nth-child(2){
+	border-left: 1.5px solid green;
+	border-bottom: 1.5px solid green;
+}
+.blockList li:nth-child(3){
+	border-top: 1.5px solid green;
+	border-right: 1.5px solid green;
+}
+.blockList li:last-child{
+	border-top: 1.5px solid green;;
+	border-left: 1.5px solid green;;
+}
+.blockList li:hover{
+	background: rgba(0,132,61, 0.9);
+	color: white;
+}
+.blockList li:hover a{
+	color: white;
+}
+/*-----------End Community 2 Page-------*/
+
+/*-----------Property Page----------*/
+.propHeader div{
+		width: 100% !important;
+	}
+.propList{
+	flex-direction: column;
+	align-items: center;
+}
+.property{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.propList li{
+	margin: 2% 0;
+	width: 30%;
+}
+/*-----------End Property Page------*/
+/*-----------Readerboard Page------*/
+.readerProperties iframe{
+	width: 100%;
+}
+.readerHeader{
+	margin: 0 !important;
+}
+.readerHeader p {
+/* 	margin: 0; */
+	width: 82% ;
+}
+.readerProperties{
+	margin-bottom: 5%;
+}
+.fortyWidth{
+	flex-basis : 40%;
+}
+.readerProperties .wp-block-columns{
+	justify-content: space-around
+}
+.matchWidth{
+	width: 90%;
+	margin: 5% auto !important;
+}
+.ninetyWidth{
+	width: 81%;
+	margin: 0 auto;
+}
+/*-----------End Readboard Page----*/
+/*----------Footer CSS--------*/
+.footer{
+	display: flex;
+	justify-content: center;
+	padding: 2% 0 2% 0;
+}
+.footerItem{
+/* 	padding: 0 5%; */
+	height: 20vw;
+	margin-bottom: 3vw;
+/* 	width: 37.5%; */
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footerItem h2{
+	height: 13%;
+	width: 65%;
+	margin-top: 0;
+}
+.footerItem ul{
+	height: 75%;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-wrap: none;
+}
+.footerItem li{
+	width: auto;
+	text-wrap: none;
+}
+.footerLogo{
+/* 	width: 25%; */
+	align-items: center;
+	justify-content: flex-start; 
+}
+.footerLogo img{
+	width: 40%;
+	height: auto;
+	border-radius: 50%;
+	background: white;
+	margin-top: 4%;
+}
+.footerLogo h2{
+	width: auto;
+}
+
+
+.footerItem h2{
+	position: relative;
+}
+.footerItem h2::after{
+	content: "";
+	width: 5vw;
+	border-bottom: 1px solid white;
+	position: absolute;
+	bottom: -30%;
+	left: 0;
+}
+.footerNav li:hover{
+	text-decoration: underline;
+}
+.disclaimer{
+	display: flex;
+	align-items: center;
+	background: rgba(0,0,0,0.2);
+	font-size: 0.8vw;
+	height: 5vw;
+	position: relative;
+	bottom: 0;
+}
+.disclaimer a{
+	color: white;
+	text-decoration: none;
+}
+.disclaimer p{
+	margin: 0;
+	margin-left: 2%
+}
+
+/*Remove bottom portion and make footer reach the bottom of the page, so there is no gap after the footer*/
+#colophon{
+	display: none;
+}
+#tertiary{
+	padding: 0;
+}
+#tertiary .twelve{
+	padding: 0 !important;
+	margin-top: auto;
+}
+#custom_html-3{
+	margin: 0 !important;
+	width: 100% !important;
+}
+#tertiary .textwidget{
+	height: 100% !important;
+}
+/*--------End Footer CSS--------*/
+
+
+@media screen and (min-width: 1024px) {
+	body *{
+	overflow-y: hidden;
+}
+	#page *{
+		overflow: visible;
+	}
+#masthead *{
+	overflow: visible;
+}
+	#site-navigation {
+		width: auto;
+		font-size: 1.3vw;
+	}
+
+	.grid {
+		padding: 0;
+		margin: 0;
+		max-width: none;
+	}
+	
+#masthead, .site-header{
+/* 	min-height: 0; */
+}
+	#masthead *{
+		min-height: 0;
+	}
+#masthead{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 5vw;
+	overflow-y: hidden;
+}
+#masthead .grid{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 3vw;
+}
+#masthead .row{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 3vw;
+}
+
+#masthead .twelve{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 0;
+	height: 3vw;
+}
+.site-branding{
+	padding: 0 !important;
+}
+.site-branding a{
+	font-size: 2.5vw !important;
+	max-width: none;
+	display: flex;
+}
+#site-navigation{
+	font-size: 1.3vw;
+	margin: 0;
+	padding: 0;
+	height: 3vw;
+	display: flex;
+	align-items: center;
+}
+	.main-navigation{
+		width: 50vw !important;
+	}
+	.main-navigation ul{
+		display: flex;
+		justify-content: space-around;
+	}
+.site-title{
+	margin: 0 !important;
+}
+.site-title span:nth-child(2){
+	min-height: 0 !important;
+	top: 0 !important;
+	height: 3vw;
+	display: flex;
+	position: relative;
+	left: 30%;
+}
+.site-title img{
+	object-fit: fill;
+	max-width: none !important;
+	max-height: none !important;
+	width: 5vw;
+	margin: 0 1vw 0 0;
+	height: 5vw;
+	position: absolute;
+	top: -35%;
+}
+	
+	
+	/*Media rules for computers not quite wide enough for normal proportions. Ipad landscape is 1024px. This is for inbetween sizes*/
+@media only screen and (max-width: 1200px){
+	.site-title img{
+		top: -20%;
+	}	
+	.site-title span:nth-child(2){
+		top: 4px !important;
+	}
+	.homeCommunityText p, .homeCommunityText h1{
+	width: 85%;
+}
+	.homeCommunityText p {
+		font-size: 1.8vw;
+}
+	.homeCommunityText h1{
+		font-size: 2.5vw;
+	}
+	.footer h2{
+		font-size: 2.6vw;
+	}
+	.footerItem{
+		font-size: 1.2vw;
+	}
+	.communityList li{
+		font-size: 1.5vw;
+	}
+}
+}
+@media only screen and (max-width: 1023px){
+	.site-top-content{
+		display: none;
+	}
+	.site-title a{
+		display: flex;
+		align-content: center;
+	}
+	.site-title span{
+		display: flex;
+		align-items: center;
+		font-size: 5.5vw !important;
+	}
+	.site-title img{
+		max-height: none !important;
+		max-width: none !important;		
+		height: 10vw;
+		width: 10vw;
+		top: -35%;
+		
+	}
+	.menu-toggle{
+		width: 10vw;
+		height: 10vw;
+		top: 2vw;
+		font-size: 2.5vw !important;
+	}
+	#menu-primary a{
+		font-size: 3.5vw !important;
+		padding: 12px 15px;
+	}
+	.grid{
+		padding: 0;
+	}
+	.pageHeader p{
+		font-size: 5.5vw;
+	}
+	.homeWidth{
+		width: 85%;
+	}
+	.header1{
+		font-size: 6.0vw !important;
+	}
+	.header2{
+		font-size: 4.5vw !important;
+	}
+	.textFont{
+		font-size: 3.5vw !important;
+	}
+	p{
+		text-align: center;
+	}
+	.rightAfter:after{
+		display: none;
+	}
+	.kitsapList{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	/*Home Page Mobile CSS*/
+	.kitsapHome{
+		flex-direction: column;
+	}
+	.kitsapHome div{
+		width: 100%;
+	}
+	.kitsapColumnOne{
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	.homeBlockList{
+		width: 50%;
+	}
+	.homeBlockList li{
+		width: 90% !important;
+		padding: 5% 0;
+		font-size: 3.5vw;
+	}
+	.homeBlockList a{
+		width: 100% !important;
+	}
+	.homeCommunity{
+		flex-direction: column;
+		height: auto;
+	}
+	.homeCommunity div{
+		width: 100%;
+	}
+	.homeCommunity img{
+		width: 100%;
+		height: auto !important;
+	}
+	.homeCommTwo{
+		width: 85% !important;
+		margin: 0 auto !important;
+	}
+	.homeCommTwo h2{
+		width: 100%;
+		text-align: center;
+		margin-top: 5% !important;
+	}
+	.homeCommTwo ul{
+		width: 100%;
+		align-items: center;
+		list-style: none;
+		margin: 10% 0 5%;
+		padding: 0;
+	}
+	.homeCalendar{
+		width: 100% !important;
+		margin-top: 5% !important
+	}
+	.homeCalendar li{
+		padding: 0 !important;
+		width: 100% !important;
+		height: 12vw;
+		font-size: 5.5vw;
+		margin: auto;
+		
+	}
+	.blockList a{
+		font-size: 4vw !important;
+	}
+	/*End Home Page Mobile CSS*/
+	/*About Page Mobile CSS*/
+	.aboutHeader p{
+		width: 68%;
+		text-align: center;
+	}
+	.aboutContainer{
+		flex-direction: column;
+		width: 85%;
+		margin: auto;
+	}
+	.aboutContainer h2{
+		text-align: center;
+	}
+	.aboutContainer *{
+		width: 100% !important;
+	}
+	.aboutContainer .wp-block-column{
+		margin-bottom: 15% !important;
+	}
+	.aboutContainer h2{
+		margin-bottom: 10%;
+	}
+	.contactContainer{
+		flex-direction: column;
+	}
+	.contactColumn{
+		padding-bottom: 5% !important;
+		margin-bottom: 10% !important;
+		position: relative;
+		width: 100%;
+	}
+	.aboutContainer li{
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	.contactColumn:after{
+		content: '';
+		position: absolute;
+		width: 50%;
+		left: 25%;
+		background : rgba(0,132,61,0.4);
+		bottom: 0;
+		height: 3px;
+	}
+	.contactContainer img{
+		width: 25vw;
+		border-radius: 50vw;
+	}
+	.contactContainer hr{
+		display: none;
+	}
+	
+	
+	/*End About Page Mobile CSS*/
+	
+	/*Properties pages CSS*/
+	.pageHeader{
+		height: 50vw;
+		margin-bottom: 0;
+	}
+	.propHeader div{
+		width: 100% !important;
+	}
+	.property{
+		margin-top: 20% !important;
+		width: 85%;
+	}
+	.propList li{
+		font-size: 4.5vw;
+		margin-top: 5%;
+		margin-bottom: 15%;
+		width: 50%;
+	}
+
+	/*End Properties page CSS*/
+	/*Community Involvement Page CSS*/
+	.calendarHeader p{
+		width: 85%;
+		text-align: left;
+	}
+	.communityContainer .blockList{
+		flex-direction: column;
+	}
+	.communityContainer .blockList li{
+		width: 85%;
+		margin: 4% auto;
+		padding: 4% 0;
+		font-size: 4.5vw;
+	}
+	.communityColumns{
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 85%;
+	}
+	.communityColumns div{
+		width: 100%;
+		margin: 0 auto !important;
+	}
+	.communityColumns .blockList li{
+		width: 100%;
+		font-size: 4.5vw;
+	}
+	.communityColumns h2, .communityColumns iframe{
+		width: 100%;
+	}
+	/*End Community Involvement Page CSS*/
+	/*Readerboard Page Mobile CSS*/
+	.readerHeader p{
+		width: 85%;
+	}
+	.readerProperties .wp-block-columns{
+		width: 85%;
+		justify-content: flex-start;
+		margin-bottom: 10%;
+	}
+	.readerProperties .wp-block-column{
+		margin: 0;
+/* 		width: 100%; */
+	}
+	.readerProperties p{
+		width: 85%;
+		text-align: left;
+	}
+	.readerContact{
+		margin: 5% auto 20% auto;
+	}
+	.infoColumns{
+		width: 100% !important;
+		margin-right: 0 !important;
+		margin-bottom: 25%;
+	}
+	.infoColumns p{
+		width: 95%;
+	}
+	.readerProperties iframe{
+		width: 100% !important;
+	}
+	.readerColumn{
+		width: 100%;
+	}
+	.readerColumn h3 a{
+		font-size: 4.5vw;
+	}
+	.readerColumn p{
+		font-size: 3vw !important;
+	}
+	.mobileFlexColumn{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	/*End Readerboard Page Mobile CSS*/
+  
+	/*Footer CSS Ipad and phone*/
+	.footer{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footerItem{
+		width: 100%;
+		height: auto;
+	}
+	.footer h2{
+		font-size: 5.5vw;
+	}
+	.footer p, .footer li{
+		font-size: 3.5vw;
+	}
+	.footerItem{
+		flex-direction: row;
+		width: 85%;
+		justify-content: space-between;
+		position: relative;
+		padding-bottom: 10%;
+		margin-bottom: 10%;
+	}
+	.footerItem:after{
+		content: '';
+		width: 100%;
+		border-bottom: 1px dashed white;
+		position: absolute;
+		bottom: 0;
+/* 		left: 7.5%; */
+	}
+	.footerItem:last-of-type:after{
+		width: 0;
+	}
+	.footerItem h2{
+		text-wrap: normal;
+/* 		margin-left: 5%; */
+		width: 40%;
+	}
+	.footerItem ul{
+		width: 60%;
+		margin-left: 10%;
+	}
+	.footerItem ul br{
+		display: none;
+	}
+	.footerItem h2:after{
+		display: none;
+	}
+	.footerLogo img{
+		width: 40%;
+		margin-right: 13%;
+	}
+	.disclaimer{
+		height: auto;
+		padding: 2% 0;
+	}
+	.disclaimer p {
+		font-size: 2.0vw;
+	}
+	/*End Footer CSS Ipad and Phone*/
+}
+
+/*CSS specifically for phones, adjusting CSS made for tablets and below*/
+@media only screen and (max-width: 750px){
+	#menu-primary a{
+		padding: 8px 10px;
+		font-size: 5vw !important;
+	}
+	.site-title img{
+/* 		display: none !important; */
+	}
+	.site-title span{
+		white-space: nowrap;
+	}
+	/*Text Sizes*/
+	#tertiary .grid{
+		padding: 0 !important;
+	}
+	.pageHeader{
+		margin-bottom: 15%;
+	}
+	.pageHeader p{
+		font-size: 7.5vw;
+		text-align: center !important;
+	}
+	.header1{
+		font-size: 7.5vw !important;
+	}
+	.header2{
+		font-size: 5.5vw !important;
+	}
+	.textFont{
+		font-size: 4.5vw !important;
+	}
+	.readerColumn p, .readerProperties p{
+		font-size: 4.5vw !important;
+	}
+	.readerColumn h3 a{
+		font-size: 5.5vw !important;
+	}
+	.mobileShort{
+		height: 50px !important;
+	}
+	/*End Text Sizes*/
+	/*Home Page Phone CSS*/
+	.kitsapList{
+		flex-direction: column;
+	}
+	.blockList li{
+		border-width: 2px !important;
+/* 		font-size: 6.5vw !important; */
+	}
+	.homeBlockList, .homeBlockList li, .homeBlockList a{
+		width: 100% !important;
+	}
+	.blockList a{
+		font-size: 5vw !important;
+	}
+	.homeCalendar li{
+		padding: 5% 0 !important;
+		height: auto;
+	}
+	/*Adjust Nav Bar Elements*/
+	.site-title a{
+		display: flex;
+		align-content: center;
+		margin-left: 1vw;
+		width: 50vw;
+	}
+	.site-title span img{
+		margin-left: 0;
+		margin-right: 3vw !important;
+		margin-bottom: 0 !important;
+		width: 15vw; 
+		height: 15vw;
+	}
+	.site-title span{
+		display: flex;
+		align-items: center;
+		font-size: 6vw !important;
+	}
+	.menu-toggle{
+/* 		top: 3.5vw; */
+		top: 4.75vw;
+		width: 11vw;
+		height: 11vw;
+		font-size: 3vw !important;
+	}
+	/*End Adjust Nav Bar Elements*/
+	/*End Home Page Phone CSS*/
+	/*About Page Phone CSS*/
+	.aboutContainer{
+		width: 85%;
+		padding: 0;
+	}
+	.aboutContainer h2{
+		text-align: center;
+	}
+	.contactContainer .textFont{
+		font-size: 4.5vw !important;
+	}
+	/*End About Page Phone CSS*/
+	/*Property Page PHone CSS*/
+	.property{
+		width: 85%;
+	}
+	.propList li{
+		width: 75%;
+/* 		font-size: 6.5vw; */
+	}
+	.bottomMargin{
+		margin-bottom: 20%;
+	}
+	.long{
+		width: 75%;
+		text-align: center;
+	}
+	.communityColumns .wp-block-spacer{
+		height: 20px !important;
+	}
+	/*End Property Page Phone CSS*/
+	/*Calendar Page Phone CSS*/
+	.calendarSpace{
+		height: 50px !important
+	}
+	.calList li{
+		padding: 5% 0 !important;
+		font-size: 6.5vw !important;
+	}
+	/*End Calendar Page Phone CSS*/
+	/*Readerboard Page PHone CSS*/
+	.readerProperties{
+		margin-top: 15%
+	}
+	.readerProperties iframe{
+		height: 85vw;
+	}
+	.readerColumn{
+		margin-top: 15% !important;
+	}
+	.contactColumn:last-child:after{
+		display: none;
+	}
+	.contactContainer{
+		margin-top: 15%;
+	}
+	.infoColumns{
+		flex-direction: column-reverse;
+	}
+	.infoColumns .wp-block-column{
+		width: 90%;
+	}
+	.infoColumns p{
+		margin: 0;
+	}
+	/*End Readerboard Page Phone CSS*/
+	/*Footer Phone CSS*/
+	.footerItem{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footerItem h2, .footerItem ul{
+		width: 100% !important;
+		margin: 0;
+	}
+	.footerItem img{
+		margin: 5% 0 0 0;
+	}
+	
+	.footerItem h2{
+		text-align: center;
+		margin-bottom: 5%;
+	}
+	.footer h2{
+		font-size: 7.5vw;
+	}
+	.footer li{
+		font-size: 5vw;
+	}
+	/*Footer Phone CSS*/
+}
