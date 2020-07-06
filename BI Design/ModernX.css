@@ -1,0 +1,46 @@
+.heroBanner{
+  background-image: url('./images/modernX/tablePortrait.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vw;
+  /* height: 90vh; */
+}
+#modernImages{
+  /* width: 60%; */
+}
+
+#modLogo{
+  width: 80%;
+}
+
+#modernLogoSection{
+  width: 50%;
+}
+
+#specList{
+  line-height: 2;
+}
+#furnish{
+  transition: 0.2s ease;
+}
+#furnish{
+  box-shadow: 1px 1px 6px 1px grey;
+}
+#furnish:hover{
+  box-shadow: 3px 3px 8px 1px grey;
+}
+#banner{
+  /* background-image: linear-gradient(1200deg, rgb(213,218,234), rgb(239,240,233), rgb(213,218,234)); */
+  /* background-image: linear-gradient(120deg, rgb(224,222,228), rgb(239,240,233), rgb(224,222,228)); */
+}
+.lineRight:after{
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -2vw;
+  height: 60%;
+  width: 2px;
+  background: rgba(0,0,0,0.5);
+}
