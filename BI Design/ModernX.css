@@ -35,6 +35,24 @@
   /* background-image: linear-gradient(1200deg, rgb(213,218,234), rgb(239,240,233), rgb(213,218,234)); */
   /* background-image: linear-gradient(120deg, rgb(224,222,228), rgb(239,240,233), rgb(224,222,228)); */
 }
+#tableDesc p{
+  width: 85%;
+}
+#tableDesc ul{
+  font-weight: 600;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2%;
+}
+#tableDesc li{
+  /* text-align: left; */
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 1.2vw;
+}
+
 .lineRight:after{
   content: "";
   position: absolute;
@@ -43,4 +61,78 @@
   height: 60%;
   width: 2px;
   background: rgba(0,0,0,0.5);
+}
+.currentColor{
+  box-shadow: 1px 1px 6px 1px grey;
+  transition: 0.2s ease;
+}
+.imageContainer{
+
+}
+.tableChoice{
+  cursor: pointer;
+  width: 20%;
+  padding: 1%;
+  box-sizing: border-box;
+
+}
+
+@media screen and (max-width: 1023px){
+  *{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+  }
+  #intro, #theTable, #tableSpecs{
+    /* flex-direction: column-reverse; for ModernX.html*/
+    flex-direction: column;
+    width: 100%;
+  }
+  #intro *{
+    width: 100%;
+  }
+  #theTable{
+    flex-direction: column;
+  }
+  #theTable *{
+    width: 100%;
+  }
+  #theTable p{
+    width: 90%;
+    margin-bottom: 4%;
+    font-size: 3.5vw;
+  }
+  #tableSpecs{
+    flex-direction: column;
+  }
+  #tableSpecs *{
+    width: 100%;
+  }
+  #tableChoices img{
+    width: 20%;
+  }
+  #tableSpecs li{
+    font-size: 3.5vw;
+  }
+  #tableDesc{
+    order: 1;
+  }
+  #tableDesc li{
+    font-size: 3.5vw;
+  }
+  #tableImages{
+    flex-direction: column;
+    width: 100%;
+  }
+  #tableImages section{
+    width: 100%;
+  }
+  #table{
+    order: 2;
+  }
+  #tableDist{
+    order: 3;
+  }
+  #furnish{
+    width: 50%;
+  }
 }
