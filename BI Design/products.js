@@ -36,11 +36,18 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'circleNavy' ,
-    src : './images/products/twelveRound/twelveRoundNavy.jpg',
+    id : 'circleCarbon' ,
+    src : './images/products/twelveRound/twelveRoundCarbon.jpg',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
   },
+  {
+    id : 'circleBlue' ,
+    src : './images/products/twelveRound/twelveRoundBlue.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
+  },
+
   //Start Nine Circle objects
   {
     id : 'circleWhiteNine',
@@ -50,22 +57,19 @@ let options = [
   },
   {
     id : 'circleDarkGrayNine',
-    // src : './images/products/nineRound/nineRoundMetal.jpg',
-    src : '',
+    src : './images/products/nineRound/nineRoundMetal.jpg',
     caption : 'Here is the caption for image 2',
     color: "Gun Metal"
   },
   {
     id : 'circleSilverNine' ,
-    // src : './images/products/nineRound/nineRoundSilver.jpg',
-    src : '',
+    src : './images/products/nineRound/nineRoundSilver.jpg',
     caption : 'Here is the caption for image 3',
     color: 'Silver'
   },
   {
     id : 'circleGoldNine',
-    // src : './images/products/nineRound/nineRoundGold.jpg',
-    src : '',
+    src : './images/products/nineRound/nineRoundGold.jpg',
     caption : 'Here is the caption for image 4',
     color: 'Gold'
   },
@@ -82,10 +86,16 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'circleNavyNine' ,
-    src : './images/products/nineRound/nineRoundNavy.jpg',
+    id : 'circleCarbonNine' ,
+    src : './images/products/nineRound/nineRoundCarbon.jpg',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
+  },
+  {
+    id : 'circleBlueNine' ,
+    src : './images/products/nineRound/nineRoundCarbon.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
   },
 //Start of Square objects
 //For square planters
@@ -126,10 +136,16 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'squareNavy' ,
-    src : './images/products/twelveSquare/twelveSquareNavy.jpg',
+    id : 'squareCarbon' ,
+    src : './images/products/twelveSquare/twelveSquareCarbon.jpg',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
+  },
+  {
+    id : 'squareBlue' ,
+    src : './images/products/twelveSquare/twelveSquareBlue.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
   },
   //Start Nine Square objects
   {
@@ -140,22 +156,19 @@ let options = [
   },
   {
     id : 'squareDarkGrayNine',
-    // src : './images/products/nineSquare/nineSquareMetal.jpg',
-    src:"",
+    src : './images/products/nineSquare/nineSquareMetal.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Gun Metal'
   },
   {
     id : 'squareSilverNine',
-    // src : './images/products/nineSquare/nineSquareSilver.jpg',
-    src:"",
+    src : './images/products/nineSquare/nineSquareSilver.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Silver'
   },
   {
     id : 'squareGoldNine',
-    // src : './images/products/nineSquare/nineSquareGold.jpg',
-    src:"",
+    src : './images/products/nineSquare/nineSquareGold.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Gold'
   },
@@ -167,16 +180,19 @@ let options = [
   },
   {
     id : 'squareTealNine',
-    // src : './images/products/nineSquare/nineSquareTeal.jpg',
-    src:"",
+    src : './images/products/nineSquare/nineSquareTeal.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Teal'
   },
   {
-    id : 'squareNavyNine' ,
-    src : './images/products/nineSquare/nineSquareNavy.jpg',
-    caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    id : 'squareCarbonNine',
+    src : './images/products/nineSquare/nineSquareCarbon.jpg',
+    color: 'Carbon'
+  },
+  {
+    id : 'squareBlueNine',
+    src : './images/products/nineSquare/nineSquareBlue.jpg',
+    color: 'Classic Blue'
   },
   //Start Rectangle objects
   //For Rectangle Content
@@ -188,7 +204,7 @@ let options = [
   },
   {
     id : 'rectangleDarkGray',
-    src : '',
+    src : './images/products/rectangle/rectangleMetal.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Gun Metal'
   },
@@ -206,7 +222,7 @@ let options = [
   },
   {
     id : 'rectangleOrange',
-    src : '',
+    src : './images/products/rectangle/rectangleOrange.jpg',
     caption : 'Here is the caption for desk image',
     color: 'Orange'
   },
@@ -217,10 +233,16 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'rectangleNavy' ,
+    id : 'rectangleCarbon' ,
     src : '',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
+  },
+  {
+    id : 'rectangleBlue' ,
+    src : '',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
   },
   //Start SoftSqaure section
   //SoftSquare Products
@@ -261,10 +283,65 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'softSquareNavy' ,
-    src : './images/products/twelveSoft/twelveSoftNavy.jpg',
+    id : 'softSquareCarbon' ,
+    src : './images/products/twelveSoft/twelveSoftCarbon.jpg',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
+  },
+  {
+    id : 'softSquareBlue' ,
+    src : './images/products/twelveSoft/twelveSoftBlue.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
+  },
+  //Start Nine Inch Soft Square
+  {
+    id : 'softSquareNineWhite',
+    src : './images/products/nineSoft/nineSoftWhite.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'White'
+  },
+  {
+    id : 'softSquareNineDarkGray',
+    src : './images/products/nineSoft/nineSoftMetal.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Gun Metal'
+  },
+  {
+    id : 'softSquareNineSilver',
+    src : './images/products/nineSoft/nineSoftSilver.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Silver'
+  },
+  {
+    id : 'softSquareNineGold',
+    src : '',
+    caption : 'Here is the caption for desk image',
+    color: 'Gold'
+  },
+  {
+    id : 'softSquareNineOrange',
+    src : './images/products/nineSoft/nineSoftOrange.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Orange'
+  },
+  {
+    id : 'softSquareNineTeal',
+    src : '',
+    caption : 'Here is the caption for desk image',
+    color: 'Teal'
+  },
+  {
+    id : 'softSquareNineCarbon' ,
+    src : './images/products/nineSoft/nineSoftCarbon.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Carbon'
+  },
+  {
+    id : 'softSquareNineBlue' ,
+    src : '',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
   },
   //Start Triangle section
   //Triangle Products
@@ -305,239 +382,74 @@ let options = [
     color: 'Teal'
   },
   {
-    id : 'triangleNavy' ,
-    src : './images/products/nineTriangle/nineTriangleNavy.jpg',
+    id : 'triangleCarbon' ,
+    src : './images/products/nineTriangle/nineTriangleCarbon.jpg',
     caption : 'Here is the caption for image 3',
-    color: 'Navy'
+    color: 'Carbon'
+  },
+  {
+    id : 'triangleBlue' ,
+    src : './images/products/nineTriangle/nineTriangleBlue.jpg',
+    caption : 'Here is the caption for image 3',
+    color: 'Classic Blue'
+  },
+  //Start Hexagon Products
+  {
+    id : 'hexWhite',
+    src : './images/products/twelveHex/twelveHexWhite.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'White'
+  },
+  {
+    id : 'hexDarkGray',
+    src : './images/products/twelveHex/twelveHexMetal.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Gun Metal'
+  },
+  {
+    id : 'hexSilver',
+    src : './images/products/twelveHex/twelveHexSilver.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Silver'
+  },
+  {
+    id : 'hexGold',
+    src : './images/products/twelveHex/twelveHexGold.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Gold'
+  },
+  {
+    id : 'hexOrange',
+    src : './images/products/twelveHex/twelveHexOrange.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Orange'
+  },
+  {
+    id : 'hexTeal',
+    src : './images/products/twelveHex/twelveHexTeal.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Teal'
+  },
+  {
+    id : 'hexCarbon',
+    src : './images/products/twelveHex/twelveHexCarbon.jpg',
+    caption : 'Here is the caption for desk image',
+    color: 'Carbon'
+  },
+  {
+    id : 'hexBlue',
+    src : '',
+    caption : 'Here is the caption for desk image',
+    color: 'Classic Blue'
   },
 ];
 
-// let options = [
-//   {
-//     id : 'circleWhite',
-//     src : './images/products/nineRound/nineRoundWhite.jpg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'White'
-//   },
-//   {
-//     id : 'circleDarkGray',
-//     src : './images/products/nineRound/nineRoundGray.jpg',
-//     caption : 'Here is the caption for image 2',
-//     color: "Dark Gray"
-//   },
-//   {
-//     id : 'circleSilver' ,
-//     src : '',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Silver'
-//   },
-//   {
-//     id : 'circleGold',
-//     src : '',
-//     caption : 'Here is the caption for image 4',
-//     color: 'Gold'
-//   },
-//   {
-//     id : 'circleOrange' ,
-//     src : './images/products/nineRound/nineRoundOrange.jpg',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Orange'
-//   },
-//   {
-//     id : 'circleTeal' ,
-//     src : './images/products/nineRound/nineRoundTeal.jpg',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Teal'
-//   },
-//   {
-//     id : 'circleNavy' ,
-//     src : './images/products/nineRound/nineRoundNavy.jpg',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Navy'
-//   },
-// //Start of Square objects
-// //For square planters
-//   {
-//     id : 'squareWhite' ,
-//     src : './images/MAH/MAHSquare1.jpeg',
-//     caption : 'Here is the caption for image 3',
-//     color: 'White'
-//   },
-//   {
-//     id : 'squareDarkGray',
-//     src : './images/MAH/MAHSquare2.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Dark Gray'
-//   },
-//   {
-//     id : 'squareSilver',
-//     src : './images/MAH/MAHSquare3.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Silver'
-//   },
-//   {
-//     id : 'squareGold',
-//     src : './images/MAH/MAHSquare4.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Gold'
-//   },
-//   {
-//     id : 'squareOrange',
-//     src : './images/MAH/MAHSquare5.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Orange'
-//   },
-//   {
-//     id : 'squareTeal',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Teal'
-//   },
-//   {
-//     id : 'squareNavy' ,
-//     src : '',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Navy'
-//   },
-//   //Start Rectangle objects
-//   //For Rectangle Content
-//   {
-//     id : 'rectangleWhite',
-//     src : './images/MAH/MAHRectangle1.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'White'
-//   },
-//   {
-//     id : 'rectangleDarkGray',
-//     src : './images/MAH/MAHRectangle2.jpeg',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Dark Gray'
-//   },
-//   {
-//     id : 'rectangleSilver',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Silver'
-//   },
-//   {
-//     id : 'rectangleGold',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Gold'
-//   },
-//   {
-//     id : 'rectangleOrange',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Orange'
-//   },
-//   {
-//     id : 'rectangleTeal',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Teal'
-//   },
-//   {
-//     id : 'rectangleNavy' ,
-//     src : '',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Navy'
-//   },
-//   //Start SoftSqaure section
-//   //SoftSquare Products
-//   {
-//     id : 'softSquareWhite',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'White'
-//   },
-//   {
-//     id : 'softSquareDarkGray',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Dark Gray'
-//   },
-//   {
-//     id : 'softSquareSilver',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Silver'
-//   },
-//   {
-//     id : 'softSquareGold',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Gold'
-//   },
-//   {
-//     id : 'softSquareOrange',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Orange'
-//   },
-//   {
-//     id : 'softSquareTeal',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Teal'
-//   },
-//   {
-//     id : 'softSquareNavy' ,
-//     src : '',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Navy'
-//   },
-//   //Start Triangle section
-//   //Triangle Products
-//   {
-//     id : 'triangleWhite',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'White'
-//   },
-//   {
-//     id : 'triangleDarkGray',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Dark Gray'
-//   },
-//   {
-//     id : 'triangleSilver',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Silver'
-//   },
-//   {
-//     id : 'triangleGold',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Gold'
-//   },
-//   {
-//     id : 'triangleOrange',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Orange'
-//   },
-//   {
-//     id : 'triangleTeal',
-//     src : '',
-//     caption : 'Here is the caption for desk image',
-//     color: 'Teal'
-//   },
-//   {
-//     id : 'triangleNavy' ,
-//     src : '',
-//     caption : 'Here is the caption for image 3',
-//     color: 'Navy'
-//   },
-// ];
 
 function imageChange(choice, container) {
   // console.log('choice: ', choice);
   // console.log(container);
   let obj = options.find(o => o.id === choice.id);
-  $("#noImage").removeClass('silverBorder whiteBorder goldBorder orangeBorder darkGrayBorder tealBorder navyBorder');
+  $("#noImage").removeClass('silverBorder whiteBorder goldBorder orangeBorder darkGrayBorder tealBorder blueBorder carbonBorder');
 
   $('#productImage').attr('src',obj.src);
   $("#captionColor").html(obj.color);
@@ -563,12 +475,12 @@ function imageChange(choice, container) {
     // $('#' + container.id + '>.imageSection>.noImage').css('background', obj.color);
     $('#noImage').removeClass('hide');
     $('#productImage').addClass('hide');
-    if (container.id === 'triangle'){
-      $('#' + container.id).find('.noImage').css('border-color', 'transparent');
-      console.log("is triangle! changing color:", obj.color);
-      $('#triangle >.imageContainer>.imageSection>.noImage').css("border-bottom-color", obj.color.replace(' ', ''));
-      $('#' + container.id + '>.imageContainer>.imageSection>.noImage').css('background', 'none');
-    }
+    // if (container.id === 'triangle'){
+    //   $('#' + container.id).find('.noImage').css('border-color', 'transparent');
+    //   console.log("is triangle! changing color:", obj.color);
+    //   $('#triangle >.imageContainer>.imageSection>.noImage').css("border-bottom-color", obj.color.replace(' ', ''));
+    //   $('#' + container.id + '>.imageContainer>.imageSection>.noImage').css('background', 'none');
+    // }
   }
   else{
     $('#noImage').addClass('hide');
@@ -627,3 +539,9 @@ $('.choice').on('mouseover', function(){
 //   }
 //   $(this).html('');
 // })
+
+//------------------Shop Updates-------------//
+$('.imageChoice').on('click', function(){
+  console.log('imageReel');
+  $(this).addClass('selectedImage').siblings().removeClass('selectedImage');
+})
