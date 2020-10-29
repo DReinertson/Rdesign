@@ -4,6 +4,7 @@
 <head>
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
   <link rel = 'stylesheet' type = 'text/css' href = './contact.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './reformat.css'>
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <meta name="twitter:card" content="summary"></meta>
   <meta name="twitter:image" content="https://www.denisebidesign.com/images/Logo/Icon.png">
@@ -19,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito:300,400,600" rel="stylesheet">
   <!-- <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
   <link rel="icon" href="./images/Logo/Icon.png" type="image/gif" sizes="16x16">
+  <script src="lazysizes.min.js" async=""></script>
   <title>Contact Denise | Interior Designer on Bainbrdige Is, WA</title>
 </head>
 
@@ -26,7 +28,7 @@
 
   <div class = 'thanks noscroll'>
     <div class = 'thanksMessage'>
-      <img src = './images/interior/bedroomAdjust.jpg' alt = 'Interior Design Bedroom'>
+      <img class = 'lazyload' data-src = './images/interior/bedroomAdjust.jpg' alt = 'Interior Design Bedroom'>
       <h2 class = 'first'>Thanks for your message!</h2>
       <h2 class = 'second'>I'll be in contact with you soon.</h2>
       <p class = 'close'>X</p>
@@ -48,6 +50,7 @@
     <ul>
       <li class = 'navItem' id = 'interiorDesign'> <a href = 'Interior_Design_Services'>Interior Design Services</a></li>
       <li class = 'navItem' id = 'MAH'><a href = 'MoAH'>Modern Airhead Products</a></li>
+      <li class = 'navItem' id = 'ModernX'> <a href = 'Modern_X_Furniture'>Modern X Furniture</a></li>
       <li class = 'navItem' id = 'Clients'><a href = 'Clients'>Clients</a></li>
       <li class = 'navItem' id = 'Blog'><a href = 'Blog'>Blog</a></li>
       <li class = 'navItem' id = 'About'><a href = 'About'>About Denise</a></li>
@@ -57,7 +60,7 @@
 
   <div class = 'contactContainer'>
     <div class = 'contactImage'>
-      <img src = './images/edgecombe/023.jpg' alt = 'Entryway'>
+      <img class = 'lazyload' data-src = './images/edgecombe/023.jpg' alt = 'Interior design photo of Edgecombe property. Living room facing oceanview window'>
     </div>
     <div class = 'formContainer'>
       <p>Would you like to purchase Modern Air Head products, find a retailer or inquire about custom vertical wallscapes? <br><br>
@@ -99,6 +102,63 @@
     </div>
 
   <!--End mc_embed_signup-->
+  <!-- <div class = 'newFooter'>
+    <div class = 'flexColumn designColumn'>
+      <img src = './images/Logo/logo12ratio.jpg'>
+      <div class = 'designText'>
+        <h3 class = 'header3'>BI Design</h3>
+        <ul>
+          <li><a href = '#'>Interior Design Services</a></li>
+          <li><a href = '#'>Clients</a></li>
+          <li><a href = '#'>Blog</a></li>
+          <li><a href = '#'>About Denise</a></li>
+          <li><a href = '#'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class = 'flexColumn moahColumn'>
+      <img src = './images/Logo/ModernAirHeadFinalCrop.jpg'>
+      <div class = 'moahText'>
+        <h3 class = 'header3'>Modern Airhead<sup class = 'smallSup'>&trade;</sup></h3>
+        <li><a href = '#'>Modern Airhead<sup class = 'smallSup'>&trade;</sup> Products</a></li>
+        <li><a href = '#'>FAQ</a></li>
+        <li><a href = '#'>Customer Support</a></li>
+      </div>
+    </div>
+  </div> -->
+
+  <div class = 'newFooter'>
+    <div class = 'flexRow designRow justifyCenter'>
+      <div class = 'footerLogoContainer'>
+        <img src = './images/Logo/logo12ratiogreen.png'>
+      </div>
+      <div class ='designText'>
+        <h3 class = 'header3'>BI Design</h3>
+        <ul>
+          <li class = 'underline'><a href = '#'>Interior Design Services</a></li>
+          <li><a href = '#'>Clients</a></li>
+          <li><a href = '#'>Blog</a></li>
+          <li><a href = '#'>About Denise</a></li>
+          <li><a href = '#'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class = 'flexRow moahRow justifyCenter'>
+      <div class = 'footerLogoContainer'>
+        <img src = './images/Logo/ModernAirHeadFinal.png'>
+      </div>
+      <div class = 'moahText'>
+        <h3 class = 'header3'>Modern Airhead<sup class = 'smallSup'>&trade;</sup></h3>
+        <ul>
+          <li><a href = '#'>Products</a></li>
+          <li><a href = '#'>FAQ</a></li>
+          <li><a href = '#'>Customer Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
   <div class = 'footer' id = 'footer'>
     <div class = 'copyright' id = 'copyright'>
       <p>Copyright 2019 BI Design. All rights reserved.</p>

@@ -1,3 +1,4 @@
+
 .blogContainer{
   width: 95vw;
   margin: 3% auto;
@@ -72,7 +73,24 @@ h2{
   object-fit: cover;
   object-position: 50% 25%;
 }
-
+.underline{
+  position: relative;
+  border: none;
+}
+.underline:after{
+  content: "";
+  background-color: rgb(92, 142, 180);;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .1s ease-in;
+}
+.underline:hover:after{
+  width: 100%;
+  right: 0;
+}
 /*------------Start Individual Blog page design-----------*/
 .blog{
   width: 55%;
@@ -361,10 +379,10 @@ h2{
 }
 /*----------------End ADD CSS--------------------*/
 /*----------------Start Mercury CSS--------------------*/
-#mercury .paragraphImage img{
+/* #mercury .paragraphImage img{
   border: none;
   box-shadow: none;
-}
+} */
 #mercury .paragraph1 p{
   width: 100%;
 }
@@ -380,6 +398,9 @@ h2{
 #mercury .blogSection > .paragraphImage{
   width: 88%;
   margin: 0 auto;
+}
+#mercury .blogSection > .paragraphImage img{
+  border-width: 15px;
 }
 #mercury .blogQuote{
   margin-top: 5%;
@@ -423,8 +444,188 @@ h2{
   width: 100%;
 }
 
+/* Beautiful Home CSS */
+#beautifulHome .paragraphImage {
+  width: 88%;
+  margin: auto;
+  height: auto;
+}
+#beautifulHome .paragraphImage img{
+  height: 100%;
+}
+
+#beautifulHome .paragraph1{
+  width: 88%;
+}
+#beautifulHome .paragraph1 p{
+  width: 100%;
+}
+#beautifulHome .thickBorder{
+  border-width: 1.5vw;
+}
+#beautifulHome .paragraph2{
+  width: 88%;
+}
+#beautifulHome .paragraph2 p{
+  width: 100%;
+}
+#beautifulHome .paragraph3{
+  width: 88%;
+}
+#beautifulHome .paragraph3 p{
+  width: 100%;
+}
+#beautifulHome .paragraph4{
+  width: 88%;
+  margin-bottom: 0;
+  display: flex;
+}
+#beautifulHome .paragraph4 p{
+  width: 90%;
+  margin-right: 5%;
+  line-height: 1.7;
+}
+
+.blogReel img{
+  width: 47.5%;
+  margin-bottom: 5%;
+}
+#beautifulHome .paragraph4 .paragraphImage{
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+#beautifulHome .paragraph4 .paragraphImage img{
+  width: 100%;
+  margin-bottom: 8%;
+}
+#beautifulHome .paragraph5{
+  width: 88%;
+  flex-direction: column;
+}
+#beautifulHome .paragraph5 p{
+  width: 100%;
+}
+.blogReel{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#beautifulHome .paragraph5 a{
+  color:rgb(92, 142, 180) !important;
+}
+#beautifulHome .paragraph5 a:hover{
+  text-decoration: underline;
+}
+#beautifulHome .paragraphBorder{
+  border-top: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding: 2vw 0;
+}
+
+/* End Beautiful Home CSS */
+
+
 /*----------------End Mercury CSS--------------------*/
 
+/* ------------------I'm Still Hot---------------------- */
+#stillHot .paragraph1 p, #stillHot .paragraph2 p{
+  width: 100%;
+}
+#stillHot .paragraphImage{
+  width: 88%;
+  margin: auto;
+}
+
+#stillHot .paragraph3 p{
+  width: 55%;
+}
+#stillHot .paragraph3 .paragraphImage{
+  width: 40%;
+  margin: 0;
+  margin-left: 5%;
+
+}
+#stillHot .paragraph3 .paragraphImage img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+#stillHot .paragraph4 p{
+  width: 100%;
+  margin-top:4%;
+  margin-bottom: 4%;
+}
+#stillHot .paragraph4 ul{
+  width: auto;
+}
+#stillHot .paragraph4 li{
+  font-size: 1.2vw;
+  line-height: 1.6;
+  color: rgb(92, 142, 180);
+  width: fit-content;
+  display: flex;
+}
+
+#stillHot .paragraph6 p{
+  width: 100%;
+}
+
+/* ------------------ End I'm Still Hot---------------------- */
+
+/* ------------------You’re Going to Make it After All----------------- */
+#makeIt .paragraph p{
+  width: 100%;
+}
+
+#makeIt .paragraph {
+  width: 88%;
+  flex-wrap: wrap;
+}
+#makeIt .paragraphImage{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ------------------End You’re Going to Make it After All----------------- */
+
+
+/* --------------------- Full Frontal Conversation------------------------ */
+
+#frontalConversation .paragraph{
+  width: 88%;
+}
+#frontalConversation .paragraphImage{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#frontalConversation .paragraph1 p, #frontalConversation .paragraph4 p{
+  width: 50%;
+}
+#frontalConversation .paragraph1 .paragraphImage, #frontalConversation .paragraph4 .paragraphImage{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+#frontalConversation .paragraph1 .paragraphImage img{
+  height: 65%;
+  object-fit: cover;
+}
+#frontalConversation .paragraph2, #frontalConversation .paragraph3{
+  flex-wrap: wrap;
+}
+#frontalConversation .paragraph2 p, #frontalConversation .paragraph3 p, #frontalConversation .paragraph5 p, #frontalConversation .paragraph6 p{
+  width: 100%;
+}
+
+
+#frontalConversation .paragraph4 p{
+  margin-left: 0;
+}
+/* --------------------- End Full Frontal Conversation------------------------ */
 /*Do one or two paragraphs of text and then separate them with two smaller horizontal pictures!*/
 @media screen and (max-width: 1023px){
   .blogContainer{
@@ -434,6 +635,8 @@ h2{
   .blogPostContainer{
     width: 100%;
     height: 45vw;
+    margin-bottom: 8%;
+    box-sizing: border-box;
   }
   .blogPost{
     width: 100%;
@@ -481,6 +684,7 @@ h2{
   }
   .blog{
     width: 100%;
+    border: none;
   }
   .paragraph p, .paragraph span{
     font-size: 3.5vw;
@@ -545,7 +749,7 @@ h2{
     margin: 0;
     height: 45%;
     object-fit: cover;
-    object-position: 70% 0;
+    object-position: 50% 0;
   }
   #dumpster .paragraph5 p{
     width: 100%;
@@ -794,4 +998,144 @@ h2{
     margin: 10% 0 14% 0;
   }
   /*----------------End Mercury CSS----------------*/
+  /*----------------Beautiful Home CSS------------------ */
+  #beautifulHome .blogHeader{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #beautifulHome .paragraph{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #beautifulHome .paragraph p{
+    margin: 0;
+  }
+  #beautifulHome .paragraphImage{
+    height: auto;
+  }
+  #beautifulHome .paragraphImage img{
+    height: 100%;
+  }
+  #beautifulHome .paragraph4{
+    width: 88%;
+    flex-direction: column;
+  }
+  #beautifulHome .paragraph4 p{
+    width: 100%;
+  }
+  #beautifulHome .paragraph4 .paragraphImage{
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    }
+  #beautifulHome .paragraph4 .paragraphImage img{
+    width: 47.5%;
+  }
+  #beautifulHome .paragraph4 .paragraphImage img:first-of-type{
+    width: 100%;
+  }
+  /* End Beautiful Home CSS */
+
+  /* -----------------I'm Still Hot--------------------- */
+  #stillHot .blogHeader, #stillHot .paragraph1, #stillHot .paragraph2, #stillHot .paragraph3, #stillHot .paragraph4, #stillHot .paragraph5, #stillHot .paragraph6{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #stillHot .paragraph3{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+  }
+  #stillHot .paragraph3 p, #stillHot .paragraph5 p, #stillHot .paragraph6 p{
+    width: 100%;
+  }
+  #stillHot .paragraph3 .paragraphImage{
+    width: 100%;
+    margin: 4% auto 4% auto;
+    display: flex;
+    justify-content: center;
+  }
+  #stillHot .paragraph3 .paragraphImage img{
+    width: 75%;
+  }
+  #stillHot .paragraph4 li{
+    font-size: 3.5vw;
+  }
+  #stillHot .socialMedia{
+    margin-top: 4%;
+  }
+
+  /* -----------------End I'm Still Hot--------------------- */
+
+  /* ------------------You’re Going to Make it After All----------------- */
+
+  #makeIt .paragraph p{
+    width: 100%;
+  }
+
+  #makeIt .paragraph, #makeIt .blogHeader{
+    width: 88%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #makeIt .paragraphImage{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ------------------ End You’re Going to Make it After All----------------- */
+
+  /* --------------------- Full Frontal Conversation------------------------ */
+
+  #frontalConversation .paragraph, #frontalConversation .blogHeader{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #frontalConversation .paragraph1 p, #frontalConversation .paragraph4 p{
+    width: 100%;
+    margin-bottom: 6%;
+  }
+  #frontalConversation .paragraph1 .paragraphImage, #frontalConversation .paragraph4 .paragraphImage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #frontalConversation .paragraph1 .paragraphImage img{
+    height: 100%;
+  }
+  #frontalConversation .paragraph{
+    flex-wrap: wrap;
+  }
+  #frontalConversation .paragraphImage{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #frontalConversation .paragraph4 p{
+    margin-left: 0;
+  }
+  #frontalConversation .paragraph4 .paragraphImage{
+    margin-right: 0;
+  }
+
+  /* --------------------- End Full Frontal Conversation------------------------ */
+}
+@media screen and (max-width: 750px){
+  .blogText p{
+    font-size: 3.5vw;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 4em;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+  }
 }

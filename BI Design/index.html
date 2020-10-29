@@ -6,25 +6,26 @@
   <link rel = 'stylesheet' type = 'text/css' href = './reformat.css'>
   <meta name = 'viewport' content = 'width=device-width, initial-scale =1.0'>
   <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:image" content="https://www.denisebidesign.com/images/Logo/Icon.png">
+  <meta name="twitter:image" content="https://www.denisebidesign.com/images/Logo/shareImageTwitter.jpg">
   <meta name="twitter:site" content="@DeniseStoughton">
   <meta name="twitter:creator" content="@DeniseStoughton">
   <meta name="twitter:title" content="BI Design | Denise Stoughton | Bainbridge Island">
   <meta property="og:title" content="BI Design | Denise Stoughton | Bainbridge Island" />
   <meta property="og:description" content='Interior design services and products by Denise Stoughton in Bainbridge Island. Providing service to Kitsap County and Seattle.' />
-  <meta property="og:image" content="https://www.denisebidesign.com/images/shareImages/BIDesign.jpg" />
+  <meta property="og:image" content="https://www.denisebidesign.com/images/Logo/shareImageText.jpg" />
   <meta name = 'description' content = 'Interior design services and products by Denise Stoughton in Bainbridge Island. Providing service to Kitsap County and Seattle.' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito:300,400,600" rel="stylesheet">
   <link rel="icon" href="./images/Logo/Icon.png" type="image/gif" sizes="16x16">
-  <title>BI Design | Interior Design on Bainbridge Is, WA</title>
+  <script src="lazysizes.min.js" async=""></script>
+  <title>BI Design | Interior Design & Products on Bainbridge Is, WA</title>
 </head>
 
 <body>
 
   <div class = 'heading' id = 'heading'>
     <a href = 'https://www.denisebidesign.com'>
-      <img src = './images/Logo/BIDesign.png' alt = 'Head Title BiDesign'>
+      <img class = 'lazyload' data-src = './images/Logo/BIDesign.png' alt = 'Head Title BiDesign'>
     </a>
     <h3 class = ''>Denise Stoughton | Designer</h3>
   </div>
@@ -33,6 +34,7 @@
     <ul>
       <li class = 'navItem' id = 'interiorDesign'> <a href = 'Interior_Design_Services'>Interior Design Services</a></li>
       <li class = 'navItem' id = 'MAH'><a href = 'MoAH'>Modern Air Head Products</a></li>
+      <li class = 'navItem' id = 'ModernX'> <a href = 'Modern_X_Furniture'>Modern X Furniture</a></li>
       <li class = 'navItem' id = 'Clients'><a href = 'Clients'>Clients</a></li>
       <li class = 'navItem' id = 'Blog'><a href = 'Blog'>Blog</a></li>
       <li class = 'navItem' id = 'About'><a href = 'About'>About Denise</a></li>
@@ -45,7 +47,7 @@
 
   <section class = 'fullWidth flexRow justifyCenter relative mobileColumn mobileFullWidth mobileCenterDiv'>
     <section class = 'introImage fortyWidth fourRightMargin mobileThreeQuarters mobileCenterDiv'>
-      <img src = './images/gallery/colorCirclesEdit.jpg' class = 'fullWidth'>
+      <img data-src = './images/gallery/colorCirclesEdit.jpg' class = 'fullWidth lazyload' alt = "Colored Modern Airhead planters with no backdrop">
     </section>
     <section class = 'flexColumn fortyWidth fourTopMargin mobileFullWidth' id = 'bannerText'>
       <h2 class = 'header1 mobileFullWidth mobileHide fourBottomMargin'>
@@ -68,7 +70,7 @@
 
   <section class = 'fullWidth flexRow relative' id = 'introInt'>
     <section class = 'introImage fullWidth fullHeight'>
-      <img src = './images/edgecombe/023large.jpg' class = 'threeQuarters fitCover fullHeight mobileOneHundred'>
+      <img data-src = './images/edgecombe/023large.jpg' class = 'threeQuarters fitCover fullHeight mobileOneHundred lazyload' alt = 'Edgecombe property, interior designing project completed'>
     </section>
     <section class = 'flexColumn alignCenter justifySpaceAround fullHeight absolute' id = 'columnButtons'>
       <a href = 'Interior_Design_Projects'>
@@ -92,18 +94,18 @@
   <section class = 'pictureColumns flexRow justifySpaceAround fullWidth fourVerticalMargin'>
 
     <a href = 'About' class = 'thirtyWidth relative flexRow'>
-        <img src = './images/denise/denise2.jpg' class = 'fullWidth fitCover fullHeight'>
+        <img data-src = './images/denise/denise2.jpg' class = 'fullWidth fitCover fullHeight lazyload' alt = 'Denise Stoughton, Interior Design & Modern Airhead Products'>
         <h3 class = 'absolute header2 mobileHide'>Get to Know Denise</h3>
         <h3 class = 'absolute header2 mobileShow'>Denise</h3>
     </a>
 
     <a href = 'Blog' class = 'thirtyWidth relative flexRow'>
-      <img src = './images/writing.jpg' alt= 'Denise Stoughton Blog' class = 'fullWidth fitCover fullHeight'>
+      <img data-src = './images/writing.jpg' alt= 'Denise Stoughton Blog' class = 'fullWidth fitCover fullHeight lazyload' alt = 'Denise Stoughton Interior Design Blog'>
       <h3 class = 'absolute header2'>Blog</h3>
     </a>
 
     <a href = 'Contact' class = 'thirtyWidth relative flexRow'>
-      <img src = './images/edgecombe/003.jpg' alt = 'Edgecombe Interior Design Project Image' class = 'fullWidth fitCover fullHeight'>
+      <img data-src = './images/edgecombe/003.jpg' alt = 'Edgecombe Interior Design Project Image' class = 'fullWidth fitCover fullHeight lazyload' alt = 'Interior Design Services Contact'>
       <h3 class = 'absolute header2'>Contact</h3>
     </a>
   </section>

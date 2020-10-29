@@ -58,6 +58,7 @@
 .contactImage img{
   width: 40vw;
   height: 35vw;
+  object-fit: cover;
 }
 
 .formContainer{
@@ -100,6 +101,90 @@ textarea{
 }
 .form-contact{
   margin-top: 5%;
+}
+
+.newFooter{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  position: relative;
+}
+.newFooter:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  background: rgba(0,0,0,0.2);
+  left: 25%;
+}
+.newFooter .flexColumn{
+  width: 20%;
+  align-items: center;
+}
+.newFooter img{
+  width: 100%;
+  margin-bottom:5%;
+}
+.designColumn{
+  margin-right: 10%;
+}
+.moahColumn{
+  margin-left: 10%;
+}
+.newFooter .flexColumn h3, .newFooter .flexColumn li{
+  text-align: left;
+}
+.designText, .moahText{
+  width: 55%;
+}
+.designRow img{
+  width: 50%;
+}
+.footerLogoContainer{
+  display:flex;
+  justify-content: flex-end;
+  width: 35%;
+  margin-right: 10%;
+}
+.newFooter .flexRow{
+  width: 45%;
+}
+.newFooter li{
+  font-size: 1.2vw;
+  margin-bottom: 0.5vw;
+  position: relative;
+}
+.newFooter li:after{
+  content:
+}
+.newFooter h3{
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 1.5vw;
+  position:relative;
+  min-height:35px;
+}
+.newFooter h3:after{
+  content: '';
+  width: 20%;
+  height: 1px;
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+.smallSup{
+  font-size: 75%;
+}
+.designText, .moahText{
+  flex-direction: column;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1023px){
   .contactContainer{
