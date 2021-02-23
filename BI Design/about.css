@@ -2,23 +2,23 @@
   width: 75vw;
   margin: 5% auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .aboutPicture{
-  width: 30%;
+  width: 35%;
   /* min-height: 100%; */
 }
 .aboutPicture img{
   width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
   box-shadow: 3px 3px 8px 1px grey;
 }
 
 .aboutText{
   width: 50%;
-  min-height: 100%;
-  margin-left: 5%;
+  /* min-height: 100%; */
+  /* margin-left: 5%; */
   font-size: 1.2vw;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,34 @@
 }
 .aboutText p{
   line-height: 1.6;
+}
+.communityInvolvement{
+  width: 75vw;
+  margin-top: 10vw;
+}
+.communityInvolvement p{
+  font-size: 1.2vw;
+  line-height: 1.6;
+}
+.underlineHover{
+  color: rgb(92, 142, 180);
+}
+.underlineHover:hover{
+  border-bottom: 1px solid #333333;
+}
+#ahb{
+
+  width: 80%;
+}
+#ahb img{
+  height: 100%;
+  border: 10px solid white;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px 1px grey;
+}
+#ahb figcaption{
+  font-size: 1vw;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 1023px){
   .aboutContainer{
@@ -35,12 +63,13 @@
   }
   .aboutPicture{
     min-height: none;
-    width: auto;
+    width: 90%;
+
   }
   .aboutPicture img{
     min-height: none;
-    width: 50vw;
-    height: 80vw;
+    /* width: 50vw; */
+    /* height: 80vw; */
   }
   .aboutText{
     min-height: none;
@@ -49,7 +78,28 @@
     margin: 5% auto;
   }
   .aboutText p{
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
+  }
+  .communityInvolvement{
+    width: 90%;
+  }
+  .communityInvolvement h2{
+    width: 100%;
+  }
+  #innerCommunity{
+    width: 100%;
+    flex-direction: column;
+  }
+  #innerCommunity *{
+    width: 100%;
+  }
+  #innerCommunity p{
+    font-size: 3.5vw;
+    margin-bottom: 10%;
+  }
+  #ahb figcaption{
+    font-size: 3vw;
+    letter-spacing: 1px;
   }
 }
 /* @media screen and (max-width: 1366px) and (min-width: 1024px){
