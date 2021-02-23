@@ -4,9 +4,11 @@
 }
 .slideshow{
   position: relative;
-  width: 53%;
+  /* width: 53%; */
+  width: 75%;
+  height: 42vw;
   margin: 0 auto;
-  height: 32vw;
+  /* height: 32vw; */
   color: black;
 }
 
@@ -30,12 +32,13 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  color: rgba(51, 51, 51, 0.3);
-  /* color: white; */
+  color: rgba(0,0,0,0.3);
   font-weight: bold;
+  /* font-size: 32px; */
   font-size: 52px;
+  padding: 2% 1%;
   user-select: none;
-  /* background: rgba(0,0,0,0.3); */
+  /* background: rgba(0,0,0,0.1); */
 }
 .next{
   right: 0;
@@ -54,6 +57,95 @@
   height: auto;
 }
 
+.interiorDesignText{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* new interior design section below main image */
+#projects {
+  width: 75%;
+  margin: 5% auto;
+  justify-content: center;
+  align-items: center;
+}
+#projects a:hover{
+  color: orange;
+}
+.intImage{
+  width: 40%;
+  margin-right: 5%;
+
+}
+.intImage img{
+border-radius: 10%;
+}
+.intText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: 5%;
+  height: 100%;
+}
+.intText p{
+  line-height: 1.8;
+}
+.aboutSection{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.aboutImage{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.aboutText{
+  margin-left: 5%;
+}
+.aboutImage img{
+  width: 50%;
+}
+.aboutChild{
+  width: 45%;
+}
+
+.portfolio{
+  margin-top: 10%;
+}
+.portfolio h2{
+  letter-spacing: 3px;
+  margin-bottom: 3%;
+}
+.portfolioLinks{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio h3{
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 8px black;
+}
+.portfolio a:hover h3{
+  background: rgba(0,0,0,0.4);
+}
+.portfolio a{
+  width: 50%;
+}
+
+/* End new interior design section below main image */
+
+
 .paragraph, .quote, .services{
   line-height: 1.6;
 }
@@ -70,10 +162,23 @@
   width: 100%;
   background: rgba(51, 51, 51, 0.1);
   height: 30%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .quote h2{
-  width: 53%;
+  width: 75%;
 }
+.quote span{
+  width: 75%;
+  align-self: flex-end;
+}
+.quote .quoteFrom{
+  width: 56%;
+  text-align: right;
+}
+
 
 .services{
   margin-bottom: 10%;
@@ -88,6 +193,11 @@
 }
 .services a:hover{
    border-bottom: 1px solid gray;
+}
+
+.paragraph, .services{
+  width: 75%;
+  margin: 0;
 }
 
 #edgecombe{
@@ -115,6 +225,52 @@
 #edgecombe:hover > #edgecombeText:after{
   width: 100%;
 }
+/* #projects a{
+  background: rgba(0,0,0,0.3);
+} */
+/* #projects h3{
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 8px black;
+} */
+#themesService h3{
+  /* background: rgba(0,0,0,0.3); */
+}
+/* #projects h3:after{
+  content : '';
+  background-color: white;
+  height: 3px;
+  width: 0%;
+  bottom: 10%;
+  left: 6%;
+  position: absolute;
+  transition: width 0.2s ease-in;
+}
+#projects a:hover > h3:after{
+  width: 88%;
+} */
+#projects a:hover h3{
+  background: rgba(0,0,0,0.4);
+}
+
+.videoContainer{
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 8% auto 4% auto;
+}
+video{
+  width: 50%;
+}
+
 
 @media screen and (max-width: 1023px){
   .slideshow{
@@ -136,6 +292,17 @@
   }
   .prev, .next{
     color: rgba(0,0,0,0.5);
+    font-size: 48px;
+  }
+  #projects{
+    flex-direction: column;
+  }
+  #projects a{
+    width: 100%;
+    height: auto;
+  }
+  #projects h3{
+    font-size: 6vw;
   }
   .paragraph{
     width: 90%;
@@ -154,35 +321,20 @@
   .services{
     width: 90%;
   }
-
-}
-@media screen and (max-width: 1024px) and (min-width: 750px){
-
-}
-@media screen and (max-width: 1366px) and (min-width: 1024px){
-  * h1{
-    font-size: 3.5vw;
-  }
-  * h2{
-    font-size: 2.5vw;
-  }
-  * h3, li, p{
-    font-size: 1.2vw;
-  }
-  .slideshow{
-    width: 70%;
-    height: 42vw;
+  .videoContainer{
+    display: flex;
+    justify-content: center;
+    width: 90%;
     margin: 4% auto;
   }
+  video{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 750px){
   .prev, .next{
-    color: rgba(51, 51, 51, 0.3);
+    font-size: 32px;
   }
-  /* .paragraph {
-    width: 70%;
-  }
-  .paragraph p{
-    width: 90%;
-    margin: 0 auto;
-  } */
 
 }
