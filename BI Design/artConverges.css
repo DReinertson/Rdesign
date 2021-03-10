@@ -1,0 +1,64 @@
+#pictureFade{
+  min-height: 500px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 4%;
+}
+
+#pictureFade img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.paragraph p{
+  width: 100%;
+}
+.blogSection > .paragraphImage{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twoImages{
+  display: flex;
+  justify-content: space-between;
+}
+.twoImages img{
+  width: 48%;
+  object-fit: cover;
+}
+
+.paragraph7 p{
+  width: 60%;
+}
+.paragraph7 .paragraphImage{
+  width: 35%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1023px){
+  #pictureFade{
+    width: 92%;
+    min-height: 600px;
+  }
+
+  .blogSection > .paragraphImage{
+    width: 92%;
+  }
+  .paragraph7 {
+    flex-direction: column;
+  }
+  .paragraph7 p {
+    margin-bottom: 4%;
+  }
+  .paragraph7 p, .paragraph7 .paragraphImage{
+    width: 100%;
+  }
+
+  .postDate{
+    right: 4%;
+  }
+}

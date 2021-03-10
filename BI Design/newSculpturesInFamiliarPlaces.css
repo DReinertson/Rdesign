@@ -1,0 +1,79 @@
+.paragraph p {
+  width: 100%;
+}
+
+.blogSection > .paragraphImage{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.twoImages{
+  display: flex;
+  justify-content: space-between;
+}
+.twoImages img{
+  width: 48%;
+  object-fit: cover;
+}
+
+
+.positionLeft{
+  object-position: 25%;
+}
+.paragraph6{
+  align-items: center;
+}
+.paragraph4 {
+  width: 80%;
+  margin: 4% auto;
+  font-style: italic;
+}
+.paragraph4 p{
+  font-weight: bold;
+}
+.paragraph6 p {
+  width: 45%;
+  /* font-size: 120%; */
+  font-weight: bold;
+}
+.paragraph6 .paragraphImage{
+  width: 50%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1023px){
+  .blogSection > .paragraphImage{
+    width: 92%;
+  }
+  .paragraph4 {
+    width: 87%;
+  }
+  .paragraph6 p {
+    width: 55%;
+    /* font-size: 120%; */
+    font-weight: bold;
+    font-size: 3vw;
+  }
+  .paragraph6 .paragraphImage{
+    width: 40%;
+    margin-left: auto;
+  }
+  .postDate{
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .paragraph6{
+    flex-direction: column;
+  }
+  .paragraph6 p{
+    font-size: 3.5vw;
+  }
+  .paragraph6 p, .paragraph6 .paragraphImage{
+    width: 100%;
+  }
+  .paragraph6 p, .paragraph6 .paragraphImage{
+    margin: 4% auto;
+  }
+}
